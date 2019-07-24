@@ -1,0 +1,69 @@
+.cta {
+	position: relative;
+	text-align: center;
+
+	.section-inner {
+		padding-bottom: 64px;
+	}
+
+	.section-title {
+		margin-bottom: 32px;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		right: -70px;
+		bottom: -110px;
+		width: 1440px;
+		height: 274px;
+		background-image: url("../images/call-to-action.svg");
+		background-repeat: no-repeat;
+	}
+}
+
+.cta-inner {
+	/* Make CTA's widht match pricing tables */
+	max-width: 664px;
+	margin: 0 auto;
+}
+
+@include media( '>medium') {
+
+	.cta {
+		text-align: left;
+
+		.section-inner {
+			padding-top: 102px;
+			padding-bottom: 102px;
+		}
+
+		.section-title {
+			margin-bottom: 0;
+			padding-right: 24px;
+		}
+
+		&::before {
+			right: auto;
+			left: calc(50% - 720px);
+			bottom: -10px;
+		}
+	}
+
+	.cta-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@include media( '<=medium' ) {
+
+	.cta-cta {
+
+		.button {
+			width: 100%;
+			max-width: 280px;
+		}
+	}
+}

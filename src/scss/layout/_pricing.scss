@@ -133,3 +133,38 @@
 		}
     }
 }
+
+.social-links {
+	display: flex;
+	margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    color: #CCC;
+    
+    i {
+    	color: #777;
+    	font-size: 26px;
+	    &:hover {
+	    	transition: linear 0.3s;
+	    	color: #7c00d6;
+	    	transform: scale(1.2);
+	    }
+    }
+}
+
+.social-links li {
+	margin: 8px;
+}
+
+.pricing-table-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pricing-table-image img {
+	border-radius: 50%;
+	width: 150px;
+}

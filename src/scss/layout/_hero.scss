@@ -16,7 +16,7 @@
 		height: 342px;
 		bottom: -128px;
 		left: calc(50% - 720px);
-		background-image: url('../images/header-bg-left.svg');
+		background-image: url('../images/header-bg-left-heart.svg');
 		z-index: -2;
 	}
 
@@ -25,7 +25,7 @@
 		height: 320px;
 		top: -140px; /* min -80px, i.e. header height */
 		left: calc(50% - 360px);
-		background-image: url('../images/header-bg-right.svg');
+		background-image: url('../images/header-bg-right-heart.svg');
 		background-size: 720px 320px;
 		z-index: -1;
 	}
@@ -97,4 +97,12 @@
 			max-width: 280px;
 		}
 	}
+	.hero-inner {
+		height: 800px;
+	}
 }
+
+.hero-copy, .hero-illustration {
+	flex-basis: 50%;
+}
+

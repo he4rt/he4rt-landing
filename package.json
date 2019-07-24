@@ -50,5 +50,9 @@
     "uglify-es": "^3.3.10"
   },
   "homepage": "https://bitbucket.org/pasqualevitiello/blue#readme",
-  "main": ".eslintrc.js"
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "@glidejs/glide": "^3.3.0",
+    "@glorious/demo": "^0.8.1"
+  }
 }

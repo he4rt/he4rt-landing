@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>He4rt Developers</title>
+    <title>He4rt Developers</title>
     <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="shortcut icon" href="dist/images/icon.ico" />
+    <link rel="stylesheet" href="node_modules/@glorious/demo/dist/gdemo.min.css">
+	<script src="node_modules/@glorious/demo/dist/gdemo.min.js"></script>
+	<script src="https://kit.fontawesome.com/1502e8505b.js"></script>
 </head>
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
@@ -16,8 +20,8 @@
                 <div class="site-header-inner">
                     <div class="brand header-brand">
                         <h1 class="m-0">
-                            <a href="#"> 
-                                <img src="./src/images/32x32.png" alt="Logo da He4rt">
+                            <a href="https://heartdevs.com">
+                                <img src="dist/images/logo-64x64.png" alt="He4rt logo">
                             </a>
                         </h1>
                     </div>
@@ -32,91 +36,92 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0 is-revealing">Landing template for startups</h1>
-	                        <p class="hero-paragraph is-revealing">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+	                        <h1 class="hero-title mt-0 is-revealing">Estude, cresça e avance no mercado</h1>
+	                        <p class="hero-paragraph is-revealing">O nosso projeto vai te ensinar a como ser um desenvolvedor fluente em programação e te garantir uma vaga no mercado de trabalho</p>
 	                        <p class="hero-cta mb-0 is-revealing">
-								<a class="button button-primary button-shadow" href="#">Get started free</a>
+								<a class="button button-primary button-shadow" href="#">Seja um membro</a>
 							</p>
 						</div>
 						<div class="hero-illustration">
+							<div id="illustration"></div>
 						</div>
                     </div>
                 </div>
             </section>
 
-            <section class="clients section">
-                <div class="container">
-                    <div class="clients-inner section-inner has-top-divider">
-                        <div class="container-sm">
-                            <ul class="list-reset mb-0">
-                                <li class="is-revealing">
-                                    <img src="dist/images/facebook-logo.svg" alt="Facebook logo">
-                                </li>
-                                <li class="is-revealing">
-                                    <img src="dist/images/tinder-logo.svg" alt="Tinder logo">
-                                </li>
-                                <li class="is-revealing">
-                                    <img src="dist/images/airbnb-logo.svg" alt="Airbnb logo">
-                                </li>
-                                <li class="is-revealing">
-                                    <img src="dist/images/microsoft-logo.svg" alt="Microsoft logo">
-                                </li>
-								<li class="is-revealing">
-									<img src="dist/images/hubspot-logo.svg" alt="Hubspot logo">
-								</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <!--    <section class="clients section">-->
+        <!--        <div class="container">-->
+        <!--            <div class="clients-inner section-inner has-top-divider">-->
+        <!--                <div class="container-sm">-->
+        <!--                    <ul class="list-reset mb-0">-->
+        <!--                        <li class="is-revealing">-->
+        <!--                            <img src="dist/images/facebook-logo.svg" alt="Facebook logo">-->
+        <!--                        </li>-->
+        <!--                        <li class="is-revealing">-->
+        <!--                            <img src="dist/images/tinder-logo.svg" alt="Tinder logo">-->
+        <!--                        </li>-->
+        <!--                        <li class="is-revealing">-->
+        <!--                            <img src="dist/images/airbnb-logo.svg" alt="Airbnb logo">-->
+        <!--                        </li>-->
+        <!--                        <li class="is-revealing">-->
+        <!--                            <img src="dist/images/microsoft-logo.svg" alt="Microsoft logo">-->
+        <!--                        </li>-->
+								<!--<li class="is-revealing">-->
+								<!--	<img src="dist/images/hubspot-logo.svg" alt="Hubspot logo">-->
+								<!--</li>-->
+        <!--                    </ul>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </section>-->
 
 			<section class="features section text-center">
                 <div class="container">
                     <div class="features-inner section-inner has-top-divider">
 						<div class="features-header text-center">
 							<div class="container-sm">
-								<h2 class="section-title mt-0">Entenda como podemos ajudar</h2>
-								<p class="section-paragraph mb-0">A nossa comunidade é formada por desenvolvedores </p>
+								<h2 class="section-title mt-0">O que é He4rt</h2>
+								<p class="section-paragraph mb-0">A He4rt Developers foi criada com o intuito de guiar quem deseja iniciar na área da programação. </p>
 							</div>
 						</div>
-                        <div class="features-wrap">
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-01.svg" alt="Feature 01">
-                                    </div>
-                                    <h4 class="feature-title">Lorem Ipsum</h4>
-                                    <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>
-                                </div>
-                            </div>
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-02.svg" alt="Feature 02">
-                                    </div>
-                                    <h4 class="feature-title">Lorem Ipsum</h4>
-                                    <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>
-                                </div>
-                            </div>
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-03.svg" alt="Feature 03">
-                                    </div>
-                                    <h4 class="feature-title">Lorem Ipsum</h4>
-                                    <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>
-                                </div>
-                            </div>
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-04.svg" alt="Feature 04">
-                                    </div>
-                                    <h4 class="feature-title">Lorem Ipsum</h4>
-                                    <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>
-                                </div>
-                            </div>
-                        </div>
+                        <!--<div class="features-wrap">-->
+                        <!--    <div class="feature is-revealing">-->
+                        <!--        <div class="feature-inner">-->
+                        <!--            <div class="feature-icon">-->
+                        <!--                <img src="dist/images/feature-icon-01.svg" alt="Feature 01">-->
+                        <!--            </div>-->
+                        <!--            <h4 class="feature-title">Lorem Ipsum</h4>-->
+                        <!--            <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--    <div class="feature is-revealing">-->
+                        <!--        <div class="feature-inner">-->
+                        <!--            <div class="feature-icon">-->
+                        <!--                <img src="dist/images/feature-icon-02.svg" alt="Feature 02">-->
+                        <!--            </div>-->
+                        <!--            <h4 class="feature-title">Lorem Ipsum</h4>-->
+                        <!--            <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--    <div class="feature is-revealing">-->
+                        <!--        <div class="feature-inner">-->
+                        <!--            <div class="feature-icon">-->
+                        <!--                <img src="dist/images/feature-icon-03.svg" alt="Feature 03">-->
+                        <!--            </div>-->
+                        <!--            <h4 class="feature-title">Lorem Ipsum</h4>-->
+                        <!--            <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--    <div class="feature is-revealing">-->
+                        <!--        <div class="feature-inner">-->
+                        <!--            <div class="feature-icon">-->
+                        <!--                <img src="dist/images/feature-icon-04.svg" alt="Feature 04">-->
+                        <!--            </div>-->
+                        <!--            <h4 class="feature-title">Lorem Ipsum</h4>-->
+                        <!--            <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</div>-->
                     </div>
                 </div>
             </section>
@@ -129,37 +134,37 @@
 								<li class="is-revealing">
 									<a href="#tab-1" class="tab-link is-active">
 										<img src="dist/images/tabs-icon-01.svg" alt="Tabs icon 01">
-										<span class="h4 m-0">Amazing features</span>
+										<span class="h4 m-0">Desenvolvendo habilidades</span>
 									</a>
 								</li>
 								<li class="is-revealing">
 									<a href="#tab-2" class="tab-link">
 										<img src="dist/images/tabs-icon-02.svg" alt="Tabs icon 02">
-										<span class="h4 m-0">Endless possibilities</span>
+										<span class="h4 m-0">Projetos</span>
 									</a>
 								</li>
 								<li class="is-revealing">
 									<a href="#tab-3" class="tab-link">
 										<img src="dist/images/tabs-icon-03.svg" alt="Tabs icon 03">
-										<span class="h4 m-0">Ease of use</span>
+										<span class="h4 m-0">Networking</span>
 									</a>
 								</li>
 							</ul>
 							<div class="tabs-content">
 								<div id="tab-1" class="tab-panel is-active">
-									<h2>Discover</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<p class="mb-0">A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
+									<h2>Desenvolvendo habilidades</h2>
+									<p>Nossa comunidade entende que bons programadores são formados a partir de bons mentores e é por isso que oferecemos para quem tiver interesse em aprender.</p>
+									<p class="mb-0">Entre nossos membros existem desde os mais iniciantes dos desenvolvedores até o mais dos sêniores avaliando e trocando conhecimento.</p>
 								</div>
 								<div id="tab-2" class="tab-panel">
-									<h2>Power of customisation</h2>
-									<p>A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
-									<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue.</p>
+									<h2>Projetos</h2>
+									<p>Sempre mantemos projetos <strong>open source</strong> para que os membros contribuam para o crescimento da própria comunidade.</p>
+									<p class="mb-0">É sempre bom lembrar que o jeito mais fácil de aprender é com um ambiente real, e nós levamos isso bem a sério.</p>
 								</div>
 								<div id="tab-3" class="tab-panel">
-									<h2>Keep it simple</h2>
-									<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-									<p class="mb-0">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+									<h2>Networking</h2>
+									<p>A comunidade sempre te dará uma chance de conhecer alguém que pode lhe gerar oportunidades futuras.</p>
+									<p class="mb-0">Desenvolver bem é um fator importante, porém com os contatos certos você pode entrar no mercado de trabalho com mais facilidade.</p>
 								</div>
 							</div>
 						</div>
@@ -174,77 +179,57 @@
 							<h2 class="section-title mt-0">Testimonials</h2>
 						</div>
 						<div class="testimonials-wrap">
-							<div class="testimonial text-sm is-revealing">
-								<div class="testimonial-inner">
-									<div class="testimonial-main">
-										<div class="testimonial-body">
-											<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+							<div class="glide">
+							  <div class="glide__track" data-glide-el="track">
+							    <ul class="glide__slides">
+							      <li class="glide__slide">
+							      	<div class="testimonial text-sm is-revealing">
+										<div class="testimonial-inner">
+											<div class="testimonial-main">
+												<div class="testimonial-body">
+													<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+												</div>
+											</div>
+											<div class="testimonial-footer">
+												<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+											</div>
 										</div>
 									</div>
-									<div class="testimonial-footer">
-										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
-									</div>
-								</div>
-							</div>
-							<div class="testimonial text-sm is-revealing">
-								<div class="testimonial-inner">
-									<div class="testimonial-main">
-										<div class="testimonial-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
+							      </li>
+							      <li class="glide__slide">
+							      	<div class="testimonial text-sm is-revealing">
+										<div class="testimonial-inner">
+											<div class="testimonial-main">
+												<div class="testimonial-body">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
+												</div>
+											</div>
+											<div class="testimonial-footer">
+												<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+											</div>
 										</div>
 									</div>
-									<div class="testimonial-footer">
-										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
-									</div>
-								</div>
-							</div>
-							<div class="testimonial text-sm is-revealing">
-								<div class="testimonial-inner">
-									<div class="testimonial-main">
-										<div class="testimonial-body">
-											<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+							      </li>
+							      <li class="glide__slide">
+							      	<div class="testimonial text-sm is-revealing">
+										<div class="testimonial-inner">
+											<div class="testimonial-main">
+												<div class="testimonial-body">
+													<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+												</div>
+											</div>
+											<div class="testimonial-footer">
+												<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+											</div>
 										</div>
 									</div>
-									<div class="testimonial-footer">
-										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
-									</div>
-								</div>
-							</div>
-							<div class="testimonial text-sm is-revealing">
-								<div class="testimonial-inner">
-									<div class="testimonial-main">
-										<div class="testimonial-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
-										</div>
-									</div>
-									<div class="testimonial-footer">
-										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
-									</div>
-								</div>
-							</div>
-							<div class="testimonial text-sm is-revealing">
-								<div class="testimonial-inner">
-									<div class="testimonial-main">
-										<div class="testimonial-body">
-											<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
-										</div>
-									</div>
-									<div class="testimonial-footer">
-										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
-									</div>
-								</div>
-							</div>
-							<div class="testimonial text-sm is-revealing">
-								<div class="testimonial-inner">
-									<div class="testimonial-main">
-										<div class="testimonial-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
-										</div>
-									</div>
-									<div class="testimonial-footer">
-										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
-									</div>
-								</div>
+							      </li>
+							    </ul>
+							  </div>
+							  <div class="glide__arrows" data-glide-el="controls">
+							    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+							    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+							  </div>
 							</div>
 						</div>
 					</div>
@@ -254,33 +239,42 @@
             <section class="pricing section">
                 <div class="container">
                     <div class="pricing-inner section-inner">
-                        <h2 class="section-title mt-0 text-center">Pricing</h2>
+                        <h2 class="section-title mt-0 text-center">Conheça nossa Equipe</h2>
 						<div>
 							<div class="pricing-tables-wrap">
 								<div class="pricing-table is-revealing">
 									<div class="pricing-table-inner">
 										<div class="pricing-table-main">
 											<div class="pricing-table-header mb-24 pb-24">
-												<div class="pricing-table-title h4 mt-0 mb-16">Startup</div>
-												<div class="pricing-table-price"><span class="pricing-table-price-currency">$</span><span class="pricing-table-price-amount h1">29</span>/m</div>
+												<div class="pricing-table-image">
+													<img src="dist/images/julia.jpg">
+												</div>
+												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Júlia Botelho</div>
+												<div class="pricing-table-price text-center">Community Manager</div>
 											</div>
 											<ul class="pricing-table-features list-reset text-xs">
-												<li>
-													<span>Lorem ipsum dolor sit amet</span>
-												</li>
-												<li>
-													<span>Lorem ipsum dolor sit amet</span>
-												</li>
-												<li>
-													<span>Lorem ipsum dolor sit amet</span>
-												</li>
-												<li>
-													<span>Lorem ipsum dolor sit amet</span>
-												</li>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+												sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+												magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+												</p>
 											</ul>
 										</div>
 										<div class="pricing-table-cta">
-											<a class="button button-secondary button-shadow button-block" href="#">Get started</a>
+											<hr>
+											<ul class="social-links">
+												<li>
+													<a href="https://twitter.com/juhbotelho" target="_blank">
+						                                <span class="screen-reader-text">Twitter</span>
+						                                <i class="fab fa-twitter"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://instagram.com/jjubsbotelho" target="_blank">
+						                                <span class="screen-reader-text">Instagram</span>
+						                                <i class="fab fa-instagram"></i>
+					                            	</a>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -288,26 +282,215 @@
 									<div class="pricing-table-inner">
 										<div class="pricing-table-main">
 											<div class="pricing-table-header mb-24 pb-24">
-												<div class="pricing-table-title h4 mt-0 mb-16">Enterprise</div>
-												<div class="pricing-table-price"><span class="pricing-table-price-currency">$</span><span class="pricing-table-price-amount h1">49</span>/m</div>
+												<div class="pricing-table-image">
+													<img src="dist/images/danielhe4rt.jpg">
+												</div>
+												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Daniel Reis</div>
+												<div class="pricing-table-price text-center">Founder</div>
 											</div>
 											<ul class="pricing-table-features list-reset text-xs">
-												<li>
-													<span>Lorem ipsum dolor sit amet</span>
-												</li>
-												<li>
-													<span>Lorem ipsum dolor sit amet</span>
-												</li>
-												<li>
-													<span>Lorem ipsum dolor sit amet</span>
-												</li>
-												<li>
-													<span>Lorem ipsum dolor sit amet</span>
-												</li>
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+												sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+												magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+												</p>
 											</ul>
 										</div>
 										<div class="pricing-table-cta">
-											<a class="button button-primary button-shadow button-block" href="#">Get started</a>
+											<hr>
+											<ul class="social-links">
+												<li>
+													<a href="https://twitter.com/danielhe4rt" target="_blank">
+						                                <span class="screen-reader-text">Twitter</span>
+						                                <i class="fab fa-twitter"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://instagram.com/danielhe4rt" target="_blank">
+						                                <span class="screen-reader-text">Instagram</span>
+						                                <i class="fab fa-instagram"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://www.youtube.com/channel/UClhaHu44mss2TkFbH2rKdOA?sub_confirmation=1" target="_blank">
+						                                <span class="screen-reader-text">Discord</span>
+						                                <i class="fab fa-youtube"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://twitch.tv/DanielHe4rt" target="_blank">
+						                                <span class="screen-reader-text">Twitch</span>
+						                                <i class="fab fa-twitch"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://discord.gg/5kwDQuv" target="_blank">
+						                                <span class="screen-reader-text">Discord</span>
+						                                <i class="fab fa-discord"></i>
+					                            	</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-table is-revealing">
+									<div class="pricing-table-inner">
+										<div class="pricing-table-main">
+											<div class="pricing-table-header mb-24 pb-24">
+												<div class="pricing-table-image">
+													<img src="https://www.urbanarts.com.br/imagens/produtos/117261/0/Ampliada/interrogacao-em-vermelho.jpg">
+												</div>
+												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Gustavo</div>
+												<div class="pricing-table-price text-center">Project Manager</div>
+											</div>
+											<ul class="pricing-table-features list-reset text-xs">
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+												sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+												magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+												</p>
+											</ul>
+										</div>
+										<div class="pricing-table-cta">
+											<hr>
+											<ul class="social-links">
+												<li>
+													<a href="https://twitter.com/danielhe4rt" target="_blank">
+						                                <span class="screen-reader-text">Twitter</span>
+						                                <i class="fab fa-twitter"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://instagram.com/danielhe4rt" target="_blank">
+						                                <span class="screen-reader-text">Instagram</span>
+						                                <i class="fab fa-instagram"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://www.youtube.com/channel/UClhaHu44mss2TkFbH2rKdOA?sub_confirmation=1" target="_blank">
+						                                <span class="screen-reader-text">Discord</span>
+						                                <i class="fab fa-youtube"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://twitch.tv/DanielHe4rt" target="_blank">
+						                                <span class="screen-reader-text">Twitch</span>
+						                                <i class="fab fa-twitch"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://discord.gg/5kwDQuv" target="_blank">
+						                                <span class="screen-reader-text">Discord</span>
+						                                <i class="fab fa-discord"></i>
+					                            	</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-table is-revealing">
+									<div class="pricing-table-inner">
+										<div class="pricing-table-main">
+											<div class="pricing-table-header mb-24 pb-24">
+												<div class="pricing-table-image">
+													<img src="dist/images/danielhe4rt.jpg">
+												</div>
+												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Gabriel Pride</div>
+												<div class="pricing-table-price text-center">Fundador</div>
+											</div>
+											<ul class="pricing-table-features list-reset text-xs">
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+												sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+												magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+												</p>
+											</ul>
+										</div>
+										<div class="pricing-table-cta">
+											<hr>
+											<ul class="social-links">
+												<li>
+													<a href="https://twitter.com/danielhe4rt" target="_blank">
+						                                <span class="screen-reader-text">Twitter</span>
+						                                <i class="fab fa-twitter"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://instagram.com/danielhe4rt" target="_blank">
+						                                <span class="screen-reader-text">Instagram</span>
+						                                <i class="fab fa-instagram"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://www.youtube.com/channel/UClhaHu44mss2TkFbH2rKdOA?sub_confirmation=1" target="_blank">
+						                                <span class="screen-reader-text">Discord</span>
+						                                <i class="fab fa-youtube"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://twitch.tv/DanielHe4rt" target="_blank">
+						                                <span class="screen-reader-text">Twitch</span>
+						                                <i class="fab fa-twitch"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://discord.gg/5kwDQuv" target="_blank">
+						                                <span class="screen-reader-text">Discord</span>
+						                                <i class="fab fa-discord"></i>
+					                            	</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-table is-revealing">
+									<div class="pricing-table-inner">
+										<div class="pricing-table-main">
+											<div class="pricing-table-header mb-24 pb-24">
+												<div class="pricing-table-image">
+													<img src="dist/images/danielhe4rt.jpg">
+												</div>
+												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Lucas Chumarrento</div>
+												<div class="pricing-table-price text-center">Desenvolvedor</div>
+											</div>
+											<ul class="pricing-table-features list-reset text-xs">
+												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+												sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+												magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+												</p>
+											</ul>
+										</div>
+										<div class="pricing-table-cta">
+											<hr>
+											<ul class="social-links">
+												<li>
+													<a href="https://twitter.com/danielhe4rt" target="_blank">
+						                                <span class="screen-reader-text">Twitter</span>
+						                                <i class="fab fa-twitter"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://instagram.com/danielhe4rt" target="_blank">
+						                                <span class="screen-reader-text">Instagram</span>
+						                                <i class="fab fa-instagram"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://www.youtube.com/channel/UClhaHu44mss2TkFbH2rKdOA?sub_confirmation=1" target="_blank">
+						                                <span class="screen-reader-text">Discord</span>
+						                                <i class="fab fa-youtube"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://twitch.tv/DanielHe4rt" target="_blank">
+						                                <span class="screen-reader-text">Twitch</span>
+						                                <i class="fab fa-twitch"></i>
+					                            	</a>
+												</li>
+												<li>
+													<a href="https://discord.gg/5kwDQuv" target="_blank">
+						                                <span class="screen-reader-text">Discord</span>
+						                                <i class="fab fa-discord"></i>
+					                            	</a>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -318,38 +501,45 @@
 	                        <ul class="accordion">
 	                            <li>
 	                                <div class="accordion-title">
-										<span>In a professional context it often happens that private?</span>
+										<span>Como ser um primo?</span>
 										<div class="accordion-icon"></div>
 									</div>
 	                                <div class="accordion-body">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+	                                    <p>Apenas entre na nossa comunidade e comece a participar das conversas e voilá, você é um primo dessa familia enorme que é a He4rt.</p>
 	                                </div>
 	                            </li>
 								<li>
 									<div class="accordion-title">
-										<span>Lorem ipsum dolor sit amet, consectetur</span>
+										<span>Nunca programei, compensa começar agora?</span>
 										<div class="accordion-icon"></div>
 									</div>
 									<div class="accordion-body">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam semper. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>
+											Claro que compensa, pequeno gafanhoto. O mercado de tecnologia está cada vez mais propicio a contratar desenvolvedores para o seu negócio. É quase impossível
+											uma empresa não se informatizar e é exatamente ai que você entra.
+										</p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<span>In a professional context it often happens that private?</span>
+										<span>Por onde devo começar a estudar?</span>
 										<div class="accordion-icon"></div>
 									</div>
 									<div class="accordion-body">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+										<p>
+											A grande massa das aplicações de hoje é voltada ao JavaScript, então indicamos fortemente a você começar pelas tecnologias para web sendo elas: HTML, CSS e JavaScript.
+										</p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<span>Lorem ipsum dolor sit amet, consectetur</span>
+										<span>Indicam algum curso?</span>
 										<div class="accordion-icon"></div>
 									</div>
 									<div class="accordion-body">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam semper. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>
+											Nós acreditamos que o conhecimento é livre e não deve ser cobrado e por isso estamos desenvolvendo uma plataforma própria para os membros poderem criarem cursos e contribuir para nossa comunidade. 
+										</p>
 									</div>
 								</li>
 	                        </ul>
@@ -361,9 +551,9 @@
 			<section class="cta section">
 				<div class="container">
 					<div class="cta-inner section-inner is-revealing">
-						<h3 class="section-title mt-0">Still not convinced?</h3>
+						<h3 class="section-title mt-0">Entre agora na nossa comunidade!</h3>
 						<div class="cta-cta">
-							<a class="button button-primary button-shadow" href="#">Schedule a live demo</a>
+							<a class="button button-primary button-shadow" href="https://discord.gg/5kwDQuv">Seja um membro</a>
 						</div>
 					</div>
 				</div>
@@ -374,56 +564,67 @@
             <div class="container">
                 <div class="site-footer-inner">
                     <div class="brand footer-brand">
-                        <a href="#">
-                            <img src="dist/images/logo.svg" alt="Blue logo">
+                        <a href="https://heartdevs.com">
+                            <img src="dist/images/logo-64x64.png" alt="He4rt logo">
                         </a>
+                        <p class="footer-brand-name">He4rt Developers</p>
                     </div>
-                    <ul class="footer-links list-reset">
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ's</a>
-                        </li>
-                        <li>
-                            <a href="#">Support</a>
-                        </li>
-                    </ul>
                     <ul class="footer-social-links list-reset">
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Facebook</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
-                                </svg>
+                    	<li>
+                            <a href="https://github.com/he4rt" target="_blank">
+					            <span class="screen-reader-text">GitHub</span>
+					            <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://discord.gg/5kwDQuv" target="_blank">
+					            <span class="screen-reader-text">Discord</span>
+					            <i class="fab fa-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/He4rtDevs" target="_blank">
                                 <span class="screen-reader-text">Twitter</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
-                                </svg>
+                                <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Google</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/>
-                                </svg>
+                            <a href="https://instagram.com/heartdevs">
+                                <span class="screen-reader-text">Instagram</span>
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2018 Blue, all rights reserved</div>
+                    <div class="footer-copyright">&copy; 2019 He4rt, todos os direitos reservados.</div>
                 </div>
             </div>
         </footer>
     </div>
-
+	<script>
+    	const demo = new GDemo('#illustration');
+		const code = `
+			function greet(){
+			  console.log("Hello World!");
+			}
+			
+			greet();
+			`
+			
+		demo
+		  .openApp('terminal', {minHeight: '350px', promptString: '$'})
+		  .command('node ./he4rt', {onCompleteDelay: 500})
+		  .respond('// Desenvolvendo com o coração das cartas!')
+		  .end();
+    </script>
     <script src="dist/js/main.min.js"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!-- Required Core Stylesheet -->
+	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+	
+	<!-- Optional Theme Stylesheet -->
+	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <script>
+	  new Glide('.glide').mount()
+	</script>
 </body>
 </html>
