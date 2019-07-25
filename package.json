@@ -53,7 +53,6 @@
   "main": ".eslintrc.js",
   "dependencies": {
     "@glidejs/glide": "^3.3.0",
-    "@glorious/demo": "^0.8.1",
-    "materialize-css": "^1.0.0-rc.2"
+    "@glorious/demo": "^0.8.1"
   }
 }

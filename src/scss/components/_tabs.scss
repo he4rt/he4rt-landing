@@ -21,7 +21,6 @@
 	position: relative;
 	display: block;
 	padding: 24px;
-	background: color(primary, 1);
 	@include shadow;
 
 	&::before {
