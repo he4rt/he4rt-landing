@@ -106,3 +106,21 @@
 	flex-basis: 50%;
 }
 
+@media screen and (min-width: 1441px) {
+	.hero {
+		text-align: left;
+        padding-top: 100px;
+
+		.hero-left-decoration {
+			width: 100%;
+			left: calc(50% - 50%);
+			background-size: 100% 640px;
+		}
+
+		.hero-right-decoration {
+			width: 100%;
+			left: calc(50% - 50%);
+			background-size: 100% 640px;
+		}
+    }
+}
