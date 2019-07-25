@@ -42,7 +42,7 @@
       interval: 150
     })
 
-    sr.reveal('.feature, .tabs-links li, .testimonial, .pricing-table, .pricing-faqs, .cta-inner', {
+    sr.reveal('.feature, .tabs-links li, .pricing-table, .pricing-faqs, .cta-inner', {
       duration: 600,
       distance: '40px',
       easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',

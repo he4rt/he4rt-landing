@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 	<script src="node_modules/@glorious/demo/dist/gdemo.min.js"></script>
+	<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 	<script src="https://kit.fontawesome.com/1502e8505b.js"></script>
 </head>
 <body class="is-boxed has-animations">
@@ -185,7 +186,7 @@
 							  <div class="glide__track" data-glide-el="track">
 							    <ul class="glide__slides">
 							      <li class="glide__slide">
-							      	<div class="testimonial text-sm is-revealing">
+							      	<div class="testimonial text-sm" >
 										<div class="testimonial-inner">
 											<div class="testimonial-main">
 												<div class="testimonial-body">
@@ -199,7 +200,7 @@
 									</div>
 							      </li>
 							      <li class="glide__slide">
-							      	<div class="testimonial text-sm is-revealing">
+							      	<div class="testimonial text-sm">
 										<div class="testimonial-inner">
 											<div class="testimonial-main">
 												<div class="testimonial-body">
@@ -213,7 +214,7 @@
 									</div>
 							      </li>
 							      <li class="glide__slide">
-							      	<div class="testimonial text-sm is-revealing">
+							      	<div class="testimonial text-sm">
 										<div class="testimonial-inner">
 											<div class="testimonial-main">
 												<div class="testimonial-body">
@@ -539,10 +540,20 @@
 		  .end();
     </script>
     <script src="dist/js/main.min.js"></script>
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-    
     <script>
-	  new Glide('.glide').mount()
+	  new Glide('.glide', 
+	  {
+	  	type: 'carousel', 
+	  	perView: 2,
+	  	breakpoints: {
+		    600: { perView: 1 },
+	  		800: { perView: 2 },
+			1200: { perView: 3 }
+	  	},
+	  	autoplay: 3000,
+		focusAt: 'center',
+		bound: true
+	  }).mount()
 	</script>
 </body>
 </html>
