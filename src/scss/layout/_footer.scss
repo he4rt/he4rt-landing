@@ -18,8 +18,8 @@
     position: relative; /* To display all elements above the background color */
     display: flex;
     flex-wrap: wrap;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .footer-brand,
@@ -76,8 +76,8 @@
 
     .site-footer-inner {
         justify-content: space-between;
-		padding-top: 80px;
-		padding-bottom: 64px;
+		padding-top: 30px;
+		padding-bottom: 15px;
     }
 
     .footer-brand,
@@ -105,7 +105,15 @@
 
 .footer-copyright {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: column;
     margin-left: 15px;
+    
+    span {
+        &:first-of-type {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    }
+    
 }
