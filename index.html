@@ -1,573 +1,678 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que sairam do zero e passaram pro intermediário/avançado."
+    />
+    <meta property="og:image" content="dist/images/logo-he4rt2.png" />
+    <meta name="theme-color" content="#8743CC" />
+    <title>He4rt Developers</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="shortcut icon" href="dist/images/heart-64x64.png" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glorious/demo/dist/gdemo.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="nSode_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <script src="node_modules/@glorious/demo/dist/gdemo.min.js"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="https://kit.fontawesome.com/1502e8505b.js"></script>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que sairam do zero e passaram pro intermediário/avançado.">
-	<title>He4rt Developers</title>
-	<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="dist/css/style.css">
-	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-	<link rel="shortcut icon" href="dist/images/logo-he4rt.png" />
-	<link rel="stylesheet" href="node_modules/@glorious/demo/dist/gdemo.min.css">
-	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-	<link rel="stylesheet" href="nSode_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-	<script src="node_modules/@glorious/demo/dist/gdemo.min.js"></script>
-	<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-	<script src="https://kit.fontawesome.com/1502e8505b.js"></script>
-</head>
+  <body class="is-boxed has-animations">
+    <div class="body-wrap">
+      <header class="site-header">
+        <div class="container">
+          <div class="site-header-inner">
+            <div class="brand header-brand">
+              <h1 class="m-0">
+                <a
+                  style="display: flex; flex-direction: row; justify-content: center; align-items: center"
+                  href="https://heartdevs.com"
+                >
+                  <img src="dist/images/logo-he4rt2.png" alt="He4rt logo" />
+                  <p
+                    style="font-family: 'Arimo', sans-serif; font-size: 21px; margin: 0;padding-left:5px"
+                  ></p>
+                </a>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
 
-<body class="is-boxed has-animations">
-	<div class="body-wrap">
-		<header class="site-header">
-			<div class="container">
-				<div class="site-header-inner">
-					<div class="brand header-brand">
-						<h1 class="m-0">
-							<a style="display: flex; flex-direction: row; justify-content: center; align-items: center" href="https://heartdevs.com">
-								<img src="dist/images/logo-he4rt.png" width="64px" alt="He4rt logo">
-								<p style="font-family: 'Arimo', sans-serif; font-size: 21px; margin: 0;padding-left:5px">He4rt Developers</p>
-							</a>
-						</h1>
-					</div>
-				</div>
-			</div>
-		</header>
+      <main>
+        <section class="hero">
+          <div class="hero-right-decoration is-revealing"></div>
+          <div class="container">
+            <div class="hero-inner">
+              <div class="hero-copy">
+                <h1 class="hero-title mt-0 is-revealing">
+                  Estude, cresça e avance no mercado
+                </h1>
+                <p class="hero-paragraph is-revealing">
+                  O nosso projeto vai te ensinar a como ser um desenvolvedor
+                  fluente em programação e te garantir uma vaga no mercado de
+                  trabalho.
+                </p>
+                <p class="hero-cta mb-0 is-revealing">
+                  <a
+                    class="button button-primary button-shadow"
+                    href="https://discord.gg/5kwDQuv"
+                    target="_blank"
+                    >Seja um membro</a
+                  >
+                </p>
+              </div>
+              <div class="hero-illustration">
+                <div id="illustration"></div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-		<main>
-			<section class="hero">
-				<div class="hero-right-decoration is-revealing"></div>
-				<div class="container">
-					<div class="hero-inner">
-						<div class="hero-copy">
-							<h1 class="hero-title mt-0 is-revealing">Estude, cresça e avance no mercado</h1>
-							<p class="hero-paragraph is-revealing">O nosso projeto vai te ensinar a como ser um
-								desenvolvedor fluente em programação e te garantir uma vaga no mercado de trabalho.</p>
-							<p class="hero-cta mb-0 is-revealing">
-								<a class="button button-primary button-shadow" href="https://discord.gg/5kwDQuv"
-									target="_blank">Seja um membro</a>
-							</p>
-						</div>
-						<div class="hero-illustration">
-							<div id="illustration"></div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <section class="features section text-center">
+          <div class="container">
+            <div class="features-inner section-inner has-top-divider">
+              <div class="features-header text-center">
+                <div class="container-sm">
+                  <h2 class="section-title mt-0">O que é He4rt</h2>
+                  <p class="section-paragraph mb-0">
+                    A He4rt Developers foi criada com o intuito de guiar quem
+                    deseja iniciar na área da programação.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-			    <section class="clients section">
-			        <div class="container">
-			            <div class="clients-inner section-inner has-top-divider">
-			                <div class="container-sm">
-			                    <ul class="list-reset mb-0">
-			                        <li class="is-revealing">
-			                            <img src="dist/images/estudio.png" width="120px" alt="Horus logo">
-			                        </li>
-			                        <li class="is-revealing">
-			                            <img src="dist/images/programathor.png" width="220px" alt="Programathor logo">
-			                        </li>
-			                        <li class="is-revealing">
-			                            <img src="dist/images/fabapp.png" width="120px" alt="Fabapp logo">
-			                        </li>
-			                    </ul>
-			                </div>
-			            </div>
-			        </div>
-			    </section>
+        <section class="features-tabs section">
+          <div class="container">
+            <div class="features-tabs-inner section-inner has-top-divider">
+              <div class="tabs-container">
+                <ul class="tabs-links">
+                  <li class="is-revealing">
+                    <a href="#tab-1" class="tab-link is-active">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACe0lEQVRYR+WXT26bQBTG32Oktru4N6AnqFHwugT3AM4J4p4g2eIuShbFSysnSHqDHKBgurYjnBu4J2i8dGV4FU4swTDD34lkqV6O3/B+vPnmfQ+EI/vhkfHA/wXkWlHvDdJH/hSIcPM1NFai01FeoakV6aTtLhFwBAh6mSQI4MfEN8fZGGVAaTXeavEMEHIJqjTq+GaOQQnQdyvqI9vdImC/CoD/fxuz925oPB3WOwPtYbR4jgi9pjD7eKQz5+cgVALUGUYlUBVMKlgkWgNgDxAupdVTUaEaMOcT37w/QKTxGosjIVRXoH1vYbu5TMBE9GsSDCw+uTdc3iHABb+exMzI9iShqNOk71h8QQT9Qi8h0Ev7C8GNE5hXfOKpvXAB8Ru/XnntPXsxA8Bx21tDQKuJPzAKQMPlHABylRNVM1chz16EiPip1fXNbiJ0neD0+rA0tR/GgHRbeC7RtRMMXGmnfhFf2hNOukKllQLANQDp0oYZsw9OaKxLrUMlVOlLSbQmFPWrQxE8OoEptBmpdbwaFMHjNmFW1r9qu71yqAqYvZNUiVcZVA2YWkBpUGeomjC1gTpBNYBpBNQGigh+/01YXyZgkVykGvKGyxESzJKEnWfNr8nxyYy2TLdCoOdBPY5SPyOCJ0rYWRsoZUD8qNAWSh2QvfzDu30bKCVA088LCwjTUUFgzsXhq0xTou+uqr5X0JBnP1wh0qxIAzfbhLmiGyOFIvziBKd3VRCl1sFNdhsCuMeYufyYwCcRQG22MdObXHlhH9ofWaLpSaKtZN/fsjfOQQmGrzqVqvSyOg/JxrxAuY5vjprubdyp2yRoukd5hZoC8PFHB/QPighrNCY04lYAAAAASUVORK5CYII="
+                      />
+                      <span class="h4 m-0">Desenvolvendo habilidades</span>
+                    </a>
+                  </li>
+                  <li class="is-revealing">
+                    <a href="#tab-2" class="tab-link">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABxUlEQVRYR+3YQU6DQBQG4P+Vxi7lBuoJ1ISurcV96wmsJ7DupBvppmzrCcQTaPeWsi9J4w3qDdg2KTwDEeMCKEwLrbGsCMzAl38mMzwIO3bQjnnwt0BG0xkCaIFwnCtJhqlZym2uPt+NExMKMYQ7kYeGfQRRySDVcQEcCoMEUWkgzo1hPAFogHD60zdnUhsGcX/hV4e1imeLojYO0qy6rjdmsiiqEFAwXKKowkCiqEJBIqjCQUkobazEvnuzIMAGkx23XDB8mYi60b2yQJmXrj1oVVT7hLaTEOODwS4RXYSbO+MT4HlwHl1LghUzZMSX2nvdNlSHGXjpjZVOBBiojknAzdZA8KQTH5Cp4k0IcDk4J8jbA0VpNac6gzpEOEqbR4UPGRhzYu4+TOqjcKeXPDP8Hk84CgP5y6pbkbzZry/E+cKXzmvV5RmYJmWBRgy4wSQeqE6bgFdmuidwWJ1oltKNrpcCYuC6N1bejKtpAz49B2US+dyOhutA8lpgDMuf1KtWv5T7xcyh/w5av1BMSDDYYnqWEluep5TSUx1Ej2uMSnJX5n5QLsU1SP37YWRcdbOig2QIbCZhwk0568PKarcHrUr6CzOhNzTWoLgdAAAAAElFTkSuQmCC"
+                      />
+                      <span class="h4 m-0">Projetos</span>
+                    </a>
+                  </li>
+                  <li class="is-revealing">
+                    <a href="#tab-3" class="tab-link">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACBklEQVRYR+2WTVKDQBCFuzMLl+oJ1BNoSliHEA/gEbyByRJciAvD0ngDj+ABBHEdrMQTGE9gXLoY24IU8hOGAUyqosUsM2+Yr183jyBs2MIN44EGSNaRxqH/69C1NjlCxg+DComzlwuvPZVVW2dfOkMBSIvxGwDQMhd4X5wNVg1WCBS60uKPiLCTVy0RzOmLdVcJVQg01MceInYk1nuGo3TrtCfvjBDI0iY7W4y/l7nok7Ndy2vPy2hlGiGQfTLWgPBR9oBwH6lrPKieSGvrYwsQL8N9oivDVS2R9u8ABRXYPT9ow7bEpQ/DUXKHPjq3EodCoKTVIipJC5aeU7dlcXX+FBDCQMwuInoyXTWbT4tCoEU/eqRAE+k8IEzNm+EeX0VaaTBGFRLgGSLsLeYS3hDoTjScds+PYUq8FYaj/HCUAirxzJRkrUBBWjPGO0SYGlxEmnPOnvJSetGyeBGAFgVs0GYEyLQsjgGhQ8Oef4oEN4CwX+gQwYwQBqaj3K8th2zdHwHCeZVWEdHIdNVB3plfvfZD/bmPSMHXvfIiwoHpHo+yB2sD2dpkHxh/rUySPMDZgeG1Z8mf6gPVaNVyOMGt4Sr9ukWlhtrWxSFY9gICmpqO2i6rz+rSQBUDTXRpMuiqgm04UCbQqlYX6Yv+78ieuZZPh+zSov0GSOZe41DjkMwB2f43pHbtJbKcWpEAAAAASUVORK5CYII="
+                      />
+                      <span class="h4 m-0">Networking</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="tabs-content">
+                  <div id="tab-1" class="tab-panel is-active">
+                    <h2 style="font-size: 35px;">Desenvolvendo habilidades</h2>
+                    <p>
+                      Nossa comunidade entende que bons programadores são
+                      formados a partir de bons mentores e é por isso que
+                      oferecemos para quem tiver interesse em aprender.
+                    </p>
+                    <p class="mb-0">
+                      Entre nossos membros existem desde os mais iniciantes dos
+                      desenvolvedores até o mais dos sêniores avaliando e
+                      trocando conhecimento.
+                    </p>
+                  </div>
+                  <div id="tab-2" class="tab-panel">
+                    <h2>Projetos</h2>
+                    <p>
+                      Sempre mantemos projetos <strong>open source</strong> para
+                      que os membros contribuam para o crescimento da própria
+                      comunidade.
+                    </p>
+                    <p class="mb-0">
+                      É sempre bom lembrar que o jeito mais fácil de aprender é
+                      com um ambiente real, e nós levamos isso bem a sério.
+                    </p>
+                  </div>
+                  <div id="tab-3" class="tab-panel">
+                    <h2>Networking</h2>
+                    <p>
+                      A comunidade sempre te dará uma chance de conhecer alguém
+                      que pode lhe gerar oportunidades futuras.
+                    </p>
+                    <p class="mb-0">
+                      Desenvolver bem é um fator importante, porém com os
+                      contatos certos você pode entrar no mercado de trabalho
+                      com mais facilidade.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-			<section class="features section text-center">
-				<div class="container">
-					<div class="features-inner section-inner has-top-divider">
-						<div class="features-header text-center">
-							<div class="container-sm">
-								<h2 class="section-title mt-0">O que é He4rt</h2>
-								<p class="section-paragraph mb-0">A He4rt Developers foi criada com o intuito de guiar
-									quem deseja iniciar na área da programação. </p>
-							</div>
-						</div>
-						<!--<div class="features-wrap">-->
-						<!--    <div class="feature is-revealing">-->
-						<!--        <div class="feature-inner">-->
-						<!--            <div class="feature-icon">-->
-						<!--                <img src="dist/images/feature-icon-01.svg" alt="Feature 01">-->
-						<!--            </div>-->
-						<!--            <h4 class="feature-title">Lorem Ipsum</h4>-->
-						<!--            <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>-->
-						<!--        </div>-->
-						<!--    </div>-->
-						<!--    <div class="feature is-revealing">-->
-						<!--        <div class="feature-inner">-->
-						<!--            <div class="feature-icon">-->
-						<!--                <img src="dist/images/feature-icon-02.svg" alt="Feature 02">-->
-						<!--            </div>-->
-						<!--            <h4 class="feature-title">Lorem Ipsum</h4>-->
-						<!--            <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>-->
-						<!--        </div>-->
-						<!--    </div>-->
-						<!--    <div class="feature is-revealing">-->
-						<!--        <div class="feature-inner">-->
-						<!--            <div class="feature-icon">-->
-						<!--                <img src="dist/images/feature-icon-03.svg" alt="Feature 03">-->
-						<!--            </div>-->
-						<!--            <h4 class="feature-title">Lorem Ipsum</h4>-->
-						<!--            <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>-->
-						<!--        </div>-->
-						<!--    </div>-->
-						<!--    <div class="feature is-revealing">-->
-						<!--        <div class="feature-inner">-->
-						<!--            <div class="feature-icon">-->
-						<!--                <img src="dist/images/feature-icon-04.svg" alt="Feature 04">-->
-						<!--            </div>-->
-						<!--            <h4 class="feature-title">Lorem Ipsum</h4>-->
-						<!--            <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>-->
-						<!--        </div>-->
-						<!--    </div>-->
-						<!--</div>-->
-					</div>
-				</div>
-			</section>
+        <section class="testimonials section">
+          <div class="container">
+            <div class="testimonials-inner section-inner">
+              <div class="testimonials-header text-center text-light">
+                <h2 class="section-title mt-0">Depoimentos</h2>
+              </div>
+              <div class="testimonials-wrap">
+                <div class="glide">
+                  <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides" id="testimonials"></ul>
+                  </div>
+                  <div class="glide__arrows" data-glide-el="controls">
+                    <button
+                      class="glide__arrow glide__arrow--left"
+                      style="border: none; box-shadow: none"
+                      data-glide-dir="<"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="#FFF"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="glide__arrow glide__arrow--right"
+                      style="border: none; box-shadow: none"
+                      data-glide-dir=">"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="#FFF"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-			<section class="features-tabs section">
-				<div class="container">
-					<div class="features-tabs-inner section-inner has-top-divider">
-						<div class="tabs-container">
-							<ul class="tabs-links">
-								<li class="is-revealing">
-									<a href="#tab-1" class="tab-link is-active">
-										<img
-											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACe0lEQVRYR+WXT26bQBTG32Oktru4N6AnqFHwugT3AM4J4p4g2eIuShbFSysnSHqDHKBgurYjnBu4J2i8dGV4FU4swTDD34lkqV6O3/B+vPnmfQ+EI/vhkfHA/wXkWlHvDdJH/hSIcPM1NFai01FeoakV6aTtLhFwBAh6mSQI4MfEN8fZGGVAaTXeavEMEHIJqjTq+GaOQQnQdyvqI9vdImC/CoD/fxuz925oPB3WOwPtYbR4jgi9pjD7eKQz5+cgVALUGUYlUBVMKlgkWgNgDxAupdVTUaEaMOcT37w/QKTxGosjIVRXoH1vYbu5TMBE9GsSDCw+uTdc3iHABb+exMzI9iShqNOk71h8QQT9Qi8h0Ev7C8GNE5hXfOKpvXAB8Ru/XnntPXsxA8Bx21tDQKuJPzAKQMPlHABylRNVM1chz16EiPip1fXNbiJ0neD0+rA0tR/GgHRbeC7RtRMMXGmnfhFf2hNOukKllQLANQDp0oYZsw9OaKxLrUMlVOlLSbQmFPWrQxE8OoEptBmpdbwaFMHjNmFW1r9qu71yqAqYvZNUiVcZVA2YWkBpUGeomjC1gTpBNYBpBNQGigh+/01YXyZgkVykGvKGyxESzJKEnWfNr8nxyYy2TLdCoOdBPY5SPyOCJ0rYWRsoZUD8qNAWSh2QvfzDu30bKCVA088LCwjTUUFgzsXhq0xTou+uqr5X0JBnP1wh0qxIAzfbhLmiGyOFIvziBKd3VRCl1sFNdhsCuMeYufyYwCcRQG22MdObXHlhH9ofWaLpSaKtZN/fsjfOQQmGrzqVqvSyOg/JxrxAuY5vjprubdyp2yRoukd5hZoC8PFHB/QPighrNCY04lYAAAAASUVORK5CYII=" />
-										<span class="h4 m-0">Desenvolvendo habilidades</span>
-									</a>
-								</li>
-								<li class="is-revealing">
-									<a href="#tab-2" class="tab-link">
-										<img
-											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABxUlEQVRYR+3YQU6DQBQG4P+Vxi7lBuoJ1ISurcV96wmsJ7DupBvppmzrCcQTaPeWsi9J4w3qDdg2KTwDEeMCKEwLrbGsCMzAl38mMzwIO3bQjnnwt0BG0xkCaIFwnCtJhqlZym2uPt+NExMKMYQ7kYeGfQRRySDVcQEcCoMEUWkgzo1hPAFogHD60zdnUhsGcX/hV4e1imeLojYO0qy6rjdmsiiqEFAwXKKowkCiqEJBIqjCQUkobazEvnuzIMAGkx23XDB8mYi60b2yQJmXrj1oVVT7hLaTEOODwS4RXYSbO+MT4HlwHl1LghUzZMSX2nvdNlSHGXjpjZVOBBiojknAzdZA8KQTH5Cp4k0IcDk4J8jbA0VpNac6gzpEOEqbR4UPGRhzYu4+TOqjcKeXPDP8Hk84CgP5y6pbkbzZry/E+cKXzmvV5RmYJmWBRgy4wSQeqE6bgFdmuidwWJ1oltKNrpcCYuC6N1bejKtpAz49B2US+dyOhutA8lpgDMuf1KtWv5T7xcyh/w5av1BMSDDYYnqWEluep5TSUx1Ej2uMSnJX5n5QLsU1SP37YWRcdbOig2QIbCZhwk0568PKarcHrUr6CzOhNzTWoLgdAAAAAElFTkSuQmCC" />
-										<span class="h4 m-0">Projetos</span>
-									</a>
-								</li>
-								<li class="is-revealing">
-									<a href="#tab-3" class="tab-link">
-										<img
-											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACBklEQVRYR+2WTVKDQBCFuzMLl+oJ1BNoSliHEA/gEbyByRJciAvD0ngDj+ABBHEdrMQTGE9gXLoY24IU8hOGAUyqosUsM2+Yr183jyBs2MIN44EGSNaRxqH/69C1NjlCxg+DComzlwuvPZVVW2dfOkMBSIvxGwDQMhd4X5wNVg1WCBS60uKPiLCTVy0RzOmLdVcJVQg01MceInYk1nuGo3TrtCfvjBDI0iY7W4y/l7nok7Ndy2vPy2hlGiGQfTLWgPBR9oBwH6lrPKieSGvrYwsQL8N9oivDVS2R9u8ABRXYPT9ow7bEpQ/DUXKHPjq3EodCoKTVIipJC5aeU7dlcXX+FBDCQMwuInoyXTWbT4tCoEU/eqRAE+k8IEzNm+EeX0VaaTBGFRLgGSLsLeYS3hDoTjScds+PYUq8FYaj/HCUAirxzJRkrUBBWjPGO0SYGlxEmnPOnvJSetGyeBGAFgVs0GYEyLQsjgGhQ8Oef4oEN4CwX+gQwYwQBqaj3K8th2zdHwHCeZVWEdHIdNVB3plfvfZD/bmPSMHXvfIiwoHpHo+yB2sD2dpkHxh/rUySPMDZgeG1Z8mf6gPVaNVyOMGt4Sr9ukWlhtrWxSFY9gICmpqO2i6rz+rSQBUDTXRpMuiqgm04UCbQqlYX6Yv+78ieuZZPh+zSov0GSOZe41DjkMwB2f43pHbtJbKcWpEAAAAASUVORK5CYII=" />
-										<span class="h4 m-0">Networking</span>
-									</a>
-								</li>
-							</ul>
-							<div class="tabs-content">
-								<div id="tab-1" class="tab-panel is-active">
-									<h2 style="font-size: 35px;">Desenvolvendo habilidades</h2>
-									<p>Nossa comunidade entende que bons programadores são formados a partir de bons
-										mentores e é por isso que oferecemos para quem tiver interesse em aprender.</p>
-									<p class="mb-0">Entre nossos membros existem desde os mais iniciantes dos
-										desenvolvedores até o mais dos sêniores avaliando e trocando conhecimento.</p>
-								</div>
-								<div id="tab-2" class="tab-panel">
-									<h2>Projetos</h2>
-									<p>Sempre mantemos projetos <strong>open source</strong> para que os membros
-										contribuam para o crescimento da própria comunidade.</p>
-									<p class="mb-0">É sempre bom lembrar que o jeito mais fácil de aprender é com um
-										ambiente real, e nós levamos isso bem a sério.</p>
-								</div>
-								<div id="tab-3" class="tab-panel">
-									<h2>Networking</h2>
-									<p>A comunidade sempre te dará uma chance de conhecer alguém que pode lhe gerar
-										oportunidades futuras.</p>
-									<p class="mb-0">Desenvolver bem é um fator importante, porém com os contatos certos
-										você pode entrar no mercado de trabalho com mais facilidade.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <section class="pricing section">
+          <div class="container">
+            <div class="pricing-inner section-inner">
+              <h2 class="section-title mt-0 text-center">
+                Conheça nossa Equipe
+              </h2>
+              <div>
+                <div class="pricing-tables-wrap">
+                  <div class="pricing-table is-revealing">
+                    <div class="pricing-table-inner">
+                      <div class="pricing-table-main">
+                        <div class="pricing-table-header mb-24 pb-24">
+                          <div class="pricing-table-image">
+                            <img src="dist/images/julia2.jpg" />
+                          </div>
+                          <div
+                            class="pricing-table-title h4 mt-0 mb-16 text-center"
+                          >
+                            Júlia Botelho
+                          </div>
+                          <div class="pricing-table-price text-center">
+                            Community Manager
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-table-cta">
+                        <ul class="social-links">
+                          <li>
+                            <a
+                              href="https://twitter.com/juhbotelho"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Twitter</span>
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://instagram.com/jjubsbotelho"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Instagram</span>
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pricing-table is-revealing">
+                    <div class="pricing-table-inner">
+                      <div class="pricing-table-main">
+                        <div class="pricing-table-header pb-24">
+                          <div class="pricing-table-image">
+                            <img src="dist/images/danielhe4rt.jpg" />
+                          </div>
+                          <div
+                            class="pricing-table-title h4 mt-0 mb-16 text-center"
+                          >
+                            Daniel Reis
+                          </div>
+                          <div class="pricing-table-price text-center">
+                            Founder
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-table-cta">
+                        <ul class="social-links">
+                          <li>
+                            <a
+                              href="https://twitter.com/danielhe4rt"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Twitter</span>
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://instagram.com/danielhe4rt"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Instagram</span>
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.youtube.com/channel/UClhaHu44mss2TkFbH2rKdOA?sub_confirmation=1"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Discord</span>
+                              <i class="fab fa-youtube"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://twitch.tv/DanielHe4rt"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Twitch</span>
+                              <i class="fab fa-twitch"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://discord.gg/5kwDQuv"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Discord</span>
+                              <i class="fab fa-discord"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/DanielHe4rt"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">GitHub</span>
+                              <i class="fab fa-github"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pricing-table is-revealing">
+                    <div class="pricing-table-inner">
+                      <div class="pricing-table-main">
+                        <div class="pricing-table-header pb-24">
+                          <div class="pricing-table-image">
+                            <img src="dist/images/gustavo.png" />
+                          </div>
+                          <div
+                            class="pricing-table-title h4 mt-0 mb-16 text-center"
+                          >
+                            Gustavo Lima
+                          </div>
+                          <div class="pricing-table-price text-center">
+                            Project Manager
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-table-cta">
+                        <ul class="social-links">
+                          <li>
+                            <a
+                              href="https://twitter.com/kjkGustavo"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Twitter</span>
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/kjkGustavo"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">GitHub</span>
+                              <i class="fab fa-github"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pricing-table is-revealing">
+                    <div class="pricing-table-inner">
+                      <div class="pricing-table-main">
+                        <div class="pricing-table-header mb-24 pb-24">
+                          <div class="pricing-table-image">
+                            <img src="dist/images/brito.png" />
+                          </div>
+                          <div
+                            class="pricing-table-title h4 mt-0 mb-16 text-center"
+                          >
+                            Eduardo Santos
+                          </div>
+                          <div class="pricing-table-price text-center">
+                            Developer
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-table-cta">
+                        <ul class="social-links">
+                          <li>
+                            <a
+                              href="https://twitter.com/edusantosbrito"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Twitter</span>
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/EduSantosBrito"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">GitHub</span>
+                              <i class="fab fa-github"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pricing-table is-revealing">
+                    <div class="pricing-table-inner">
+                      <div class="pricing-table-main">
+                        <div class="pricing-table-header mb-24 pb-24">
+                          <div class="pricing-table-image">
+                            <img src="dist/images/chumarrento.jpg" />
+                          </div>
+                          <div
+                            class="pricing-table-title h4 mt-0 mb-16 text-center"
+                          >
+                            Lucas Pereira
+                          </div>
+                          <div class="pricing-table-price text-center">
+                            Developer
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-table-cta">
+                        <ul class="social-links">
+                          <li>
+                            <a
+                              href="https://twitter.com/lcsbtchs"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Twitter</span>
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/Chumarrento"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">GitHub</span>
+                              <i class="fab fa-github"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pricing-table is-revealing">
+                    <div class="pricing-table-inner">
+                      <div class="pricing-table-main">
+                        <div class="pricing-table-header mb-24 pb-24">
+                          <div class="pricing-table-image">
+                            <img src="dist/images/miguel.jpg" />
+                          </div>
+                          <div
+                            class="pricing-table-title h4 mt-0 mb-16 text-center"
+                          >
+                            Miguel Evanoff
+                          </div>
+                          <div class="pricing-table-price text-center">
+                            Designer & Developer
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-table-cta">
+                        <ul class="social-links">
+                          <li>
+                            <a
+                              href="https://twitter.com/R4BB1T_"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">Twitter</span>
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/BERS3RK"
+                              target="_blank"
+                            >
+                              <span class="screen-reader-text">GitHub</span>
+                              <i class="fab fa-github"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-faqs container-sm is-revealing">
+                <h4 class="mt-40 mb-32">FAQs</h4>
+                <ul class="accordion">
+                  <li>
+                    <div class="accordion-title">
+                      <span>Como ser um primo?</span>
+                      <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-body">
+                      <p>
+                        Apenas entre na nossa comunidade e comece a participar
+                        das conversas e voilá, você é um primo dessa familia
+                        enorme que é a He4rt.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="accordion-title">
+                      <span>Nunca programei, compensa começar agora?</span>
+                      <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-body">
+                      <p>
+                        Claro que compensa, pequeno gafanhoto. O mercado de
+                        tecnologia está cada vez mais propicio a contratar
+                        desenvolvedores para o seu negócio. É quase impossível
+                        uma empresa não se informatizar e é exatamente ai que
+                        você entra.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="accordion-title">
+                      <span>Por onde devo começar a estudar?</span>
+                      <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-body">
+                      <p>
+                        A grande massa das aplicações de hoje é voltada ao
+                        JavaScript, então indicamos fortemente a você começar
+                        pelas tecnologias para web sendo elas: HTML, CSS e
+                        JavaScript.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="accordion-title">
+                      <span>Indicam algum curso?</span>
+                      <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-body">
+                      <p>
+                        Nós acreditamos que o conhecimento é livre e não deve
+                        ser cobrado e por isso estamos desenvolvendo uma
+                        plataforma própria para os membros poderem criarem
+                        cursos e contribuir para nossa comunidade.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-			<section class="testimonials section">
-				<div class="container">
-					<div class="testimonials-inner section-inner">
-						<div class="testimonials-header text-center text-light">
-							<h2 class="section-title mt-0">Depoimentos</h2>
-						</div>
-						<div class="testimonials-wrap">
-							<div class="glide">
-								<div class="glide__track" data-glide-el="track">
-									<ul class="glide__slides" id="testimonials">
-									</ul>
-								</div>
-								<div class="glide__arrows" data-glide-el="controls">
-									<button class="glide__arrow glide__arrow--left" style="border: none; box-shadow: none" data-glide-dir="<">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" width="24" height="24"
-											viewBox="0 0 24 24">
-											<path
-												d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z">
-											</path>
-										</svg>
-									</button>
-									<button class="glide__arrow glide__arrow--right" style="border: none; box-shadow: none" data-glide-dir=">">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" width="24" height="24"
-											viewBox="0 0 24 24">
-											<path
-												d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z">
-											</path>
-										</svg>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <section class="cta section">
+          <div class="container">
+            <div class="cta-inner section-inner is-revealing">
+              <h3 class="section-title mt-0">
+                Entre agora na nossa comunidade!
+              </h3>
+              <div class="cta-cta">
+                <a
+                  class="button button-primary button-shadow"
+                  href="https://discord.gg/5kwDQuv"
+                  target="_blank"
+                  >Seja um membro</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
-			<section class="pricing section">
-				<div class="container">
-					<div class="pricing-inner section-inner">
-						<h2 class="section-title mt-0 text-center">Conheça nossa Equipe</h2>
-						<div>
-							<div class="pricing-tables-wrap">
-								<div class="pricing-table is-revealing">
-									<div class="pricing-table-inner">
-										<div class="pricing-table-main">
-											<div class="pricing-table-header mb-24 pb-24">
-												<div class="pricing-table-image">
-													<img src="dist/images/julia2.jpg">
-												</div>
-												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Júlia Botelho
-												</div>
-												<div class="pricing-table-price text-center">Community Manager</div>
-											</div>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="site-footer-inner">
+            <div class="brand footer-brand">
+              <a href="https://heartdevs.com">
+                <img
+                  src="dist/images/he4rt-footer.png"
+                  width="64px"
+                  alt="He4rt logo"
+                />
+              </a>
 
-										</div>
-										<div class="pricing-table-cta">
-											<ul class="social-links">
-												<li>
-													<a href="https://twitter.com/juhbotelho" target="_blank">
-														<span class="screen-reader-text">Twitter</span>
-														<i class="fab fa-twitter"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://instagram.com/jjubsbotelho" target="_blank">
-														<span class="screen-reader-text">Instagram</span>
-														<i class="fab fa-instagram"></i>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="pricing-table is-revealing">
-									<div class="pricing-table-inner">
-										<div class="pricing-table-main">
-											<div class="pricing-table-header pb-24">
-												<div class="pricing-table-image">
-													<img src="dist/images/danielhe4rt.jpg">
-												</div>
-												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Daniel Reis
-												</div>
-												<div class="pricing-table-price text-center">Founder</div>
-											</div>
-
-										</div>
-										<div class="pricing-table-cta">
-											<ul class="social-links">
-												<li>
-													<a href="https://twitter.com/danielhe4rt" target="_blank">
-														<span class="screen-reader-text">Twitter</span>
-														<i class="fab fa-twitter"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://instagram.com/danielhe4rt" target="_blank">
-														<span class="screen-reader-text">Instagram</span>
-														<i class="fab fa-instagram"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://www.youtube.com/channel/UClhaHu44mss2TkFbH2rKdOA?sub_confirmation=1"
-														target="_blank">
-														<span class="screen-reader-text">Discord</span>
-														<i class="fab fa-youtube"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://twitch.tv/DanielHe4rt" target="_blank">
-														<span class="screen-reader-text">Twitch</span>
-														<i class="fab fa-twitch"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://discord.gg/5kwDQuv" target="_blank">
-														<span class="screen-reader-text">Discord</span>
-														<i class="fab fa-discord"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://github.com/DanielHe4rt" target="_blank">
-														<span class="screen-reader-text">GitHub</span>
-														<i class="fab fa-github"></i>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="pricing-table is-revealing">
-									<div class="pricing-table-inner">
-										<div class="pricing-table-main">
-											<div class="pricing-table-header pb-24">
-												<div class="pricing-table-image">
-													<img src="dist/images/gustavo.png">
-												</div>
-												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Gustavo Lima
-												</div>
-												<div class="pricing-table-price text-center">Project Manager</div>
-											</div>
-
-										</div>
-										<div class="pricing-table-cta">
-											<ul class="social-links">
-												<li>
-													<a href="https://twitter.com/kjkGustavo" target="_blank">
-														<span class="screen-reader-text">Twitter</span>
-														<i class="fab fa-twitter"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://github.com/kjkGustavo" target="_blank">
-														<span class="screen-reader-text">GitHub</span>
-														<i class="fab fa-github"></i>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="pricing-table is-revealing">
-									<div class="pricing-table-inner">
-										<div class="pricing-table-main">
-											<div class="pricing-table-header mb-24 pb-24">
-												<div class="pricing-table-image">
-													<img src="dist/images/brito.png">
-												</div>
-												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Eduardo Santos</div>
-												<div class="pricing-table-price text-center">Developer</div>
-											</div>
-										</div>
-										<div class="pricing-table-cta">
-											<ul class="social-links">
-												<li>
-													<a href="https://twitter.com/edusantosbrito" target="_blank">
-														<span class="screen-reader-text">Twitter</span>
-														<i class="fab fa-twitter"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://github.com/EduSantosBrito" target="_blank">
-														<span class="screen-reader-text">GitHub</span>
-														<i class="fab fa-github"></i>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="pricing-table is-revealing">
-									<div class="pricing-table-inner">
-										<div class="pricing-table-main">
-											<div class="pricing-table-header mb-24 pb-24">
-												<div class="pricing-table-image">
-													<img src="dist/images/chumarrento.jpg">
-												</div>
-												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Lucas 
-													Pereira</div>
-												<div class="pricing-table-price text-center">Developer</div>
-											</div>
-										</div>
-										<div class="pricing-table-cta">
-											<ul class="social-links">
-												<li>
-													<a href="https://twitter.com/lcsbtchs" target="_blank">
-														<span class="screen-reader-text">Twitter</span>
-														<i class="fab fa-twitter"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://github.com/Chumarrento" target="_blank">
-														<span class="screen-reader-text">GitHub</span>
-														<i class="fab fa-github"></i>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="pricing-table is-revealing">
-									<div class="pricing-table-inner">
-										<div class="pricing-table-main">
-											<div class="pricing-table-header mb-24 pb-24">
-												<div class="pricing-table-image">
-													<img src="dist/images/miguel.jpg">
-												</div>
-												<div class="pricing-table-title h4 mt-0 mb-16 text-center">Miguel Evanoff</div>
-												<div class="pricing-table-price text-center">Designer & Developer</div>
-											</div>
-										</div>
-										<div class="pricing-table-cta">
-											<ul class="social-links">
-												<li>
-													<a href="https://twitter.com/R4BB1T_" target="_blank">
-														<span class="screen-reader-text">Twitter</span>
-														<i class="fab fa-twitter"></i>
-													</a>
-												</li>
-												<li>
-													<a href="https://github.com/BERS3RK" target="_blank">
-														<span class="screen-reader-text">GitHub</span>
-														<i class="fab fa-github"></i>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="pricing-faqs container-sm is-revealing">
-							<h4 class="mt-40 mb-32">FAQs</h4>
-							<ul class="accordion">
-								<li>
-									<div class="accordion-title">
-										<span>Como ser um primo?</span>
-										<div class="accordion-icon"></div>
-									</div>
-									<div class="accordion-body">
-										<p>Apenas entre na nossa comunidade e comece a participar das conversas e voilá,
-											você é um primo dessa familia enorme que é a He4rt.</p>
-									</div>
-								</li>
-								<li>
-									<div class="accordion-title">
-										<span>Nunca programei, compensa começar agora?</span>
-										<div class="accordion-icon"></div>
-									</div>
-									<div class="accordion-body">
-										<p>
-											Claro que compensa, pequeno gafanhoto. O mercado de tecnologia está cada vez
-											mais propicio a contratar desenvolvedores para o seu negócio. É quase
-											impossível
-											uma empresa não se informatizar e é exatamente ai que você entra.
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="accordion-title">
-										<span>Por onde devo começar a estudar?</span>
-										<div class="accordion-icon"></div>
-									</div>
-									<div class="accordion-body">
-										<p>
-											A grande massa das aplicações de hoje é voltada ao JavaScript, então
-											indicamos fortemente a você começar pelas tecnologias para web sendo elas:
-											HTML, CSS e JavaScript.
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="accordion-title">
-										<span>Indicam algum curso?</span>
-										<div class="accordion-icon"></div>
-									</div>
-									<div class="accordion-body">
-										<p>
-											Nós acreditamos que o conhecimento é livre e não deve ser cobrado e por isso
-											estamos desenvolvendo uma plataforma própria para os membros poderem criarem
-											cursos e contribuir para nossa comunidade.
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="cta section">
-				<div class="container">
-					<div class="cta-inner section-inner is-revealing">
-						<h3 class="section-title mt-0">Entre agora na nossa comunidade!</h3>
-						<div class="cta-cta">
-							<a class="button button-primary button-shadow" href="https://discord.gg/5kwDQuv"
-								target="_blank">Seja um membro</a>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<footer class="site-footer">
-			<div class="container">
-				<div class="site-footer-inner">
-					<div class="brand footer-brand">
-						<a href="https://heartdevs.com">
-							<img src="dist/images/logo-he4rt.png" width="64px" alt="He4rt logo">
-						</a>
-						
-						<div class="footer-copyright">
-							<span>He4rt Developers</span>
-							<span>&copy; 2020 He4rt, todos os direitos reservados.</span>
-						</div>
-					</div>
-					<ul class="footer-social-links list-reset social-links">
-						<li>
-							<a href="https://github.com/he4rt" target="_blank">
-								<span class="screen-reader-text">GitHub</span>
-								<i class="fab fa-github"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://discord.gg/5kwDQuv" target="_blank">
-								<span class="screen-reader-text">Discord</span>
-								<i class="fab fa-discord"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/He4rtDevs" target="_blank">
-								<span class="screen-reader-text">Twitter</span>
-								<i class="fab fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://instagram.com/heartdevs">
-								<span class="screen-reader-text">Instagram</span>
-								<i class="fab fa-instagram"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script>
-		const demo = new GDemo('#illustration');
-		const code = `
+              <div class="footer-copyright">
+                <span>He4rt Developers</span>
+                <span>&copy; 2020 He4rt, todos os direitos reservados.</span>
+              </div>
+            </div>
+            <ul class="footer-social-links list-reset social-links">
+              <li>
+                <a href="https://github.com/he4rt" target="_blank">
+                  <span class="screen-reader-text">GitHub</span>
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.gg/5kwDQuv" target="_blank">
+                  <span class="screen-reader-text">Discord</span>
+                  <i class="fab fa-discord"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/He4rtDevs" target="_blank">
+                  <span class="screen-reader-text">Twitter</span>
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/heartdevs">
+                  <span class="screen-reader-text">Instagram</span>
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const demo = new GDemo("#illustration");
+      const code = `
 			function greet(){
 			  console.log("Hello World!");
 			}
 			
 			greet();
-			`
+			`;
 
-		demo.openApp('terminal', { minHeight: '350px', promptString: '$' })
-			.command('node ./he4rt', { onCompleteDelay: 500 })
-			.respond('// Desenvolvendo com o coração das cartas!')
-			.end();
-	</script>
-	<script src="dist/js/main.min.js"></script>
-	<script>
-		const genTestimonial = (data) => {
-			return `
+      demo
+        .openApp("terminal", { minHeight: "350px", promptString: "$" })
+        .command("node ./he4rt", { onCompleteDelay: 500 })
+        .respond("// Desenvolvendo com o coração das cartas!")
+        .end();
+    </script>
+    <script src="dist/js/main.min.js"></script>
+    <script>
+      const genTestimonial = data => {
+        return `
 				<li class="glide__slide">
 					<div class="testimonial text-sm">
 						<div class="testimonial-inner">
@@ -577,42 +682,40 @@
 								</div>
 							</div>
 							<div class="testimonial-footer">
-								<div class="testimonial-name"><a href="https://twitter.com/${data.name.substr(1)}" target="blank">${data.name}</a></div>
+								<div class="testimonial-name"><a href="https://twitter.com/${data.name.substr(
+                  1
+                )}" target="blank">${data.name}</a></div>
 							</div>
 						</div>
 					</div>
 				</li>
-			`
-		}
-	
-	
-		const testimonials = fetch('./dist/js/testimonials')
-			.then(res => res.json())
-			.then(res => {
-				console.log(res)
-				for(let i in res){
-					console.log(res[i])
-					document.getElementById("testimonials").insertAdjacentHTML("beforeend",genTestimonial(res[i]));
-				}
-				new Glide('.glide',
-					{
-						type: 'carousel',
-						perView: 1,
-						breakpoints: {
-							600: { perView: 1 },
-							800: { perView: 1 },
-							1200: { perView: 1 }
-						},
-						autoplay: 3000,
-						focusAt: 'center',
-						bound: true
-					}).mount()
-				
-			})
-	</script>
-	<script>
-	
-	</script>
-</body>
+			`;
+      };
 
+      const testimonials = fetch("./dist/js/testimonials.json")
+        .then(res => res.json())
+        .then(res => {
+          console.log(res);
+          for (let i in res) {
+            console.log(res[i]);
+            document
+              .getElementById("testimonials")
+              .insertAdjacentHTML("beforeend", genTestimonial(res[i]));
+          }
+          new Glide(".glide", {
+            type: "carousel",
+            perView: 1,
+            breakpoints: {
+              600: { perView: 1 },
+              800: { perView: 1 },
+              1200: { perView: 1 }
+            },
+            autoplay: 3000,
+            focusAt: "center",
+            bound: true
+          }).mount();
+        });
+    </script>
+    <script></script>
+  </body>
 </html>
