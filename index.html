@@ -5,19 +5,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&family=Spline+Sans:wght@700&display=swap" rel="stylesheet">
     <title>TailwindCSS Boilerplate</title>
 </head>
-
-<body class="bg-gradient-to-bl from-purple-400 to-zinc-500 h-screen">
-    <section class="container mx-auto pt-20">
-        <h1 class="text-white text-3xl text-center">
-            <p class="mb-8">Vite + Tailwind CSS + Awesomeness</p>
-        </h1>
-        <div class="mx-auto text-center">
-            <a href='https://github.com/hasinhayder/tailwind-boilerplate' class=" text-white bg-cyan-500 font-semibold border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Download</a>
-            <a target="_blank" href='https://github.com/hasinhayder' class="ml-4 text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Don't Click</a>
+<body class="bg-white h-screen">
+    <header class="w-full min-h-screen flex items-center relative">
+        <div class="flex flex-col ml-20 w-2/4 relative z-10">
+            <div class="pb-5">
+                <img src="./public/images/logo.png">
+            </div>
+            <h1 class="text-5xl font-spline w-10/12">Feito pela <span class="text-purple font-spline">comunidade</span> para a <span class="text-purple">comunidade</span>.</h1>
+            <p class="text-gray-500 text-lg my-3 w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices tempor lectus, vel commodo lacus posuere quis. Mauris euismod vulputate dapibus.</p>
+            <div class="mt-3">
+                <button class="bg-transparent border-2 border-purple rounded-3xl px-5 py-1 font-bold font-spline text-purple hover:bg-purple hover:text-white transition-all">Seja um membro</button>
+            </div>
         </div>
-    </section>
+        <svg width="60%" viewBox="0 0 896 658" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 right-0">
+            <path d="M530.517 297C158.708 342.2 21.9185 116.5 0 -2H900V658C843.459 352 630.119 289.833 530.517 297Z" fill="url(#paint0_linear_7_93)"/>
+            <defs>
+                <linearGradient id="paint0_linear_7_93" x1="2.36829e-05" y1="-2.5001" x2="914.438" y2="235.537" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#782BF1"/>
+                    <stop offset="1" stop-color="#A62BF1"/>
+                    <stop offset="1" stop-color="#7935D8"/>
+                </linearGradient>
+            </defs>
+        </svg>            
+    </header>
     <script type="module" src="/assets/js/main.js"></script>
 </body>
 

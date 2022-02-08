@@ -12,11 +12,21 @@ module.exports = {
                 fuchsia: colors.fuchsia,
                 cyan: colors.cyan,
                 emerald: colors.emerald,
-                teal: colors.teal
+                teal: colors.teal,
+                purple: '#782BF1',
+                gray: {
+                    200: '#D1D5DB',
+                    500: '#8C8B8E',
+                    700: '#4F4F4F'
+                }
             },
             container: {
                 center: true,
             },
+            fontFamily: {
+                'spline': ['Spline Sans'],
+                'sans': ['Source Sans Pro'],
+            }
         },
     },
     variants: {
