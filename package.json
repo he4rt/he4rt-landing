@@ -10,6 +10,7 @@
     "vite": "^2.7.13"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0",
     "@tailwindcss/jit": "^0.1.18",
     "autoprefixer": "^10.4.2",
     "path": "^0.12.7",
