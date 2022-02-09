@@ -17,6 +17,14 @@
   z-index: 20;
 }
 
+/* .swiper-slide {
+  flex-shrink: 0;
+  height: 100%;
+  width: auto;
+  position: relative;
+  transition-property: transform;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

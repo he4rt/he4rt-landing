@@ -3,13 +3,12 @@ export default {
     plugins: [],
     server: {
         open: '/index.html',
-        port: 3116,
+        port: 3000,
     },
     build: {
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'index.html'),
-                another: resolve(__dirname, 'another.html')
+                main: resolve(__dirname, 'index.html'), 
             }
         }
     }
