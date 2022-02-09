@@ -17,6 +17,34 @@
   z-index: 20;
 }
 
+.swiper {
+  height: 400px;
+  width: 400px;
+  z-index: 20;
+}
+
+/* .swiper-wrapper {
+  width: 100%;
+  z-index: 30;
+} */
+
+/* .swiper {
+  width: 240px;
+  height: 380px;
+} */
+
+/* .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
 /* .swiper-slide {
   flex-shrink: 0;
   height: 100%;
