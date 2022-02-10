@@ -4,18 +4,20 @@
 ### ⌛ Running the Project
 
 ```bash
-# clone do repositorio
-     $ git clone this_repositoryLanding-Page-Curso-Platinado
-# acesse a pasta do projeto
+     # clone do repositorio
+     $ git clone this_repository
+     # acesse a pasta do projeto
      $ cd this_directory
+     #install dependencies
      $ yarn install
+     # run the project
      $ yarn run dev
 ```
 
 ## Build
 
 ```bash
-# clone do repositorio
+     # clone do repositorio
      $ yarn build
 ```
 ### 🛠️ Technologies
