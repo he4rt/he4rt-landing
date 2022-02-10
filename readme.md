@@ -1,14 +1,33 @@
-# He4rtLanding
+# 
+<h1 align="center"> He4rtLanding  </h1>
 
-## Start
-```
-git clone this_repository
-cd this_directory
-yarn
-yarn dev
+### ⌛ Running the Project
+
+```bash
+     # clone do repositorio
+     $ git clone this_repository
+     # acesse a pasta do projeto
+     $ cd this_directory
+     #install dependencies
+     $ yarn install
+     # run the project
+     $ yarn run dev
 ```
 
 ## Build
+
+```bash
+     # clone do repositorio
+     $ yarn build
 ```
-yarn build
-```
+### 🛠️ Technologies
+The following technologies were used:
+- [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Tailwindcss](https://tailwindcss.com/)
+- [ScrollReaveal](https://scrollrevealjs.org/)
+- [Swiperjs](https://swiperjs.com/)
+- [Yarn](https://yarnpkg.com/)
+<h3 align="center">
+ All Design and Code made  with 💜.
+</h3>
