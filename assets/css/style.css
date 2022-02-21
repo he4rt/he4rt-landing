@@ -3,7 +3,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/*
+esse aqui e pra arrumar a responsividade q tava quebrando
+*/
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .for-noobs-section__bg {
   background-image: url('/images/sectionBgImage.svg');
 }
