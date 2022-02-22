@@ -4,6 +4,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.for-noobs-section {
+  max-height: 800px;
+}
+
 .for-noobs-section__bg {
   background-image: url('/images/sectionBgImage.svg');
 }
@@ -23,35 +27,23 @@
   z-index: 20;
 }
 
-/* .swiper-wrapper {
-  width: 100%;
-  z-index: 30;
-} */
-
-/* .swiper {
-  width: 240px;
-  height: 380px;
-} */
-
-/* .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+.swiper-cards .swiper-slide {
+  overflow: visible;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-} */
+.header__container {
+  max-height: 700px;
+}
 
-/* .swiper-slide {
-  flex-shrink: 0;
-  height: 100%;
-  width: auto;
-  position: relative;
-  transition-property: transform;
-} */
+.content__max-width {
+  max-width: 1500px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide {
+    width: 159px;
+  }
+}
 
 @tailwind base;
 @tailwind components;
