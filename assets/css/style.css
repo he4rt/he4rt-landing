@@ -3,11 +3,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.for-noobs-section {
-  max-height: 800px;
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
 .for-noobs-section__bg {
   background-image: url('/images/sectionBgImage.svg');
 }
