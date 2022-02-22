@@ -3,10 +3,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-html,body{
+/* html,body{
   max-width: 100%;
   overflow-x: hidden;
-}
+} */
 .for-noobs-section__bg {
   background-image: url('/images/sectionBgImage.svg');
 }
@@ -24,6 +24,7 @@ html,body{
   height: 400px;
   width: 400px;
   z-index: 20;
+  overflow: visible !important;
 }
 
 .swiper-cards .swiper-slide {
@@ -37,6 +38,19 @@ html,body{
 .content__max-width {
   max-width: 1500px;
 }
+/* 
+.test {
+  transform: translate3d(calc(-416px + 100%) , 0, 0px) !important;
+}
+
+
+.test-antes {
+  transform: translate3d(calc(-416px - 250%), 0, 0px) !important;
+} */
+
+/* .oi {
+  transform: translate3d(calc(457px + -15%), calc(0px), calc(-200px)) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1) !important;
+} */
 
 @media screen and (max-width: 767px) {
   .swiper-slide {

@@ -13,14 +13,9 @@
 </head>
 <body class="bg-white w-screen h-screen">
     <!--Header section feito pela comunidade-->
-<<<<<<< HEAD
-    <header class="w-full mx-auto h-screen flex flex-col md:flex-row md:items-center relative overflow-hidden header__container content__max-width">
-        <div class="flex flex-col w-full pt-20 px-8 md:px-0 md:pt-0 md:ml-20 md:w-2/4 relative z-10">
-=======
     <header class="w-full min-h-screen flex items-center relative overflow-hidden" id="header">
         <div class="flex flex-col ml-20 w-2/4 relative z-10">
 
->>>>>>> d2f37334d70019a33b964c83060758cd5e149f62
             <div class="pb-5">
                 <img src="./public/images/logo.png">
             </div>
@@ -334,19 +329,47 @@
             speed: 500,
             grabCursor: true,
             slidesPerView: 'auto',
+            spaceBetween: 0, 
             touchMove: true,
+            centeredSlides: true,
             breakpoints: {
                 320: {
-                    effect: 'slide',
                     slidesPerView: 'auto',
                     touchMove: true,
                     spaceBetween: 15
                 }
             }
         });
+        // swiper.slides[swiper.realIndex + 1].classList.add('test');
+        // swiper.slides[swiper.realIndex + 2].classList.add('test');
+        for (let x = 0; x < swiper.slides.length; x++) {
+            console.log(swiper.slides[x]);
+            swiper.slides[x].style.transform = `translate3d(calc(${-400 * x}px + ${x * 100}%), 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)`
+        }
+
         swiper.on('slideChange', function () {
-            console.log('slide changed');
+            const currentIndex = swiper.realIndex;
+            for (let x = 0; x < swiper.slides.length; x++) {
+                if (x < currentIndex) {
+                    let a = currentIndex - x;
+                    let fodase = x == 0 ? 1 : x;
+                    swiper.slides[x].style.transform = `translate3d(calc(${-400 * fodase}px + ${100 - (a * 5/100) * 100}%), 0, ${-200 * a}px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)`
+                } else {
+                    let b = x - currentIndex;
+                    swiper.slides[x].style.transform = `translate3d(calc(${-400 * x}px + ${b * 100}%), 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)`
+                }
+            }
         });
+
+        //400
+
+        swiper.on('activeIndexChange', function(swiper) {
+            console.log(swiper)
+            console.log(swiper.previousIndex);
+            // swiper.slides[swiper.previousIndex].classList.add('test-antes');
+            swiper.slides[swiper.previousIndex].classList.remove('test');
+            swiper.slides[swiper.realIndex + 1].classList.add('test');
+        })
     </script>
 </body>
 
