@@ -9,6 +9,7 @@
 } */
 .for-noobs-section__bg {
   background-image: url('/images/sectionBgImage.svg');
+  background-size: cover;
 }
 
 .for-noobs-section__bg:before {
@@ -43,7 +44,10 @@
   .swiper-slide {
     width: 159px;
   }
-
+  .for-noobs-section__bg {
+    background-image: url('/images/sectionBgImage.svg');
+    background-size: contain;
+  }
   .for-noobs-section__bg:before {
     content: '';
     position: absolute;
