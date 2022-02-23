@@ -192,39 +192,39 @@
     </section>
 
     <!--4noobs-->
-    <section class="min-h-screen bg-left bg-no-repeat bg-contain relative for-noobs-section__bg flex justify-center">
+    <section class="min-h-screen bg-bottom md:bg-left bg-no-repeat relative for-noobs-section__bg flex justify-center">
         <div class="flex flex-col items-center justify-center relative z-30 w-10/12">
             <div class="text-left">
-                <h3 class="font-spline text-gray-200 text-xl">Lorem ipsum</h3>
-                <h2 class="text-white font-spline font-bold text-4xl my-4">Conheça o <span
+                <h3 class="font-spline text-gray-200 mt-14 md:mt-0 md:text-xl">Lorem ipsum</h3>
+                <h2 class="text-white font-spline font-bold text-2xl md:text-4xl my-4">Conheça o <span
                         class="text-purple-500">4Noobs</span>, uma biblioteca de cursos open-source feita pela
                     comunidade.</h2>
-                <p class="text-gray-200 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                <p class="text-gray-200 md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
                     ultrices tempor lectus, vel commodo lacus posuere quis. Mauris euisod vulputate dapibus.</p>
-                <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-8">
-                    <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white shadow-sm shadow-black/25">
+                <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-8 pb-60">
+                    <div class="flex flex-col md:px-8 py-4 md:py-6 md:bg-blue-700 rounded-lg text-white md:shadow-sm md:shadow-black/25">
                         <h4 class="text-2xl">20</h4>
-                        <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
                     </div>
-                    <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white card-animation">
+                    <div class="flex flex-col md:px-8 py-4 md:py-6 md:bg-blue-700 rounded-lg text-white md:shadow-sm md:shadow-black/25">
                         <h4 class="text-2xl">20</h4>
-                        <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
                     </div>
-                    <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white card-animation">
+                    <div class="flex flex-col md:px-8 py-4 md:py-6 md:bg-blue-700 rounded-lg text-white md:shadow-sm md:shadow-black/25">
                         <h4 class="text-2xl">20</h4>
-                        <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
                     </div>
-                    <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white card-animation">
+                    <div class="flex flex-col md:px-8 py-4 md:py-6 md:bg-blue-700 rounded-lg text-white md:shadow-sm md:shadow-black/25">
                         <h4 class="text-2xl">20</h4>
-                        <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
                     </div>
-                    <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white card-animation">
+                    <div class="flex flex-col md:px-8 py-4 md:py-6 md:bg-blue-700 rounded-lg text-white md:shadow-sm md:shadow-black/25">
                         <h4 class="text-2xl">20</h4>
-                        <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
                     </div>
-                    <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white card-animation">
+                    <div class="flex flex-col md:px-8 py-4 md:py-6 md:bg-blue-700 rounded-lg text-white md:shadow-sm md:shadow-black/25">
                         <h4 class="text-2xl">20</h4>
-                        <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
             </div>
@@ -321,31 +321,32 @@
     <script type="module" src="/assets/js/scrollReveal.js"></script>
     <script>
         const swiper = new Swiper(".swiper", {
-            // effect: "cards",
-            // cardsEffect: {
-            //     slideShadows: false,
-            //     rotate: 0,
-            // },
+            effect: "cards",
+            cardsEffect: {
+                slideShadows: false,
+                rotate: 0,
+                spaceBetween: 50,
+            },
             speed: 500,
             grabCursor: true,
             slidesPerView: 'auto',
             spaceBetween: 0, 
             touchMove: true,
             centeredSlides: true,
-            breakpoints: {
-                320: {
-                    slidesPerView: 'auto',
-                    touchMove: true,
-                    spaceBetween: 15
-                }
-            }
+            // breakpoints: {
+            //     320: {
+            //         slidesPerView: 'auto',
+            //         touchMove: true,
+            //         spaceBetween: 15
+            //     }
+            // }
         });
         // swiper.slides[swiper.realIndex + 1].classList.add('test');
         // swiper.slides[swiper.realIndex + 2].classList.add('test');
-        for (let x = 0; x < swiper.slides.length; x++) {
-            console.log(swiper.slides[x]);
-            swiper.slides[x].style.transform = `translate3d(calc(${-400 * x}px + ${x * 100}%), 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)`
-        }
+        // for (let x = 0; x < swiper.slides.length; x++) {
+        //     console.log(swiper.slides[x]);
+        //     swiper.slides[x].style.transform = `translate3d(calc(${x * 100}%), 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)`
+        // }
 
         swiper.on('slideChange', function () {
             const currentIndex = swiper.realIndex;
@@ -353,10 +354,10 @@
                 if (x < currentIndex) {
                     let a = currentIndex - x;
                     let fodase = x == 0 ? 1 : x;
-                    swiper.slides[x].style.transform = `translate3d(calc(${-400 * fodase}px + ${100 - (a * 5/100) * 100}%), 0, ${-200 * a}px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)`
+                    swiper.slides[x].style.transform = `translate3d(calc(0px + ${-7.25 * a}%), 0px, -100px) rotateZ(-2deg) scale(1); margin-right: 15px; transition-duration: 0ms;`
                 } else {
                     let b = x - currentIndex;
-                    swiper.slides[x].style.transform = `translate3d(calc(${-400 * x}px + ${b * 100}%), 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1)`
+                    swiper.slides[x].style.transform = `translate3d(calc(${-830 *()}px + 7.25%), 0px, -100px) rotateZ(2deg) scale(1); margin-right: 15px; transition-duration: 0ms;`
                 }
             }
         });
