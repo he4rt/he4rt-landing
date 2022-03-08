@@ -3,10 +3,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* html,body{
+html,body{
   max-width: 100%;
   overflow-x: hidden;
-} */
+  scroll-behavior: smooth;
+}
 .for-noobs-section__bg {
   background-image: url('/images/sectionBgImage.svg');
   background-size: cover;
@@ -32,12 +33,17 @@
   overflow: visible;
 }
 
-.header__container {
-  max-height: 700px;
-}
-
 .content__max-width {
   max-width: 1500px;
+}
+
+.content__max-height {
+  max-height: 800px;
+}
+
+/* footer */
+.footer__icons:hover {
+  filter: drop-shadow(0px 0px 15px #782BF1);
 }
 
 @media screen and (max-width: 767px) {
@@ -55,6 +61,10 @@
     height: 100%;
     background: linear-gradient(180deg, #111827 88%, rgba(17, 24, 39, 0) 100%);
     z-index: 20;
+  }
+  
+  .header__container {
+    max-height: none;
   }
 }
 
