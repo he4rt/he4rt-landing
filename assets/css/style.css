@@ -73,7 +73,7 @@ html,body{
   }
   .for-noobs-section__bg {
     background-image: url('/images/sectionBgImage.svg');
-    background-size: contain;
+    background-size:auto;
   }
   .for-noobs-section__bg:before {
     content: '';
