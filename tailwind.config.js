@@ -25,12 +25,14 @@ module.exports = {
                     900: '#424141'
                 },
                 blue: {
+                    100: '#2B92F1',
                     99: '#2B3342',
                     700: '#1B2333',
                     800: '#111827',
                     900: '#111225'
                 },
-                pink: '#C92BF1'
+                pink: '#C92BF1',
+                green: '#2BF162'
             },
             container: {
                 center: true,
