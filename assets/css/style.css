@@ -25,13 +25,16 @@ html,body{
 
 .swiper {
   height: 400px;
-  width: 400px;
+  overflow: visible;
   z-index: 20;
-  overflow: visible !important;
 }
 
-.swiper-cards .swiper-slide {
-  overflow: visible;
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 288px
 }
 
 .content__max-width {
