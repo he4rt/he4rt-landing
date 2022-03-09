@@ -11,7 +11,7 @@ html,body{
 }
 .for-noobs-section__bg {
   background-image: url('/images/sectionBgImage.svg');
-  background-size: cover;
+  background-size: auto;
 }
 
 .for-noobs-section__bg:before {
