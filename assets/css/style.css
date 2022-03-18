@@ -25,8 +25,12 @@ html,body{
 
 .swiper {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 5rem 1rem;
   z-index: 20;
+}
+
+.border-r-1 {
+  border-right-width: 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -42,6 +46,21 @@ html,body{
 .swiper-wrapper {
   display: flex;
   align-items: center;
+}
+
+.swiper-button-prev {
+  top: 95%;
+  left: 80%;
+}
+
+.swiper-button-next {
+  top: 95%;
+  left: 90%;
+}
+
+:root {
+    --swiper-navigation-size: 15px;
+    --swiper-theme-color: #782BF1
 }
 
 .content__max-width {
@@ -94,6 +113,14 @@ html,body{
   .header__container {
     max-height: none;
   }
+}
+
+.mw-35px {
+  max-width: 70px
+}
+
+.mh-35px {
+  max-height: 50px
 }
 
 @tailwind base;
