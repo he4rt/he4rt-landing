@@ -2,6 +2,7 @@
     TODO: 
     [] Ajustar sequencia das classes 
     [] Ver o que esta sendo usado e o que nao esta sendo
+    [] animacao do swiper a 6 em 6 segundos mudar
     [X] Animacao header
     [X] Robots https://metatags.io/
     [] Configurar Robots
