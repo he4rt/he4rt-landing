@@ -3,14 +3,15 @@
     [] Ajustar sequencia das classes 
     [] Ver o que esta sendo usado e o que nao esta sendo
     [X] Animacao header
-    [] Robots https://metatags.io/
+    [X] Robots https://metatags.io/
+    [] Configurar Robots
     [] Documentacao para outras pessoas que forem contribuir
     FIXME: 
     [] Ajustar responsive o que encontrarei
-      [X] Ajustar responsive he4rt conf
+    [] Ajustar a imagem do header que esta impedindo de deixar a outra seção mais perto
+    [X] Ajustar responsive he4rt conf
     [X] Responsive header com swiper
     [x] Diminuir tempo das animacao
-    [] Ajustar a imagem do header que esta impedindo de deixar a outra seção mais perto
 -->
 
 
