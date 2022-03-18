@@ -32,11 +32,11 @@ html,body{
 .border-r-1 {
   border-right-width: 1px;
 }
-
-@media screen and (min-width: 768px) {
-  .swiper {
-    width: 60%;
-  }
+.mw-25{
+max-width: 25px;
+}
+.mh-25{
+max-height: 25px;
 }
 
 .swiper-slide {
@@ -121,6 +121,11 @@ html,body{
 
 .mh-35px {
   max-height: 50px
+}
+@media screen and (min-width:1024px){
+  .swiper {
+    width: 50%;
+  }
 }
 
 @tailwind base;
