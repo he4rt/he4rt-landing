@@ -7,29 +7,29 @@ const forNoobs = [
 forNoobs.forEach((forNoob) => {
     swiperContainer.insertAdjacentHTML('beforeend', `
     <div class="swiper-slide">
-        <div class="flex flex-col rounded-lg w-44 md:w-72 drop-shadow-xl overflow-hidden">
-            <div class="w-full bg-gradient-to-r from-purple-500 to-pink-700 flex items-center justify-between text-white p-4">
+        <div class="flex flex-col rounded-lg w-40 sm:w-52 md:w-60 lg:w-64 drop-shadow-xl overflow-hidden">
+            <div class="w-full bg-gradient-to-r from-purple-500 to-pink-700 flex items-center justify-between text-white p-3">
                 <div class="flex items-center">
-                    <div class="w-1/4 mw-35px mh-35px rounded-full overflow-hidden mr-4">
+                    <div class="w-1/4 mw-25 mh-25 lg:mw-35px lg:mh-35px rounded-full overflow-hidden mr-1 lg:mr-4">
                         <img src="https://images2.fanpop.com/image/photos/11400000/Anime-girls-anime-stories-11411029-425-601.jpg" class="shadow-2xl drop-shadow" alt="${forNoob.alt}">
                     </div>
                     <div>
-                        <h2 class="text-white font-bold font-spline">Mc Poze do Rodo</h2>
-                        <p class="font-normal font-spline">Músico</p>
+                        <h2 class="text-xs lg:text-sm text-white font-bold font-spline">Mc Poze do Rodo</h2>
+                        <p class="text-xs lg:text-sm font-normal font-spline">Músico</p>
                     </div>
                 </div>
                 <i class="fa fa-arrow-right self-end pb-3 pr-2 text-lg"></i>
             </div>
             <div class="w-full bg-white p-5">
                 <div class="flex flex-col border-b border-purple-100">
-                    <p class="text-purple-500 font-bold font-spline">4Noobs 
+                    <p class="text-sm text-purple-500 font-bold font-spline">4Noobs 
                         <span class="text-gray-900">- </span>
                         <span class="text-gray-900 font-normal font-spline">Nice</span>
                     </p>
-                    <p class="font-spline text-gray-500 pb-1.5 text-sm">Funk</p>
+                    <p class="text-xs lg:text-sm font-spline text-gray-500 pb-1.5">Funk</p>
                 </div>
-                <p class="text-gray-500 my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quam labore! Rem aperiam illo quas assumenda</p>
-                <button class="w-full py-2 my-3 text-purple-500 font-spline font-bold border border-purple-500 rounded-3xl hover:bg-purple-500 hover:text-white transition">Ver agora</button>
+                <p class="text-xs lg:text-sm text-gray-500 my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quam labore! Rem aperiam illo quas assumenda</p>
+                <button class="w-full py-2 my-3 text-purple-500  text-xs lg:text-sm font-spline font-bold border border-purple-500 rounded-3xl hover:bg-purple-500 hover:text-white transition">Ver agora</button>
             </div>
         </div>
     </div>
