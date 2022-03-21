@@ -2,47 +2,60 @@
 <html lang="pt-br">
 
 <head>
-    <meta name="description"
-        content="Aqui é o lugar aonde mentes extraordinárias se encontram com o objetivo de alcançar milhares de pessoas com o poder da tecnologia. Aqui mais do que participar, você vai contribuir.">
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&family=Spline+Sans:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>He4rt Developers</title>
+<!-- Primary Meta Tags -->
+<title>He4rt Developers</title>
+<meta name="title" content="He4rt Developers">
+<meta name="description" content="Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que sairam do zero e passaram pro intermediário/avançado.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://heartdevs.com/">
+<meta property="og:title" content="He4rt Developers">
+<meta property="og:description" content="Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que sairam do zero e passaram pro intermediário/avançado.">
+<meta property="og:image"  content="./public/images/meta-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://heartdevs.com/">
+<meta property="twitter:title" content="He4rt Developers">
+<meta property="twitter:description" content="Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que sairam do zero e passaram pro intermediário/avançado.">
+<meta property="twitter:image" content="./public/images/meta-image.jpg">
+<!---->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&family=Spline+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
-<body class="bg-white w-screen h-screen">
+<body class="w-screen h-screen">
     <!--Header section feito pela comunidade-->
     <header
-        class="w-full h-screen header__container flex items-center justify-between relative flex-col lg:flex-row content__max-width mx-auto header__max-height"
-        id="header">
+        class="w-full lg:h-screen header__container content__max-width header__max-height flex flex-col lg:flex-row items-center justify-between relative mx-auto"
+        id="inicio">
         <div class="flex flex-col w-4/4  px-6 relative z-10 lg:pb-11 mb-0 mt-14 lg:mt-0">
-            <div class="py-4 scroll-left lg:pb-6">
+            <div class="py-4 scroll-left-1 lg:pb-6">
                 <img src="./public/images/logo.png"
                     alt="Imagem contendo um coração roxo representando a comunidade He4rtDevs.">
             </div>
-            <h1 class="scroll-left-2 text-xl md:text-2xl lg:text-4xl font-bold font-spline">Feito pela <span
+            <h1 class="scroll-left-2 text-xl md:text-2xl lg:text-4xl text-gray-900 font-bold font-spline">Feito pela <span
                     class="text-purple-500 font-spline">comunidade</span><br> para a <span
                     class="text-purple-500">comunidade</span></h1>
-            <p
-                class="scroll-left-3 text-sm md:text-lg lg:text-xl font-sans text-gray-500 my-4 lg:my-3 w-10/12 md:w-8/12 lg:w-6/12">
+            <p class="scroll-left-3 text-sm md:text-lg lg:text-xl font-sans text-gray-500 my-4 lg:my-3 w-10/12 md:w-8/12 lg:w-6/12">
                 Aqui é o lugar aonde mentes extraordinárias se encontram com o objetivo de alcançar milhares de pessoas
                 com o poder da tecnologia. <span class="text-purple-500 font-spline">Aqui mais do que participar, você
                     vai contribuir.</span></p>
             <div class="scroll-left-3 mt-3">
-                <a href="https://discord.com/invite/5kwDQuv"><button
+                <a tabindex="0" href="https://discord.com/invite/5kwDQuv"><button
                         class="bg-transparent border-2 border-purple-500 rounded-3xl px-5 py-1 font-bold font-spline text-purple-500 hover:bg-purple-500 hover:text-white transition-all">Seja
                         um membro</button></a>
             </div>
         </div>
         <!--section card com swiper-->
-        <div class="scroll-right swiper mySwiper flex items-center lg:absolute lg:left-1/2">
+        <div class="scroll-right-1 swiper mySwiper flex items-center lg:absolute lg:left-1/2">
             <div class="swiper-wrapper"></div>
             <div class="hidden lg:flex swiper-button-prev"></div>
             <div class="hidden lg:flex swiper-button-next"></div>
@@ -71,20 +84,21 @@
         <img src="/images/logoBg.png" alt="Imagem contendo um coração representando a comunidade He4rtDevs"
             class="absolute top-0 right-0 w-2/4">
     </svg>
+
     <!--section o que e a he4rt?-->
     <section id="section-o-que-e-a-he4rt"
         class="w-full content__max-width mx-auto px-6 xl:px-0 mb-11 lg:mb-28 min-h-max flex items-center ">
-        <div class="hidden scroll-left lg:w-4/12 mr-8 xl:mr-16 lg:flex justify-start items-center">
+        <div class="hidden scroll-left-1 lg:w-4/12 mr-8 xl:mr-16 lg:flex justify-start items-center">
             <div class="w-96">
-                <img alt="Uma equipe de devs trabalhando em conjunto" src="/public/images/team.png">
+                <img alt="Uma equipe de devs trabalhando em equipe, assim que descrevemos a he4rt Developers." src="/public/images/team.png">
             </div>
         </div>
         <div class="md:w-12/12 lg:w-8/12">
             <div class="flex flex-wrap">
                 <div class="md:w-12/12">
                     <div class="flex flex-col mt-4">
-                        <div class="scroll-bottom px-1 md:px-0 flex-auto">
-                            <h2 class=" mb-1 text-gray-700 font-spline font-bold text-xl md:text-3xl lg:text-4xl">
+                        <div class="scroll-bottom-1 px-1 md:px-0 flex-auto">
+                            <h2 class="mb-1 text-gray-700 font-spline font-bold text-xl md:text-3xl lg:text-4xl">
                                 Afinal, o que é a <span class="text-purple-500">He4rt Developers</span>?</h2>
                             <p class="mb-1 text-gray-500 text-sm md:text-xl lg:text-xl">Temos como filosofia o ensino,
                                 tecnologia e as pessoas. <span class="text-purple-500">Acreditamos que quando alinhados
@@ -114,10 +128,10 @@
         class="min-h-min bg-bottom md:bg-left bg-no-repeat relative for-noobs-section__bg flex justify-center items-center p-6 xl:p-6">
         <div class="flex flex-col items-center justify-center relative z-30 content__max-width mx-0 lg:mx-0">
             <div class="text-left mt-8">
-                <h1 class="scroll-left font-spline text-gray-200 md:mt-0 text-base md:text-lg lg:text-xl font-bold">
+                <h1 class="scroll-left-1 font-spline text-gray-200 md:mt-0 text-base md:text-lg lg:text-xl font-bold">
                     Educação sem barreiras.</h1>
-                <h2 class="scroll-left-2 font-spline font-bold text-white text-xl md:text-4xl mt-4">Conheça o <span
-                        class="text-purple-500">4Noobs</span>, uma biblioteca de cursos open-source feita pela
+                <h2 class="scroll-left-2 font-spline font-bold text-white text-xl md:text-4xl mt-4">Conheça o <a href="https://github.com/he4rt/4noobs"><span
+                        class="text-purple-500 hover:text-purple-600">4Noobs</span></a>, uma biblioteca de cursos open-source feita pela
                     comunidade.</h2>
                 <p class="scroll-left-3 text-gray-200 text-sm md:text-xl lg:text-xl mt-4">Com apoio de profissionais e
                     estudantes apaixonados por tecnologia desenvolvemos a maior biblioteca open source do mundo para
@@ -168,7 +182,7 @@
     <section id="sobre" class="mx-auto mt-11 lg:mt-28 lg:mb-20 px-6 xl:px-6 w-full content__max-width">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="w-full">
-                <h2 class="scroll-left font-bold text-gray-700 text-xl md:text-3xl lg:text-4xl">Um pouco mais sobre a
+                <h2 class="scroll-left-1 font-bold text-gray-700 text-xl md:text-3xl lg:text-4xl">Um pouco mais sobre a
                     <span class="text-purple-500">He4rt Devs</span>.
                 </h2>
                 <p class="scroll-left-2 text-gray-500 text-base md:text-xl lg:text-xl my-5">Uma comunidade
@@ -331,7 +345,7 @@
     <section class="mx-auto lg:mb-20 px-6 xl:px-6 w-full content__max-width">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="pb-10 w-full">
-                <h2 class="scroll-bottom text-gray-700 font-bold text-lg md:text-3xl lg:text-4xl">Conheça a He4rt Conf,
+                <h2 class="scroll-bottom-1 text-gray-700 font-bold text-lg md:text-3xl lg:text-4xl">Conheça a He4rt Conf,
                     um dos maiores eventos de Tech do ano de 2021.</h2>
                 <p class="scroll-bottom-2 text-gray-500 text-base md:text-lg lg:text-xl my-5">A inovação é liderada por
                     pessoas que sabem o que fazem, sejam elas profissionais jovens em início de carreira ou
@@ -380,7 +394,7 @@
         class="w-full bg-left bg-no-repeat bg-contain relative flex justify-center content__max-width mx-auto mt-16 mb-40 px-6 xl:px-6">
         <div class="flex flex-col items-center justify-center relative z-30 w-full">
             <div class="text-left w-full">
-                <h2 class="scroll-bottom font-bold text-gray-700 text-xl md:text-3xl lg:text-4xl">O que eu encontrarei
+                <h2 class="scroll-bottom-1 font-bold text-gray-700 text-xl md:text-3xl lg:text-4xl">O que eu encontrarei
                     na He4rt?</h2>
                 <p class="scroll-bottom-2 text-gray-500 text-base md:text-xl lg:text-xl my-5">Nós temos os recursos para
                     levar qualquer ideia para frente, nenhum sonho é louco demais para nós. Descubra como desenvolver
@@ -448,9 +462,11 @@
             </div>
         </div>
     </section>
+
+    <!--footer-->
     <footer class="bg-blue-900 w-full flex items-center justify-center">
         <div class="flex flex-col text-gray-300 my-10 md:my-16">
-            <ul class="flex scroll-bottom justify-between font-sans text-sm mx-5 md:mx-0">
+            <ul class="flex scroll-bottom-1 justify-between font-sans text-sm mx-5 md:mx-0">
                 <li>
                     <a href="#inicio" class="font-semibold hover:text-purple-500 transition">Início</a>
                 </li>
@@ -495,17 +511,10 @@
                 </a>
             </div>
             <div class="mx-10 scroll-bottom-3">
-                <p class="font-semibold text-gray-300 text-sm">© 2022 He4rt Devs. Todos os direitos reservados.</p>
+                <p class="font-semibold text-center text-gray-300 text-sm">© 2022 He4rt Devs. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
