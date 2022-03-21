@@ -39,7 +39,7 @@ const swiper = new Swiper(".mySwiper", {
         //aqui muda o tamanho do slide
         640: {
             spaceBetween: 0,
-            slidesPerView: 'auto',
+            slidesPerView: 3,
         },
         715:{
             spaceBetween: 2,
