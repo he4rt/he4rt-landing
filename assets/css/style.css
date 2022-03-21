@@ -31,12 +31,13 @@ max-width: 25px;
 .mh-25{
 max-height: 25px;
 }
+
 .content__max-width {
-max-width: 1120px;
+  max-width: 1120px;
 }
 
 .header__max-height {
-max-height: 9000px;
+  max-height: 800px;
 }
 
 /*Sliders*/
@@ -78,9 +79,6 @@ max-height: 9000px;
   z-index: 20;
 }
 
-
-
-
 /* footer */
 .footer__icons:hover {
   filter: drop-shadow(0px 0px 15px #782BF1);
@@ -114,6 +112,9 @@ max-height: 9000px;
 }
 
 @media screen and (max-width: 767px) {
+  .header__max-height {
+    max-height: none;
+  }
   .for-noobs-section__bg {
     background-image: url('/images/sectionBgImage.svg');
     background-size:auto;
