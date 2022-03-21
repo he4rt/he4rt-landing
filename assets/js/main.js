@@ -1,22 +1,23 @@
 const swiperContainer = document.querySelector('.swiper-wrapper');
+const discordMembers = document.querySelector('[data-js="discord-value"]');
+const twitterFollowers = document.querySelector('[data-js="twitter-value"]');
+const instagramFollowers = document.querySelector('[data-js="instagram-value"]');
+const githubFollowers = document.querySelector('[data-js="github-value"]');
 
 const fetchData = async function() {
     try {
         const res = await axios.get('https://raw.githubusercontent.com/he4rt/4noobs/master/.github/config.json');
         if (res.status === 200) {
-            console.log(res.data?.courses)
-            return res.data?.courses;
+            return res.data;
         }
-    }
-    catch(err) {
+    } catch(err) {
         console.error(err)
         return null;
     }
 }
 
-const setSwiperItems = async function() {
-    const forNoobs = await fetchData();
-    if (!forNoobs) return;
+const setSwiperItems = async function(data) {
+    const forNoobs = data.courses;
 
     forNoobs.forEach((forNoob) => {
         swiperContainer.insertAdjacentHTML('beforeend', `
@@ -53,4 +54,19 @@ const setSwiperItems = async function() {
     });
 }
 
-setSwiperItems();
+const setSocials = async function(data) {
+    const socials = data.socials;
+
+    instagramFollowers.textContent = `+ ${socials.instagram} mil seguidores`;
+    twitterFollowers.textContent = `+ ${socials.twitter} mil seguidores`;
+    githubFollowers.textContent = `+ ${socials.github} mil seguidores`;
+    discordMembers.textContent = `+ ${socials.discord} mil seguidores`;
+}
+
+const initializeApp = async function () {
+    const data = await fetchData();
+
+    if (!data) return;
+    setSwiperItems(data);
+    setSocials(data)
+}();
