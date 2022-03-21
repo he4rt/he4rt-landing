@@ -44,6 +44,7 @@ max-height: 25px;
 .swiper {
   width: 100%;
   padding: 5rem 0.5rem;
+  z-index: 20;
 }
 
 .swiper-slide {
@@ -133,7 +134,7 @@ max-height: 25px;
   }
 
   .border-r-1 {
-    border: none;
+    border: 2px;
   }
 }
 
