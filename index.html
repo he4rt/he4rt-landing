@@ -1,212 +1,526 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&family=Spline+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
-    <title>TailwindCSS Boilerplate</title>
+<!-- Primary Meta Tags -->
+<title>He4rt Developers</title>
+<meta name="title" content="He4rt Developers">
+<meta name="description" content="Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que sairam do zero e passaram pro intermediário/avançado.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://heartdevs.com/">
+<meta property="og:title" content="He4rt Developers">
+<meta property="og:description" content="Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que sairam do zero e passaram pro intermediário/avançado.">
+<meta property="og:image"  content="./public/images/meta-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://heartdevs.com/">
+<meta property="twitter:title" content="He4rt Developers">
+<meta property="twitter:description" content="Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que sairam do zero e passaram pro intermediário/avançado.">
+<meta property="twitter:image" content="./public/images/meta-image.jpg">
+<!---->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&family=Spline+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
-<body class="bg-white h-screen">
-    <header class="w-full min-h-screen flex items-center relative overflow-hidden" id="header">
-        <div class="flex flex-col ml-20 w-2/4 relative z-10">
-            <div class="pb-5">
-                <img src="./public/images/logo.png">
+
+<body class="w-screen h-screen">
+    <!--Header section feito pela comunidade-->
+    <header
+        class="w-full lg:h-screen header__container content__max-width header__max-height flex flex-col lg:flex-row items-center justify-between relative mx-auto"
+        id="inicio">
+        <div class="flex flex-col w-4/4  px-6 relative z-10 lg:pb-11 mb-0 mt-14 lg:mt-0">
+            <div class="py-4 scroll-left-1 lg:pb-6">
+                <img src="./public/images/logo.png"
+                    alt="Imagem contendo um coração roxo representando a comunidade He4rtDevs.">
             </div>
-            <h1 class="text-5xl font-bold font-spline w-10/12">Feito pela <span class="text-purple-500 font-spline">comunidade</span> para a <span class="text-purple-500">comunidade</span>.</h1>
-            <p class="text-gray-500 text-lg my-3 w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices tempor lectus, vel commodo lacus posuere quis. Mauris euismod vulputate dapibus.</p>
-            <div class="mt-3">
-                <button class="bg-transparent border-2 border-purple-500 rounded-3xl px-5 py-1 font-bold font-spline text-purple-500 hover:bg-purple-500 hover:text-white transition-all">Seja um membro</button>
-            </div>
-        </div>
-        <div class="w-2/4 flex">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="flex flex-col rounded-lg w-72 drop-shadow-xl overflow-hidden">
-                            <div class="w-full bg-gradient-to-r from-purple-500 to-pink flex items-center justify-between text-white p-3">
-                                <div class="flex items-center">
-                                    <div class="w-1/4 p-2 mr-3">
-                                        <img src="https://yt3.ggpht.com/g8lfkmyHXwpjIBHoNgHgip2m4LSnR-8gsVa-1DG05JGVuTrIIjJ9x4tUNuYvDuH7OHyCHqnnwQ=s900-c-k-c0x00ffffff-no-rj" class="rounded-full shadow-2xl">
-                                    </div>
-                                    <div>
-                                        <h2 class="text-white font-bold font-spline">Mc Poze do Rodo</h2>
-                                        <p class="font-normal font-spline">Músico</p>
-                                    </div>
-                                </div>
-                                <i class="fa fa-arrow-right self-end pb-3 pr-2 text-lg"></i>
-                            </div>
-                            <div class="w-full bg-white p-5">
-                                <div class="flex flex-col border-b border-purple-100">
-                                    <p class="text-purple-500 font-bold font-spline">4Noobs 
-                                        <span class="text-gray-900">- </span>
-                                        <span class="text-gray-900 font-normal font-spline">Nice</span>
-                                    </p>
-                                    <p class="font-spline text-gray-500 pb-1.5 text-sm">Funk</p>
-                                </div>
-                                <p class="text-gray-500 my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quam labore! Rem aperiam illo quas assumenda</p>
-                                <button class="w-full py-2 my-3 text-purple-500 font-spline font-bold border border-purple-500 rounded-3xl hover:bg-purple-500 hover:text-white transition">Ver agora</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex flex-col rounded-lg w-72 drop-shadow-xl overflow-hidden">
-                            <div class="w-full bg-gradient-to-r from-purple-500 to-pink flex items-center justify-between text-white p-3">
-                                <div class="flex items-center">
-                                    <div class="w-1/4 p-2 mr-3">
-                                        <img src="https://yt3.ggpht.com/g8lfkmyHXwpjIBHoNgHgip2m4LSnR-8gsVa-1DG05JGVuTrIIjJ9x4tUNuYvDuH7OHyCHqnnwQ=s900-c-k-c0x00ffffff-no-rj" class="rounded-full shadow-2xl">
-                                    </div>
-                                    <div>
-                                        <h2 class="text-white font-bold font-spline">Mc Poze do Rodo</h2>
-                                        <p class="font-normal font-spline">Músico</p>
-                                    </div>
-                                </div>
-                                <i class="fa fa-arrow-right self-end pb-3 pr-2 text-lg"></i>
-                            </div>
-                            <div class="w-full bg-white p-5">
-                                <div class="flex flex-col border-b border-purple-100">
-                                    <p class="text-purple-500 font-bold font-spline">4Noobs 
-                                        <span class="text-gray-900">- </span>
-                                        <span class="text-gray-900 font-normal font-spline">Nice</span>
-                                    </p>
-                                    <p class="font-spline text-gray-500 pb-1.5 text-sm">Funk</p>
-                                </div>
-                                <p class="text-gray-500 my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quam labore! Rem aperiam illo quas assumenda</p>
-                                <button class="w-full py-2 my-3 text-purple-500 font-spline font-bold border border-purple-500 rounded-3xl hover:bg-purple-500 hover:text-white transition">Ver agora</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex flex-col rounded-lg w-72 drop-shadow-xl overflow-hidden">
-                            <div class="w-full bg-gradient-to-r from-purple-500 to-pink flex items-center justify-between text-white p-3">
-                                <div class="flex items-center">
-                                    <div class="w-1/4 p-2 mr-3">
-                                        <img src="https://yt3.ggpht.com/g8lfkmyHXwpjIBHoNgHgip2m4LSnR-8gsVa-1DG05JGVuTrIIjJ9x4tUNuYvDuH7OHyCHqnnwQ=s900-c-k-c0x00ffffff-no-rj" class="rounded-full shadow-2xl">
-                                    </div>
-                                    <div>
-                                        <h2 class="text-white font-bold font-spline">Mc Poze do Rodo</h2>
-                                        <p class="font-normal font-spline">Músico</p>
-                                    </div>
-                                </div>
-                                <i class="fa fa-arrow-right self-end pb-3 pr-2 text-lg"></i>
-                            </div>
-                            <div class="w-full bg-white p-5">
-                                <div class="flex flex-col border-b border-purple-100">
-                                    <p class="text-purple-500 font-bold font-spline">4Noobs 
-                                        <span class="text-gray-900">- </span>
-                                        <span class="text-gray-900 font-normal font-spline">Nice</span>
-                                    </p>
-                                    <p class="font-spline text-gray-500 pb-1.5 text-sm">Funk</p>
-                                </div>
-                                <p class="text-gray-500 my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quam labore! Rem aperiam illo quas assumenda</p>
-                                <button class="w-full py-2 my-3 text-purple-500 font-spline font-bold border border-purple-500 rounded-3xl hover:bg-purple-500 hover:text-white transition">Ver agora</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h1 class="scroll-left-2 text-xl md:text-2xl lg:text-4xl text-gray-900 font-bold font-spline">Feito pela <span
+                    class="text-purple-500 font-spline">comunidade</span><br> para a <span
+                    class="text-purple-500">comunidade</span></h1>
+            <p class="scroll-left-3 text-sm md:text-lg lg:text-xl font-sans text-gray-500 my-4 lg:my-3 w-10/12 md:w-8/12 lg:w-6/12">
+                Aqui é o lugar aonde mentes extraordinárias se encontram com o objetivo de alcançar milhares de pessoas
+                com o poder da tecnologia. <span class="text-purple-500 font-spline">Aqui mais do que participar, você
+                    vai contribuir.</span></p>
+            <div class="scroll-left-3 mt-3">
+                <a tabindex="0" href="https://discord.com/invite/5kwDQuv"><button
+                        class="bg-transparent border-2 border-purple-500 rounded-3xl px-5 py-1 font-bold font-spline text-purple-500 hover:bg-purple-500 hover:text-white transition-all">Seja
+                        um membro</button></a>
             </div>
         </div>
-        <svg style="width: 60%" viewBox="0 0 900 705" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-2 top-2.5">
-            <path d="M1 1C22.9185 119.5 159.708 345.2 531.517 300C631.119 292.833 844.459 355 901 661" stroke="#782BF1" stroke-width="2" stroke-linecap="round"/>
-        </svg> 
-        <svg width="60%" viewBox="0 0 896 658" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 right-0">
-            <path d="M530.517 297C158.708 342.2 21.9185 116.5 0 -2H900V658C843.459 352 630.119 289.833 530.517 297Z" fill="url(#paint0_linear_7_93)"/>
-            <defs>
-                <linearGradient id="paint0_linear_7_93" x1="2.36829e-05" y1="-2.5001" x2="1014.438" y2="235.537" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#782BF1"/>
-                    <stop offset="1" stop-color="#A62BF1"/>
-                    <stop offset="1" stop-color="#7935D8"/>
-                </linearGradient>
-            </defs>
-            <img src="/images/logoBg.png" class="absolute top-0 right-0 w-2/4">
-        </svg>            
+        <!--section card com swiper-->
+        <div class="scroll-right-1 swiper mySwiper flex items-center lg:absolute lg:left-1/2">
+            <div class="swiper-wrapper"></div>
+            <div class="hidden lg:flex swiper-button-prev"></div>
+            <div class="hidden lg:flex swiper-button-next"></div>
+        </div>
     </header>
-    <section class="w-full min-h-screen bg-left bg-no-repeat bg-contain relative for-noobs-section__bg flex justify-center">
-        <div class="flex flex-col items-center justify-center relative z-30 w-10/12">
-            <div class="text-left">
-                <h3 class="font-spline text-gray-200 text-xl">Lorem ipsum</h3>
-                <h2 class="text-white font-spline font-bold text-4xl my-4">Conheça o <span class="text-purple-500">4Noobs</span>, uma biblioteca de cursos open-source feita pela comunidade.</h2>
-                <p class="text-gray-200 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices tempor lectus, vel commodo lacus posuere quis. Mauris euisod vulputate dapibus.</p>
+    <!--svg campo direito superior-->
+    <svg style="width: 60%" viewBox="0 0 900 705" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="absolute top-0.5 right-0.5 md:right-2 md:top-2">
+        <path d="M1 1C22.9185 119.5 159.708 345.2 531.517 300C631.119 292.833 844.459 355 901 661" stroke="#782BF1"
+            stroke-width=".45rem" stroke-linecap="round" class="block md:hidden" />
+        <path d="M1 1C22.9185 119.5 159.708 345.2 531.517 300C631.119 292.833 844.459 355 901 661" stroke="#782BF1"
+            stroke-width="2" stroke-linecap="round" class="hidden md:block" />
+    </svg>
+    <svg width="60%" viewBox="0 0 896 658" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="absolute top-0 right-0">
+        <path d="M530.517 297C158.708 342.2 21.9185 116.5 0 -2H900V658C843.459 352 630.119 289.833 530.517 297Z"
+            fill="url(#paint0_linear_7_93)" />
+        <defs>
+            <linearGradient id="paint0_linear_7_93" x1="2.36829e-05" y1="-2.5001" x2="1014.438" y2="235.537"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#782BF1" />
+                <stop offset="1" stop-color="#A62BF1" />
+                <stop offset="1" stop-color="#7935D8" />
+            </linearGradient>
+        </defs>
+        <img src="/images/logoBg.png" alt="Imagem contendo um coração representando a comunidade He4rtDevs"
+            class="absolute top-0 right-0 w-2/4">
+    </svg>
+
+    <!--section o que e a he4rt?-->
+    <section id="section-o-que-e-a-he4rt"
+        class="w-full content__max-width mx-auto px-6 xl:px-0 mb-11 lg:mb-28 min-h-max flex items-center ">
+        <div class="hidden scroll-left-1 lg:w-4/12 mr-8 xl:mr-16 lg:flex justify-start items-center">
+            <div class="w-96">
+                <img alt="Uma equipe de devs trabalhando em equipe, assim que descrevemos a he4rt Developers." src="/public/images/team.png">
             </div>
-            <div class="grid grid-cols-3 gap-8 w-full mt-8">
-                <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white shadow-sm shadow-black/25">
-                    <h4 class="text-2xl">20</h4>
-                    <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white">
-                    <h4 class="text-2xl">20</h4>
-                    <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white">
-                    <h4 class="text-2xl">20</h4>
-                    <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white">
-                    <h4 class="text-2xl">20</h4>
-                    <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white">
-                    <h4 class="text-2xl">20</h4>
-                    <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="flex flex-col px-8 py-6 bg-blue-700 rounded-lg text-white">
-                    <h4 class="text-2xl">20</h4>
-                    <p><span class="font-bold">Linguagens de Programação</span> - Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="md:w-12/12 lg:w-8/12">
+            <div class="flex flex-wrap">
+                <div class="md:w-12/12">
+                    <div class="flex flex-col mt-4">
+                        <div class="scroll-bottom-1 px-1 md:px-0 flex-auto">
+                            <h2 class="mb-1 text-gray-700 font-spline font-bold text-xl md:text-3xl lg:text-4xl">
+                                Afinal, o que é a <span class="text-purple-500">He4rt Developers</span>?</h2>
+                            <p class="mb-1 text-gray-500 text-sm md:text-xl lg:text-xl">Temos como filosofia o ensino,
+                                tecnologia e as pessoas. <span class="text-purple-500">Acreditamos que quando alinhados
+                                    conseguimos mudar o mundo</span>. Descubra uma cultura colaborativa de crescimento,
+                                originalidade, apoio e inclusão que podem fazer a diferença na sua vida. <span
+                                    class="text-purple-500">Ajude a moldar nossa comunidade: faça parte dela.</span></p>
+                        </div>
+                    </div>
+                    <div class="scroll-bottom-2 flex flex-col mt-6 min-w-0">
+                        <div class="flex-auto">
+                            <h1 class="mb-1 text-gray-700 font-spline font-bold text-base md:text-3xl text lg:text-2xl">
+                                Como posso me juntar a <span class="text-purple-500">He4rt</span>?</h1>
+                            <p class="mb-1 text-gray-500 text-sm md:text-lg lg:text-xl">Faça parte do nosso <span
+                                    class="text-purple-500"> <a href="https://github.com/he4rt"> Discord</a></span> e
+                                contribua com diversos projetos que podem mudar a maneira como as pessoas aprendem ao
+                                redor do mundo. <span class="text-purple-500">Acompanhe a He4rt nas redes sociais</span>
+                                e descubra nossas iniciativas tecnologicas.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="w-full flex justify-center py-16">
-        <div class="flex flex-col w-10/12">
-            <h2 class="font-bold text-gray-700 text-4xl">O que eu encontrarei na He4rt?</h2>
-            <p class="text-gray-500 text-xl my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices tempor lectus, vel commodo lacus posuere quis. Mauris euismod vulputate dapibus.</p>
-            <div class="grid grid-cols-2 gap-x-44">
-                <div class="flex flex-col items-start my-5">
-                    <i class="fas fa-clipboard-check text-3xl text-purple-500 pb-4 px-1"></i>
-                    <h2 class="font-spline font-bold text-gray-900 text-2xl my-2">Desenvolvendo habilidades</h2>
-                    <p class="text-gray-500 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo iaculis leo.</p>
-                </div>
-                <div class="flex flex-col items-start my-5">
-                    <i class="fas fa-clipboard-check text-3xl text-purple-500 pb-4 px-1"></i>
-                    <h2 class="font-spline font-bold text-gray-900 text-2xl my-2">Projetos</h2>
-                    <p class="text-gray-500 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo iaculis leo.</p>
-                </div>
-                <div class="flex flex-col items-start my-5">
-                    <i class="fas fa-clipboard-check text-3xl text-purple-500 pb-4 px-1"></i>
-                    <h2 class="font-spline font-bold text-gray-900 text-2xl my-2">Eventos</h2>
-                    <p class="text-gray-500 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo iaculis leo.</p>
-                </div>
-                <div class="flex flex-col items-start my-5">
-                    <i class="fas fa-clipboard-check text-3xl text-purple-500 pb-4 px-1"></i>
-                    <h2 class="font-spline font-bold text-gray-900 text-2xl my-2">Networking</h2>
-                    <p class="text-gray-500 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo iaculis leo.</p>
+
+    <!--4noobs-->
+    <section id="4noobs"
+        class="min-h-min bg-bottom md:bg-left bg-no-repeat relative for-noobs-section__bg flex justify-center items-center p-6 xl:p-6">
+        <div class="flex flex-col items-center justify-center relative z-30 content__max-width mx-0 lg:mx-0">
+            <div class="text-left mt-8">
+                <h1 class="scroll-left-1 font-spline text-gray-200 md:mt-0 text-base md:text-lg lg:text-xl font-bold">
+                    Educação sem barreiras.</h1>
+                <h2 class="scroll-left-2 font-spline font-bold text-white text-xl md:text-4xl mt-4">Conheça o <a href="https://github.com/he4rt/4noobs"><span
+                        class="text-purple-500 hover:text-purple-600">4Noobs</span></a>, uma biblioteca de cursos open-source feita pela
+                    comunidade.</h2>
+                <p class="scroll-left-3 text-gray-200 text-sm md:text-xl lg:text-xl mt-4">Com apoio de profissionais e
+                    estudantes apaixonados por tecnologia desenvolvemos a maior biblioteca open source do mundo para
+                    você aprender, aprimorar e contribuir seus conhecimentos.</p>
+                <div class="grid grid-cols-1 mt-8 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full pb-72 md:pb-10">
+                    <div
+                        class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
+                        <h2 class="font-bold text-2xl">20</h2>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Linguagens de Programação</span> - De
+                            front-end à back-end. Várias possibilidades para você aprender.</p>
+                    </div>
+                    <div
+                        class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
+                        <h2 class="font-bold text-2xl">2</h2>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Frameworks</span> - Um conjunto de códigos
+                            prontos para facilitar o seu desenvolvimento.</p>
+                    </div>
+                    <div
+                        class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
+                        <h2 class="font-bold text-2xl">5</h2>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Ferramentas</span> - Conheça as ferramentas
+                            que vão te ajudar como programador.</p>
+                    </div>
+                    <div
+                        class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
+                        <h2 class="font-bold text-2xl">2</h2>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Sistemas Operacionais</span> - Saiba criar
+                            e utilizar os principais sistemas operacionais.</p>
+                    </div>
+                    <div
+                        class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
+                        <h2 class="font-bold text-2xl">2</h2>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Design</span> - Da experiência do usuário
+                            a interfaces o céu é o seu limite.</p>
+                    </div>
+                    <div
+                        class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
+                        <h2 class="font-bold text-2xl">2</h2>
+                        <p class="w-11/12 md:w-full"><span class="font-bold">Banco de Dados</span> - Aprenda sobre
+                            estruturas,sistemas e dados.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!--Um pouco mais sobre a he4rt-->
+    <section id="sobre" class="mx-auto mt-11 lg:mt-28 lg:mb-20 px-6 xl:px-6 w-full content__max-width">
+        <div class="flex flex-col items-center justify-center w-full">
+            <div class="w-full">
+                <h2 class="scroll-left-1 font-bold text-gray-700 text-xl md:text-3xl lg:text-4xl">Um pouco mais sobre a
+                    <span class="text-purple-500">He4rt Devs</span>.
+                </h2>
+                <p class="scroll-left-2 text-gray-500 text-base md:text-xl lg:text-xl my-5">Uma comunidade
+                    extraordinária é formada por pessoas excepcionais. Com mais de 11 mil membros em nosso Discord e com
+                    mais de 17 mil seguidores em nossas redes sociais, conseguimos mudar a maneira como a tecnologia
+                    revoluciona o futuro, faça parte de uma equipe dedicada a mudar a histórias e criar carreiras de
+                    sucessos. Não existem nada mais importante para nós do que nossos membros.</p>
+            </div>
+        </div>
+        <div class="mt-3 mb-5 md:mt-5 md:mb-10 lg:mt-11 lg:mb-20 mx-auto w-full content__max-width">
+            <div class="scroll-bottom-3 grid grid-cols-2 md:grid-cols-4 w-full">
+                <div class="flex justify-start sm:justify-center items-stretch">
+                    <div>
+                        <svg width="50" height="50" viewBox="0 0 51 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_467_41)">
+                                <path
+                                    d="M38.7689 12.5495C37.785 12.9855 36.727 13.2761 35.6109 13.4134C36.7458 12.7398 37.6186 11.6655 38.0283 10.3961C36.9666 11.0186 35.7905 11.4756 34.5389 11.7166C33.5395 10.6572 32.1141 10 30.5348 10C27.5011 10 25.0425 12.4375 25.0425 15.4427C25.0425 15.8678 25.0922 16.2822 25.1859 16.6844C20.6222 16.4552 16.5745 14.2858 13.8666 10.9933C13.3908 11.7977 13.1231 12.7398 13.1231 13.7341C13.1231 15.6236 14.0906 17.2867 15.5658 18.2669C14.6653 18.2392 13.8178 17.9889 13.0758 17.5872C13.0758 17.6036 13.0758 17.628 13.0758 17.6509C13.0758 20.2914 14.9695 22.4898 17.4797 22.9905C17.0208 23.1161 16.5361 23.1859 16.0364 23.1859C15.6816 23.1859 15.3361 23.1456 15.0014 23.0856C15.7003 25.2433 17.7281 26.8206 20.1305 26.867C18.2508 28.3244 15.8836 29.1972 13.3092 29.1972C12.8644 29.1972 12.4298 29.1719 12 29.1198C14.4314 30.6597 17.3194 31.5625 20.4192 31.5625C30.5203 31.5625 36.0459 23.2675 36.0459 16.0717C36.0459 15.8359 36.0384 15.6011 36.0272 15.3691C37.1058 14.6078 38.0348 13.6469 38.7689 12.5495Z"
+                                    fill="#782BF1" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_467_41" x="0" y="0" width="50.769" height="45.5625"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="2" />
+                                    <feGaussianBlur stdDeviation="6" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.470588 0 0 0 0 0.168627 0 0 0 0 0.945098 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_467_41" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_467_41"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="mb-8">
+                        <h2 class="text-gray-700 font-bold text-xs sm:text-base lg:text-xl w-2/2">Twitter</h2>
+                        <p class="text-gray-500 text-xs sm:text-sm  lg:text-base w-2/2" data-js="twitter-value">+12 mil seguidores</p>
+                    </div>
+                </div>
+                <!---->
+                <div class="flex justify-end sm:justify-center items-stretch">
+                    <div>
+                        <svg width="50" height="50" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M29.8711 25C29.8711 26.5857 28.5857 27.8711 27 27.8711C25.4143 27.8711 24.1289 26.5857 24.1289 25C24.1289 23.4143 25.4143 22.1289 27 22.1289C28.5857 22.1289 29.8711 23.4143 29.8711 25Z"
+                                fill="#782BF1" />
+                            <path
+                                d="M33.7144 19.9202C33.5764 19.5462 33.3562 19.2076 33.0701 18.9298C32.7923 18.6437 32.454 18.4235 32.0797 18.2855C31.7762 18.1676 31.3203 18.0273 30.4805 17.9891C29.5721 17.9476 29.2997 17.9387 26.9999 17.9387C24.6999 17.9387 24.4275 17.9474 23.5193 17.9888C22.6796 18.0273 22.2234 18.1676 21.9201 18.2855C21.5459 18.4235 21.2074 18.6437 20.9298 18.9298C20.6437 19.2076 20.4235 19.5459 20.2852 19.9202C20.1674 20.2236 20.0271 20.6798 19.9888 21.5196C19.9474 22.4278 19.9385 22.7001 19.9385 25.0002C19.9385 27.3 19.9474 27.5724 19.9888 28.4808C20.0271 29.3206 20.1674 29.7765 20.2852 30.08C20.4235 30.4542 20.6434 30.7925 20.9295 31.0704C21.2074 31.3565 21.5457 31.5766 21.9199 31.7147C22.2234 31.8328 22.6796 31.9731 23.5193 32.0113C24.4275 32.0527 24.6997 32.0614 26.9997 32.0614C29.3 32.0614 29.5723 32.0527 30.4803 32.0113C31.3201 31.9731 31.7762 31.8328 32.0797 31.7147C32.8309 31.4249 33.4247 30.8312 33.7144 30.08C33.8323 29.7765 33.9726 29.3206 34.011 28.4808C34.0525 27.5724 34.0612 27.3 34.0612 25.0002C34.0612 22.7001 34.0525 22.4278 34.011 21.5196C33.9728 20.6798 33.8325 20.2236 33.7144 19.9202V19.9202ZM26.9999 29.4229C24.5571 29.4229 22.5768 27.4428 22.5768 25C22.5768 22.5571 24.5571 20.577 26.9999 20.577C29.4426 20.577 31.4229 22.5571 31.4229 25C31.4229 27.4428 29.4426 29.4229 26.9999 29.4229ZM31.5977 21.4358C31.0269 21.4358 30.5641 20.973 30.5641 20.4022C30.5641 19.8313 31.0269 19.3685 31.5977 19.3685C32.1685 19.3685 32.6313 19.8313 32.6313 20.4022C32.6311 20.973 32.1685 21.4358 31.5977 21.4358Z"
+                                fill="#782BF1" />
+                            <g filter="url(#filter0_d_467_46)">
+                                <path
+                                    d="M27 10C18.717 10 12 16.717 12 25C12 33.283 18.717 40 27 40C35.283 40 42 33.283 42 25C42 16.717 35.283 10 27 10ZM35.5613 28.5511C35.5197 29.468 35.3739 30.094 35.161 30.6419C34.7135 31.7989 33.7989 32.7135 32.6419 33.161C32.0942 33.3739 31.468 33.5194 30.5513 33.5613C29.6328 33.6032 29.3394 33.6133 27.0002 33.6133C24.6608 33.6133 24.3676 33.6032 23.4489 33.5613C22.5322 33.5194 21.906 33.3739 21.3583 33.161C20.7833 32.9447 20.2629 32.6057 19.8326 32.1674C19.3945 31.7374 19.0555 31.2167 18.8392 30.6419C18.6264 30.0942 18.4806 29.468 18.4389 28.5513C18.3966 27.6326 18.3867 27.3392 18.3867 25C18.3867 22.6608 18.3966 22.3674 18.4387 21.4489C18.4803 20.532 18.6259 19.906 18.8388 19.3581C19.0551 18.7833 19.3943 18.2626 19.8326 17.8326C20.2626 17.3943 20.7833 17.0553 21.3581 16.839C21.906 16.6261 22.532 16.4806 23.4489 16.4387C24.3674 16.3968 24.6608 16.3867 27 16.3867C29.3392 16.3867 29.6326 16.3968 30.5511 16.4389C31.468 16.4806 32.094 16.6261 32.6419 16.8388C33.2167 17.0551 33.7374 17.3943 34.1677 17.8326C34.6057 18.2629 34.9449 18.7833 35.161 19.3581C35.3741 19.906 35.5197 20.532 35.5616 21.4489C35.6034 22.3674 35.6133 22.6608 35.6133 25C35.6133 27.3392 35.6034 27.6326 35.5613 28.5511V28.5511Z"
+                                    fill="#782BF1" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_467_46" x="0" y="0" width="54" height="54"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="2" />
+                                    <feGaussianBlur stdDeviation="6" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.470588 0 0 0 0 0.168627 0 0 0 0 0.945098 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_467_46" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_467_46"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="mb-8">
+                        <h2 class="text-gray-700 font-bold text-xs sm:text-base lg:text-xl w-2/2">Instagram</h2>
+                        <p class="text-gray-500 text-xs sm:text-sm  lg:text-base w-2/2" data-js="instagram-value">+ 3 mil seguidores</p>
+                    </div>
+                </div>
+                <!---->
+                <div class="flex justify-start sm:justify-center items-stretch">
+                    <div>
+                        <svg width="50" height="50" viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_467_47)">
+                                <path
+                                    d="M24.1875 10.8125C17.4567 10.8125 12 16.2692 12 23C12 28.7548 15.99 33.575 21.3539 34.8528C21.0764 34.7867 20.8013 34.7127 20.5313 34.6283V31.8359C20.5313 31.8359 20.0742 31.9883 19.4648 31.9883C17.76 31.9883 17.0517 30.4672 16.875 29.7031C16.7677 29.2377 16.4873 28.7966 16.1864 28.527C15.8269 28.2064 15.6586 28.2055 15.6563 28.0958C15.6516 27.8656 15.9647 27.875 16.1133 27.875C16.875 27.875 17.4525 28.6855 17.7206 29.1045C18.3848 30.1391 19.0978 30.3125 19.4648 30.3125C19.9219 30.3125 20.3166 30.2441 20.5884 30.1128C20.7141 29.2278 21.1078 28.4394 21.75 27.875C18.892 27.3036 16.875 25.6644 16.875 23C16.875 21.6275 17.4258 20.3661 18.3436 19.3475C18.2498 19.0817 18.0938 18.5441 18.0938 17.668C18.0938 17.0891 18.1341 16.3784 18.3984 15.6875C18.3984 15.6875 20.1366 15.6997 21.7758 17.2522C22.5323 17.0319 23.3419 16.9062 24.1875 16.9062C25.0331 16.9062 25.8427 17.0319 26.5992 17.2522C28.2384 15.6997 29.9766 15.6875 29.9766 15.6875C30.2423 16.3784 30.2812 17.0891 30.2812 17.668C30.2812 18.6125 30.1556 19.1633 30.0788 19.4009C30.9684 20.4102 31.5 21.6519 31.5 23C31.5 25.6644 29.483 27.3036 26.625 27.875C27.3881 28.5453 27.8437 29.5217 27.8437 30.6172V34.6283C27.5737 34.7131 27.2991 34.7867 27.0211 34.8528C32.385 33.575 36.375 28.7548 36.375 23C36.375 16.2692 30.9183 10.8125 24.1875 10.8125ZM25.0373 35.1547C24.7566 35.1744 24.4734 35.1875 24.1875 35.1875C24.4734 35.1875 24.7561 35.1739 25.0373 35.1547ZM26.8997 34.8809C26.3541 35.0052 25.7948 35.0923 25.2239 35.1406C25.7948 35.0923 26.3541 35.0047 26.8997 34.8809ZM24.1875 35.1875C23.9016 35.1875 23.6184 35.1744 23.3377 35.1547C23.6189 35.1739 23.9016 35.1875 24.1875 35.1875ZM23.1506 35.1406C22.5802 35.0923 22.0205 35.0052 21.4753 34.8809C22.0209 35.0047 22.5802 35.0923 23.1506 35.1406Z"
+                                    fill="#782BF1" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_467_47" x="0" y="0.8125" width="48.375" height="48.375"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="2" />
+                                    <feGaussianBlur stdDeviation="6" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.470588 0 0 0 0 0.168627 0 0 0 0 0.945098 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_467_47" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_467_47"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="mb-11">
+                        <h2 class="text-gray-700 font-bold text-xs sm:text-base lg:text-xl w-2/2">GitHub</h2>
+                        <p class="text-gray-500 text-xs sm:text-sm lg:text-base w-2/2" data-js="github-value">+ 2 mil seguidores</p>
+                    </div>
+                </div>
+                <!---->
+                <div class="flex justify-end sm:justify-center items-stretch">
+                    <div>
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_467_50)">
+                                <path
+                                    d="M15.225 36.495H33.0488L32.1975 33.7387L34.2338 35.4862L36.1 37.1587L39.5 40V13.0937C39.415 11.4212 37.975 10 36.19 10L15.2313 10.0037C13.4475 10.0037 12 11.4275 12 13.1V33.4C12 35.1637 13.445 36.495 15.225 36.495V36.495ZM28.41 17.1037L28.3688 17.1187L28.3838 17.1037H28.41ZM18.8713 18.69C21.1625 17.0225 23.2863 17.1025 23.2863 17.1025L23.4575 17.2712C20.6538 17.94 19.3825 19.1925 19.3825 19.1925C19.3825 19.1925 19.7225 19.0262 20.3163 18.7725C24.0925 17.2875 28.2163 17.395 32.0338 19.275C32.0338 19.275 30.76 18.1037 28.1288 17.3537L28.3613 17.125C28.725 17.1262 30.65 17.1937 32.71 18.7C32.71 18.7 35.015 22.6375 35.015 27.475C34.9388 27.3825 33.585 29.5575 30.1013 29.6325C30.1013 29.6325 29.5113 28.965 29.0913 28.3825C31.1288 27.7975 31.8913 26.6275 31.8913 26.6275C31.2225 27.0487 30.6125 27.2987 30.1175 27.5487C29.3563 27.8837 28.5938 28.0487 27.8325 28.2175C24.2275 28.8025 22.2038 27.8237 20.2913 27.0475L19.6375 26.715C19.6375 26.715 20.3988 27.885 22.355 28.47C21.8413 29.0562 21.3325 29.7225 21.3325 29.7225C17.85 29.64 16.58 27.465 16.58 27.465C16.58 22.62 18.8713 18.69 18.8713 18.69V18.69Z"
+                                    fill="#782BF1" />
+                            </g>
+                            <path
+                                d="M28.635 25.9637C29.5237 25.9637 30.2475 25.2137 30.2475 24.2887C30.2475 23.37 29.5275 22.62 28.635 22.62V22.6237C27.75 22.6237 27.025 23.3712 27.0225 24.2962C27.0225 25.2137 27.7462 25.9637 28.635 25.9637Z"
+                                fill="#782BF1" />
+                            <path
+                                d="M22.8625 25.9637C23.7513 25.9637 24.475 25.2137 24.475 24.2887C24.475 23.37 23.7563 22.62 22.8675 22.62L22.8625 22.6237C21.9738 22.6237 21.25 23.3712 21.25 24.2962C21.25 25.2137 21.9738 25.9637 22.8625 25.9637V25.9637Z"
+                                fill="#782BF1" />
+                            <defs>
+                                <filter id="filter0_d_467_50" x="0" y="0" width="51.5" height="54"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="2" />
+                                    <feGaussianBlur stdDeviation="6" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.470588 0 0 0 0 0.168627 0 0 0 0 0.945098 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_467_50" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_467_50"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="mb-11">
+                        <h2 class="text-gray-700 font-bold text-xs sm:text-base lg:text-xl w-2/2">Discord</h2>
+                        <p class="text-gray-500 text-xs sm:text-sm lg:text-base w-2/2" data-js="discord-value">+ 12 mil membros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--hea4rtconf-->
+    <section class="mx-auto lg:mb-20 px-6 xl:px-6 w-full content__max-width">
+        <div class="flex flex-col items-center justify-center w-full">
+            <div class="pb-10 w-full">
+                <h2 class="scroll-bottom-1 text-gray-700 font-bold text-lg md:text-3xl lg:text-4xl">Conheça a He4rt Conf,
+                    um dos maiores eventos de Tech do ano de 2021.</h2>
+                <p class="scroll-bottom-2 text-gray-500 text-base md:text-lg lg:text-xl my-5">A inovação é liderada por
+                    pessoas que sabem o que fazem, sejam elas profissionais jovens em início de carreira ou
+                    especialistas com anos de experiência. Na He4rt, o ensino não depende só de indivíduos brilhantes,
+                    mas de uma comunidade com foco no futuro, e não no passado. Promovemos essa cultura e damos espaço
+                    para essas pessoas assumirem responsabilidades com o mundo. </p>
+            </div>
+            <div class="scroll-bottom-3 flex items-center justify-around w-full">
+                <div
+                    class="w-2/4 m-1 md:w-52 lg:w-60 relative h-fit rounded-xl bg-white shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-purple-500">
+                    <div class="flex flex-col justify-center items-center">
+                        <h2
+                            class="text-purple-500 font-bold pt-5 pb-1 px-4 lg:pt-8 lg:pb-1 lg:px-14 text-base sm:text-xl lg:text-3xl">
+                            + 4,677</h2>
+                        <p class="sm:hidden text-center text-gray-500 pb-2 text-xs">Espectadores <br> simutâneos</p>
+                        <p class="hidden sm:flex text-center text-gray-500 pb-6 lg:pb-8 md:text-base lg:text-lg">
+                            Espectadores simutâneos</p>
+                    </div>
+                </div>
+                <div
+                    class="w-2/4 m-1 md:w-52 lg:w-60  relative h-min rounded-xl bg-white shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-blue-100">
+                    <div class="flex flex-col justify-center items-center">
+                        <h2
+                            class="text-blue-100 pt-5 pb-1 px-2 lg:pt-8 lg:pb-1 lg:px-13 text-base sm:text-xl lg:text-3xl font-bold">
+                            + 70,980</h2>
+                        <p class=" sm:hidden text-center text-gray-500 text-xs pb-2">Espectadores <br> únicos</p>
+                        <p class=" hidden sm:flex text-center text-gray-500 md:text-base lg:text-lg pb-6 lg:pb-8">
+                            Espectadores únicos</p>
+                    </div>
+                </div>
+                <div
+                    class="w-2/4 m-1 md:w-52 lg:w-60 relative h-fit rounded-xl bg-white shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-green">
+                    <div class="flex flex-col justify-center items-center">
+                        <h2
+                            class="text-green pt-5 pb-1 px-5 lg:pt-8 lg:pb-1 lg:px-14 text-base sm:text-xl lg:text-3xl font-bold">
+                            + 13</h2>
+                        <p class="md:flex text-gray-500 text-sm sm:text-base lg:text-lg pb-5 lg:pb-8">Palestras</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--oq eu encontrarei na he4rt-->
+    <section
+        class="w-full bg-left bg-no-repeat bg-contain relative flex justify-center content__max-width mx-auto mt-16 mb-40 px-6 xl:px-6">
+        <div class="flex flex-col items-center justify-center relative z-30 w-full">
+            <div class="text-left w-full">
+                <h2 class="scroll-bottom-1 font-bold text-gray-700 text-xl md:text-3xl lg:text-4xl">O que eu encontrarei
+                    na He4rt?</h2>
+                <p class="scroll-bottom-2 text-gray-500 text-base md:text-xl lg:text-xl my-5">Nós temos os recursos para
+                    levar qualquer ideia para frente, nenhum sonho é louco demais para nós. Descubra como desenvolver
+                    projetos que revolucionam a maneira de aprender.</p>
+                <div class="scroll-bottom-3 grid grid-cols-1 md:grid-cols-2 gap-x-0">
+                    <div class="flex flex-col items-start pr-16 my-5 border-r-1 border-pink-500">
+                        <div class="icon__bg-rounded mx-2 mb-6">
+                            <svg width="1.3rem" height="1.3rem" viewBox="0 0 21 19" fill="none">
+                                <path
+                                    d="M10.5 11.5834L19.875 6.37502L10.5 1.16669L1.125 6.37502L10.5 11.5834ZM10.5 11.5834L16.9157 8.01904C17.481 9.44438 17.7917 10.9984 17.7917 12.625C17.7917 13.3555 17.729 14.0714 17.6087 14.7676C14.8899 15.0319 12.4261 16.1673 10.5 17.8912C8.57392 16.1673 6.11012 15.0319 3.39127 14.7676C3.27101 14.0714 3.20833 13.3555 3.20833 12.6249C3.20833 10.9983 3.519 9.44435 4.08424 8.01903L10.5 11.5834ZM6.33333 17.8333V10.0209L10.5 7.70604"
+                                    stroke="url(#paint0_linear_418_96)" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_418_96" x1="1.12264" y1="7.33893" x2="18.1349"
+                                        y2="7.21864" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#782BF1" />
+                                        <stop offset="1" stop-color="#7935D8" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2 class="font-spline font-bold text-gray-900 text-xl md:text-2xl mt-2 mb-4">Desenvolvendo
+                            habilidades</h2>
+                        <p class="text-gray-500 text-lg">Ajude, contribua e retire suas dúvidas em qualquer área da
+                            tecnologia com nossa comunidade!</p>
+                    </div>
+                    <div class="flex flex-col items-start my-5 md:pl-28">
+                        <div class="icon__bg-rounded mx-2 mb-6">
+                            <svg width="1.3rem" height="1.3rem" viewBox="0 0 20 26" fill="none">
+                                <path
+                                    d="M6.95711 14.7929C6.56658 14.4024 5.93342 14.4024 5.54289 14.7929C5.15237 15.1834 5.15237 15.8166 5.54289 16.2071L6.95711 14.7929ZM8.75 18L8.04289 18.7071C8.43342 19.0976 9.06658 19.0976 9.45711 18.7071L8.75 18ZM14.4571 13.7071C14.8476 13.3166 14.8476 12.6834 14.4571 12.2929C14.0666 11.9024 13.4334 11.9024 13.0429 12.2929L14.4571 13.7071ZM17.75 6.75V21.75H19.75V6.75H17.75ZM16.25 23.25H3.75V25.25H16.25V23.25ZM2.25 21.75V6.75H0.25V21.75H2.25ZM3.75 5.25H6.25V3.25H3.75V5.25ZM13.75 5.25H16.25V3.25H13.75V5.25ZM3.75 23.25C2.92157 23.25 2.25 22.5784 2.25 21.75H0.25C0.25 23.683 1.817 25.25 3.75 25.25V23.25ZM17.75 21.75C17.75 22.5784 17.0784 23.25 16.25 23.25V25.25C18.183 25.25 19.75 23.683 19.75 21.75H17.75ZM19.75 6.75C19.75 4.817 18.183 3.25 16.25 3.25V5.25C17.0784 5.25 17.75 5.92157 17.75 6.75H19.75ZM2.25 6.75C2.25 5.92157 2.92157 5.25 3.75 5.25V3.25C1.817 3.25 0.25 4.817 0.25 6.75H2.25ZM5.54289 16.2071L8.04289 18.7071L9.45711 17.2929L6.95711 14.7929L5.54289 16.2071ZM9.45711 18.7071L14.4571 13.7071L13.0429 12.2929L8.04289 17.2929L9.45711 18.7071ZM8.75 2.75H11.25V0.75H8.75V2.75ZM11.25 5.75H8.75V7.75H11.25V5.75ZM8.75 5.75C7.92157 5.75 7.25 5.07843 7.25 4.25H5.25C5.25 6.183 6.817 7.75 8.75 7.75V5.75ZM12.75 4.25C12.75 5.07843 12.0784 5.75 11.25 5.75V7.75C13.183 7.75 14.75 6.183 14.75 4.25H12.75ZM11.25 2.75C12.0784 2.75 12.75 3.42157 12.75 4.25H14.75C14.75 2.317 13.183 0.75 11.25 0.75V2.75ZM8.75 0.75C6.817 0.75 5.25 2.317 5.25 4.25H7.25C7.25 3.42157 7.92157 2.75 8.75 2.75V0.75Z"
+                                    fill="#782BF1" />
+                            </svg>
+                        </div>
+                        <h2 class="font-spline font-bold text-gray-900 text-xl md:text-2xl mt-2 mb-4">Projetos</h2>
+                        <p class="text-gray-500 text-lg">Aprimore e contribua com nossos projetos, evolua constantemente
+                            e mostre suas habilidades.</p>
+                    </div>
+                    <div class="flex flex-col items-start my-5 pr-16 border-r-1 border-pink-500">
+                        <div class="icon__bg-rounded mx-2 mb-6">
+                            <svg width="1.3rem" height="1.3rem" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.20833 1.125V5.29167M1.125 3.20833H5.29167M4.25 15.7083V19.875M2.16667 17.7917H6.33333M11.5417 1.125L13.9226 8.26786L19.875 10.5L13.9226 12.7321L11.5417 19.875L9.16071 12.7321L3.20833 10.5L9.16071 8.26786L11.5417 1.125Z"
+                                    stroke="#782BF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h2 class="font-spline font-bold text-gray-900 text-xl md:text-2xl mt-2 mb-4">Eventos</h2>
+                        <p class="text-gray-500 text-lg">Participe dos eventos exclusivos da comunidade e receba
+                            diversos prêmios por isso!</p>
+                    </div>
+                    <div class="flex flex-col items-start my-5 md:pl-28">
+                        <div class="icon__bg-rounded mx-2 mb-6">
+                            <svg width="1.3rem" height="1.3rem" viewBox="0 0 23 19" fill="none">
+                                <path
+                                    d="M16.7085 17.8334H21.9168V15.75C21.9168 14.0241 20.5177 12.625 18.7918 12.625C17.7964 12.625 16.9097 13.0904 16.3374 13.8155M16.7085 17.8334H6.29183M16.7085 17.8334V15.75C16.7085 15.0664 16.5768 14.4136 16.3374 13.8155M6.29183 17.8334H1.0835V15.75C1.0835 14.0241 2.48261 12.625 4.2085 12.625C5.20392 12.625 6.09064 13.0904 6.66292 13.8155M6.29183 17.8334V15.75C6.29183 15.0664 6.42352 14.4136 6.66292 13.8155M6.66292 13.8155C7.4309 11.8969 9.30726 10.5417 11.5002 10.5417C13.6931 10.5417 15.5694 11.8969 16.3374 13.8155M14.6252 4.29169C14.6252 6.01758 13.2261 7.41669 11.5002 7.41669C9.77427 7.41669 8.37516 6.01758 8.37516 4.29169C8.37516 2.5658 9.77427 1.16669 11.5002 1.16669C13.2261 1.16669 14.6252 2.5658 14.6252 4.29169ZM20.8752 7.41669C20.8752 8.56728 19.9424 9.50002 18.7918 9.50002C17.6412 9.50002 16.7085 8.56728 16.7085 7.41669C16.7085 6.26609 17.6412 5.33335 18.7918 5.33335C19.9424 5.33335 20.8752 6.26609 20.8752 7.41669ZM6.29183 7.41669C6.29183 8.56728 5.35909 9.50002 4.2085 9.50002C3.0579 9.50002 2.12516 8.56728 2.12516 7.41669C2.12516 6.26609 3.0579 5.33335 4.2085 5.33335C5.35909 5.33335 6.29183 6.26609 6.29183 7.41669Z"
+                                    stroke="#782BF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h2 class="font-spline font-bold text-gray-900 text-xl md:text-2xl mt-2 mb-4">Networking</h2>
+                        <p class="text-gray-500 text-lg">Tenha oportunidade de conhecer milhares de pessoas com o mesmo
+                            interesse que você.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="bg-blue-900 w-full flex items-center justify-center">
+        <div class="flex flex-col text-gray-300 my-10 md:my-16">
+            <ul class="flex scroll-bottom-1 justify-between font-sans text-sm mx-5 md:mx-0">
+                <li>
+                    <a href="#inicio" class="font-semibold hover:text-purple-500 transition">Início</a>
+                </li>
+                <li>
+                    <a href="#4noobs" class="font-semibold hover:text-purple-500 transition">4Noobs</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="font-semibold hover:text-purple-500 transition">Sobre</a>
+                </li>
+                <li>
+                    <a href="https://discord.com/invite/5kwDQuv"
+                        class="font-semibold hover:text-purple-500 transition">Discord</a>
+                </li>
+            </ul>
+            <div class="flex justify-center items-center my-10">
+                <a href="https://www.instagram.com/heartdevs/" class="scroll-bottom-2 mx-5"
+                    aria-label="Instagram da He4rtDevs">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="hover:-translate-y-0.5 transform-gpu transition-all hover:font-purple-500 footer__icons">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.315 0C12.745 0 13.099 0.0129999 14.123 0.0599999C15.187 0.109 15.914 0.278 16.55 0.525C17.2175 0.775874 17.8222 1.16936 18.322 1.678C18.8306 2.17777 19.2241 2.7825 19.475 3.45C19.722 4.086 19.891 4.813 19.94 5.877C19.988 6.944 20 7.284 20 10V10.08C20 12.723 19.988 13.067 19.94 14.123C19.891 15.187 19.722 15.914 19.475 16.55C19.2241 17.2175 18.8306 17.8222 18.322 18.322C17.8222 18.8306 17.2175 19.2241 16.55 19.475C15.914 19.722 15.187 19.891 14.123 19.94C13.056 19.988 12.716 20 10 20H9.92C7.277 20 6.933 19.988 5.877 19.94C4.813 19.891 4.086 19.722 3.45 19.475C2.7825 19.2241 2.17777 18.8306 1.678 18.322C1.16936 17.8222 0.775874 17.2175 0.525 16.55C0.278 15.914 0.109 15.187 0.0599999 14.123C0.0129999 13.099 0 12.744 0 10.315V9.685C0 7.255 0.0129999 6.901 0.0599999 5.877C0.109 4.813 0.278 4.086 0.525 3.45C0.775874 2.7825 1.16936 2.17777 1.678 1.678C2.17777 1.16936 2.7825 0.775874 3.45 0.525C4.086 0.278 4.813 0.109 5.877 0.0599999C6.901 0.0129999 7.256 0 9.685 0H10.315ZM10.234 1.802H9.766C7.31 1.802 6.982 1.813 5.959 1.86C4.984 1.905 4.455 2.067 4.102 2.204C3.635 2.386 3.302 2.602 2.952 2.952C2.602 3.302 2.386 3.635 2.204 4.102C2.067 4.455 1.904 4.984 1.86 5.959C1.813 6.982 1.802 7.31 1.802 9.766V10.234C1.802 12.69 1.813 13.018 1.86 14.041C1.905 15.016 2.067 15.545 2.204 15.898C2.386 16.364 2.603 16.698 2.952 17.048C3.302 17.398 3.635 17.614 4.102 17.796C4.455 17.933 4.984 18.096 5.959 18.14C7.013 18.188 7.329 18.198 10 18.198H10.08C12.677 18.198 12.997 18.188 14.04 18.14C15.016 18.095 15.545 17.933 15.898 17.796C16.364 17.614 16.698 17.398 17.048 17.048C17.398 16.698 17.614 16.365 17.796 15.898C17.933 15.545 18.096 15.016 18.14 14.041C18.188 12.986 18.198 12.671 18.198 10V9.92C18.198 7.323 18.188 7.003 18.14 5.96C18.095 4.984 17.933 4.455 17.796 4.102C17.6358 3.66757 17.3802 3.2746 17.048 2.952C16.7254 2.61986 16.3324 2.36426 15.898 2.204C15.545 2.067 15.016 1.904 14.041 1.86C13.018 1.813 12.69 1.802 10.234 1.802ZM10 4.865C10.6743 4.865 11.3421 4.99782 11.9651 5.25588C12.5881 5.51394 13.1542 5.89218 13.631 6.36901C14.1078 6.84584 14.4861 7.41191 14.7441 8.03492C15.0022 8.65793 15.135 9.32566 15.135 10C15.135 10.6743 15.0022 11.3421 14.7441 11.9651C14.4861 12.5881 14.1078 13.1542 13.631 13.631C13.1542 14.1078 12.5881 14.4861 11.9651 14.7441C11.3421 15.0022 10.6743 15.135 10 15.135C8.63811 15.135 7.33201 14.594 6.36901 13.631C5.40601 12.668 4.865 11.3619 4.865 10C4.865 8.63811 5.40601 7.33201 6.36901 6.36901C7.33201 5.40601 8.63811 4.865 10 4.865ZM10 6.667C9.11603 6.667 8.26827 7.01815 7.64321 7.64321C7.01815 8.26827 6.667 9.11603 6.667 10C6.667 10.884 7.01815 11.7317 7.64321 12.3568C8.26827 12.9818 9.11603 13.333 10 13.333C10.884 13.333 11.7317 12.9818 12.3568 12.3568C12.9818 11.7317 13.333 10.884 13.333 10C13.333 9.11603 12.9818 8.26827 12.3568 7.64321C11.7317 7.01815 10.884 6.667 10 6.667ZM15.338 3.462C15.6563 3.462 15.9615 3.58843 16.1865 3.81347C16.4116 4.03852 16.538 4.34374 16.538 4.662C16.538 4.98026 16.4116 5.28548 16.1865 5.51053C15.9615 5.73557 15.6563 5.862 15.338 5.862C15.0197 5.862 14.7145 5.73557 14.4895 5.51053C14.2644 5.28548 14.138 4.98026 14.138 4.662C14.138 4.34374 14.2644 4.03852 14.4895 3.81347C14.7145 3.58843 15.0197 3.462 15.338 3.462Z"
+                            fill="#9CA3AF" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/He4rtDevs" class="scroll-bottom-2 mx-5"
+                    aria-label="Perfil no Twitter da He4rtDevs">
+                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="hover:-translate-y-0.5 transform-gpu transition-all hover:font-purple-500 footer__icons">
+                        <path
+                            d="M6.29 16.2534C13.837 16.2534 17.965 10.0004 17.965 4.5784C17.965 4.4004 17.965 4.2234 17.953 4.0484C18.7562 3.46693 19.4493 2.74701 20 1.9224C19.2511 2.2544 18.4566 2.47216 17.643 2.5684C18.4996 2.05546 19.1408 1.24875 19.447 0.298398C18.6417 0.776285 17.7607 1.11313 16.842 1.2944C16.2234 0.636163 15.405 0.200233 14.5136 0.0541031C13.6222 -0.0920265 12.7075 0.0597974 11.9111 0.486067C11.1147 0.912337 10.4811 1.58927 10.1083 2.41206C9.7355 3.23485 9.64437 4.15758 9.849 5.0374C8.21759 4.95564 6.6216 4.53172 5.16465 3.79317C3.70769 3.05461 2.42233 2.01792 1.392 0.750398C0.867318 1.6536 0.706589 2.72282 0.942536 3.74036C1.17848 4.75791 1.79337 5.64728 2.662 6.2274C2.00926 6.2085 1.37063 6.0329 0.8 5.7154V5.7674C0.800389 6.71469 1.1284 7.6327 1.7284 8.36576C2.3284 9.09881 3.16347 9.60179 4.092 9.7894C3.48781 9.95411 2.85389 9.97806 2.239 9.8594C2.50116 10.6749 3.01168 11.388 3.69913 11.899C4.38658 12.41 5.21657 12.6934 6.073 12.7094C5.22212 13.378 4.24779 13.8722 3.20573 14.1639C2.16367 14.4556 1.07432 14.539 0 14.4094C1.8766 15.6137 4.06019 16.2525 6.29 16.2494"
+                            fill="#9CA3AF" />
+                    </svg>
+                </a>
+                <a href="https://github.com/he4rt" class="scroll-bottom-2 mx-5"
+                    aria-label="Repositório do Github na He4rtDevs">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="hover:-translate-y-0.5 transform-gpu transition-all hover:font-purple-500 footer__icons">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 0C4.477 0 0 4.484 0 10.017C0 14.442 2.865 18.197 6.839 19.521C7.339 19.613 7.521 19.304 7.521 19.038C7.521 18.801 7.513 18.17 7.508 17.335C4.726 17.94 4.139 15.992 4.139 15.992C3.685 14.834 3.029 14.526 3.029 14.526C2.121 13.906 3.098 13.918 3.098 13.918C4.101 13.988 4.629 14.95 4.629 14.95C5.521 16.48 6.97 16.038 7.539 15.782C7.631 15.135 7.889 14.694 8.175 14.444C5.955 14.191 3.62 13.331 3.62 9.493C3.62 8.4 4.01 7.505 4.649 6.805C4.546 6.552 4.203 5.533 4.747 4.155C4.747 4.155 5.587 3.885 7.497 5.181C8.31277 4.95851 9.15444 4.84519 10 4.844C10.85 4.848 11.705 4.959 12.504 5.181C14.413 3.885 15.251 4.154 15.251 4.154C15.797 5.533 15.453 6.552 15.351 6.805C15.991 7.505 16.379 8.4 16.379 9.493C16.379 13.341 14.04 14.188 11.813 14.436C12.172 14.745 12.491 15.356 12.491 16.291C12.491 17.629 12.479 18.71 12.479 19.038C12.479 19.306 12.659 19.618 13.167 19.52C15.1583 18.8521 16.8893 17.5753 18.1155 15.87C19.3416 14.1648 20.0009 12.1173 20 10.017C20 4.484 15.522 0 10 0Z"
+                            fill="#9CA3AF" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mx-10 scroll-bottom-3">
+                <p class="font-semibold text-center text-gray-300 text-sm">© 2022 He4rt Devs. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="/assets/js/main.js"></script>
-    <script>
-        const swiper = new Swiper(".mySwiper", {
-            effect: "cards",
-            cardsEffect: {
-                slideShadows: false,
-            },
-            speed: 500,
-            grabCursor: true,
-            slidesPerView: 'auto',
-            touchMove: true
-        });
-
-        ScrollReveal().reveal('#header');
-    </script>
+    <script type="module" src="/assets/js/swiper.js"></script>
+    <script type="module" src="/assets/js/scrollReveal.js"></script>
 </body>
 
 </html>
