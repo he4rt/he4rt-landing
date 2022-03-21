@@ -97,14 +97,6 @@ max-height: 25px;
   background-color: rgba(120, 43, 241, 0.1);
 }
 
-.mw-35px {
-  max-width: 70px
-}
-
-.mh-35px {
-  max-height: 50px
-}
-
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -137,8 +129,16 @@ max-height: 25px;
 
 @media screen and (min-width:1024px){
   .swiper {
-    width: 55%;
+    width: 50%;
   }
+  .mw-35{
+    max-width: 70px
+  }
+  
+  .mh-35{
+    max-height: 50px
+  }
+  
 }
 
 @tailwind base;

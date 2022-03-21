@@ -17,23 +17,23 @@ const swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         320: {
-            spaceBetween: 30,
+            spaceBetween: 0,
             slidesPerView: 1.7,
         },
         375: {
-            spaceBetween: 30,
+            spaceBetween: 0,
             slidesPerView: 2,
         },
         425: {
-            spaceBetween: 30,
+            spaceBetween: 0,
             slidesPerView: 2.3,
         },
         515:{
-            spaceBetween: 30,
+            spaceBetween: 0,
             slidesPerView: 2.6,
         },
         575:{
-            spaceBetween: 30,
+            spaceBetween: 0,
             slidesPerView: 2.9,
         },
         //aqui muda o tamanho do slide
@@ -46,8 +46,24 @@ const swiper = new Swiper(".mySwiper", {
             slidesPerView: 3.1,
         },
         768:{
-            spaceBetween: 110,
-            slidesPerView: 'auto',
+            spaceBetween: 2,
+            slidesPerView: 3,
+        },
+        861:{
+            spaceBetween: 2,
+            slidesPerView: 3.4,
+        },
+        951:{
+            spaceBetween: 2,
+            slidesPerView: 3.3,
+        },
+        1024:{
+            spaceBetween: 0,
+            slidesPerView: 1.8,
+        },
+        1030:{
+            spaceBetween: 0,
+            slidesPerView: 1.9,
         }
     },
     navigation: {

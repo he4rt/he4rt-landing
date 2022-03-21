@@ -1,7 +1,3 @@
-
-ScrollReveal().reveal('.text-animation', { distance: '30px', duration: 1200, delay: 600 });
-ScrollReveal().reveal('.card-animation', { distance: '40px', duration: 1000, delay: 900 });
-ScrollReveal().reveal('#header');
 ScrollReveal().reveal('.scroll-left', {origin: 'left', distance: '40px', duration: 1000, delay: 500 });
 ScrollReveal().reveal('.scroll-left-2', {origin: 'left', distance: '40px', duration: 1000, delay: 800 });
 ScrollReveal().reveal('.scroll-left-3', {origin: 'left', distance: '40px', duration: 1000, delay: 1000 });
