@@ -20,6 +20,16 @@
      # clone do repositorio
      $ yarn build
 ```
+
+## Contribuindo
+
+Contribuições são sempre bem-vindas!
+
+Veja `contribuindo.md` para saber como começar.
+
+Por favor, siga o `padrão` desse projeto.
+
+
 ### 🛠️ Technologies
 The following technologies were used:
 - [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)

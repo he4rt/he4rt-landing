@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
 <head>
-
     <meta name="description"
         content="Aqui é o lugar aonde mentes extraordinárias se encontram com o objetivo de alcançar milhares de pessoas com o poder da tecnologia. Aqui mais do que participar, você vai contribuir.">
     <meta charset="UTF-8" />
@@ -21,30 +20,32 @@
 <body class="bg-white w-screen h-screen">
     <!--Header section feito pela comunidade-->
     <header
-        class="w-full min-h-screen header__container flex items-center justify-between relative flex-col md:flex-row content__max-width mx-auto"
+        class="w-full h-screen header__container flex items-center justify-between relative flex-col lg:flex-row content__max-width mx-auto header__max-height"
         id="header">
-        <div class="flex flex-col w-2/4 px-6 md:px-0 relative z-10 pb-11 mt-14 md:mt-0">
-            <div class="py-4 md:pb-6">
+        <div class="flex flex-col w-4/4  px-6 relative z-10 lg:pb-11 mb-0 mt-14 lg:mt-0">
+            <div class="py-4 scroll-left lg:pb-6">
                 <img src="./public/images/logo.png"
                     alt="Imagem contendo um coração roxo representando a comunidade He4rtDevs.">
             </div>
-            <h1 class="text-2xl md:text-4xl font-bold font-spline">Feito pela <span
-                    class="text-purple-500 font-spline">comunidade</span> para a <span
+            <h1 class="scroll-left-2 text-xl md:text-2xl lg:text-4xl font-bold font-spline">Feito pela <span
+                    class="text-purple-500 font-spline">comunidade</span><br> para a <span
                     class="text-purple-500">comunidade</span></h1>
-            <p class="text-gray-500 md:text-lg my-4 md:my-3 w-full md:w-10/12 font-sans">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Pellentesque ultrices tempor lectus, vel commodo lacus posuere quis. Mauris
-                euismod vulputate dapibus.</p>
-            <div class="mt-3">
+            <p
+                class="scroll-left-3 text-sm md:text-lg lg:text-xl font-sans text-gray-500 my-4 lg:my-3 w-10/12 md:w-8/12 lg:w-6/12">
+                Aqui é o lugar aonde mentes extraordinárias se encontram com o objetivo de alcançar milhares de pessoas
+                com o poder da tecnologia. <span class="text-purple-500 font-spline">Aqui mais do que participar, você
+                    vai contribuir.</span></p>
+            <div class="scroll-left-3 mt-3">
                 <a href="https://discord.com/invite/5kwDQuv"><button
                         class="bg-transparent border-2 border-purple-500 rounded-3xl px-5 py-1 font-bold font-spline text-purple-500 hover:bg-purple-500 hover:text-white transition-all">Seja
                         um membro</button></a>
             </div>
         </div>
         <!--section card com swiper-->
-        <div class="swiper mySwiper flex items-center md:absolute md:left-1/2">
+        <div class="scroll-right swiper mySwiper flex items-center lg:absolute lg:left-1/2">
             <div class="swiper-wrapper"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="hidden lg:flex swiper-button-prev"></div>
+            <div class="hidden lg:flex swiper-button-next"></div>
         </div>
     </header>
     <!--svg campo direito superior-->
@@ -73,13 +74,11 @@
     <!--section o que e a he4rt?-->
     <section id="section-o-que-e-a-he4rt"
         class="w-full content__max-width mx-auto px-6 xl:px-0 mb-11 lg:mb-28 min-h-max flex items-center ">
-
         <div class="hidden scroll-left lg:w-4/12 mr-8 xl:mr-16 lg:flex justify-start items-center">
             <div class="w-96">
                 <img alt="Uma equipe de devs trabalhando em conjunto" src="/public/images/team.png">
             </div>
         </div>
-
         <div class="md:w-12/12 lg:w-8/12">
             <div class="flex flex-wrap">
                 <div class="md:w-12/12">
@@ -94,7 +93,6 @@
                                     class="text-purple-500">Ajude a moldar nossa comunidade: faça parte dela.</span></p>
                         </div>
                     </div>
-
                     <div class="scroll-bottom-2 flex flex-col mt-6 min-w-0">
                         <div class="flex-auto">
                             <h1 class="mb-1 text-gray-700 font-spline font-bold text-base md:text-3xl text lg:text-2xl">
@@ -106,7 +104,6 @@
                                 e descubra nossas iniciativas tecnologicas.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -167,12 +164,13 @@
         </div>
     </section>
 
-    <!--He4rtConf-->
+    <!--Um pouco mais sobre a he4rt-->
     <section id="sobre" class="mx-auto mt-11 lg:mt-28 lg:mb-20 px-6 xl:px-6 w-full content__max-width">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="w-full">
                 <h2 class="scroll-left font-bold text-gray-700 text-xl md:text-3xl lg:text-4xl">Um pouco mais sobre a
-                    <span class="text-purple-500">He4rt Devs</span>.</h2>
+                    <span class="text-purple-500">He4rt Devs</span>.
+                </h2>
                 <p class="scroll-left-2 text-gray-500 text-base md:text-xl lg:text-xl my-5">Uma comunidade
                     extraordinária é formada por pessoas excepcionais. Com mais de 11 mil membros em nosso Discord e com
                     mais de 17 mil seguidores em nossas redes sociais, conseguimos mudar a maneira como a tecnologia
@@ -328,8 +326,9 @@
             </div>
         </div>
     </section>
+
     <!--hea4rtconf-->
-    <section id="he4rtconf" class="mx-auto lg:mb-20 px-6 xl:px-6 w-full content__max-width">
+    <section class="mx-auto lg:mb-20 px-6 xl:px-6 w-full content__max-width">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="pb-10 w-full">
                 <h2 class="scroll-bottom text-gray-700 font-bold text-lg md:text-3xl lg:text-4xl">Conheça a He4rt Conf,
@@ -347,8 +346,9 @@
                         <h2
                             class="text-purple-500 font-bold pt-5 pb-1 px-4 lg:pt-8 lg:pb-1 lg:px-14 text-base sm:text-xl lg:text-3xl">
                             + 4,677</h2>
-                        <p class="hidden sm:flex text-gray-500 pb-6 lg:pb-8 md:text-base lg:text-lg">Espectadores
-                            simultaneos</p>
+                        <p class="sm:hidden text-center text-gray-500 pb-2 text-xs">Espectadores <br> simutâneos</p>
+                        <p class="hidden sm:flex text-center text-gray-500 pb-6 lg:pb-8 md:text-base lg:text-lg">
+                            Espectadores simutâneos</p>
                     </div>
                 </div>
                 <div
@@ -357,9 +357,9 @@
                         <h2
                             class="text-blue-100 pt-5 pb-1 px-2 lg:pt-8 lg:pb-1 lg:px-13 text-base sm:text-xl lg:text-3xl font-bold">
                             + 70,980</h2>
-                        <p class=" sm:hidden text-gray-500 text-xs pb-6">Espectadores</p>
-                        <p class=" hidden sm:flex text-gray-500 md:text-base lg:text-lg pb-6 lg:pb-8">Espectadores
-                            únicos</p>
+                        <p class=" sm:hidden text-center text-gray-500 text-xs pb-2">Espectadores <br> únicos</p>
+                        <p class=" hidden sm:flex text-center text-gray-500 md:text-base lg:text-lg pb-6 lg:pb-8">
+                            Espectadores únicos</p>
                     </div>
                 </div>
                 <div
@@ -385,8 +385,8 @@
                 <p class="scroll-bottom-2 text-gray-500 text-base md:text-xl lg:text-xl my-5">Nós temos os recursos para
                     levar qualquer ideia para frente, nenhum sonho é louco demais para nós. Descubra como desenvolver
                     projetos que revolucionam a maneira de aprender.</p>
-                <div class="scroll-bottom-3 grid grid-cols-1 md:grid-cols-2 gap-x-44">
-                    <div class="flex flex-col items-start my-5 pr-36 border-r-1 border-pink">
+                <div class="scroll-bottom-3 grid grid-cols-1 md:grid-cols-2 gap-x-0">
+                    <div class="flex flex-col items-start pr-16 my-5 border-r-1 border-pink-500">
                         <div class="icon__bg-rounded mx-2 mb-6">
                             <svg width="1.3rem" height="1.3rem" viewBox="0 0 21 19" fill="none">
                                 <path
@@ -407,7 +407,7 @@
                         <p class="text-gray-500 text-lg">Ajude, contribua e retire suas dúvidas em qualquer área da
                             tecnologia com nossa comunidade!</p>
                     </div>
-                    <div class="flex flex-col items-start my-5 pl-28">
+                    <div class="flex flex-col items-start my-5 md:pl-28">
                         <div class="icon__bg-rounded mx-2 mb-6">
                             <svg width="1.3rem" height="1.3rem" viewBox="0 0 20 26" fill="none">
                                 <path
@@ -419,7 +419,7 @@
                         <p class="text-gray-500 text-lg">Aprimore e contribua com nossos projetos, evolua constantemente
                             e mostre suas habilidades.</p>
                     </div>
-                    <div class="flex flex-col items-start my-5 pr-36 border-r-1 border-pink">
+                    <div class="flex flex-col items-start my-5 pr-16 border-r-1 border-pink-500">
                         <div class="icon__bg-rounded mx-2 mb-6">
                             <svg width="1.3rem" height="1.3rem" viewBox="0 0 21 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -432,7 +432,7 @@
                         <p class="text-gray-500 text-lg">Participe dos eventos exclusivos da comunidade e receba
                             diversos prêmios por isso!</p>
                     </div>
-                    <div class="flex flex-col items-start my-5 pl-28">
+                    <div class="flex flex-col items-start my-5 md:pl-28">
                         <div class="icon__bg-rounded mx-2 mb-6">
                             <svg width="1.3rem" height="1.3rem" viewBox="0 0 23 19" fill="none">
                                 <path
@@ -450,7 +450,7 @@
     </section>
     <footer class="bg-blue-900 w-full flex items-center justify-center">
         <div class="flex flex-col text-gray-300 my-10 md:my-16">
-            <ul class="flex justify-between font-sans text-sm mx-5 md:mx-0">
+            <ul class="flex scroll-bottom justify-between font-sans text-sm mx-5 md:mx-0">
                 <li>
                     <a href="#inicio" class="font-semibold hover:text-purple-500 transition">Início</a>
                 </li>
@@ -466,7 +466,8 @@
                 </li>
             </ul>
             <div class="flex justify-center items-center my-10">
-                <a href="https://www.instagram.com/heartdevs/" class="mx-5" aria-label="Instagram da He4rtDevs">
+                <a href="https://www.instagram.com/heartdevs/" class="scroll-bottom-2 mx-5"
+                    aria-label="Instagram da He4rtDevs">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="hover:-translate-y-0.5 transform-gpu transition-all hover:font-purple-500 footer__icons">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -474,7 +475,8 @@
                             fill="#9CA3AF" />
                     </svg>
                 </a>
-                <a href="https://twitter.com/He4rtDevs" class="mx-5" aria-label="Perfil no Twitter da He4rtDevs">
+                <a href="https://twitter.com/He4rtDevs" class="scroll-bottom-2 mx-5"
+                    aria-label="Perfil no Twitter da He4rtDevs">
                     <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="hover:-translate-y-0.5 transform-gpu transition-all hover:font-purple-500 footer__icons">
                         <path
@@ -482,7 +484,8 @@
                             fill="#9CA3AF" />
                     </svg>
                 </a>
-                <a href="https://github.com/he4rt" class="mx-5" aria-label="Repositório do Github na He4rtDevs">
+                <a href="https://github.com/he4rt" class="scroll-bottom-2 mx-5"
+                    aria-label="Repositório do Github na He4rtDevs">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="hover:-translate-y-0.5 transform-gpu transition-all hover:font-purple-500 footer__icons">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -491,11 +494,18 @@
                     </svg>
                 </a>
             </div>
-            <div class="mx-10">
+            <div class="mx-10 scroll-bottom-3">
                 <p class="font-semibold text-gray-300 text-sm">© 2022 He4rt Devs. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
+
+
+
+
+
+
+
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>

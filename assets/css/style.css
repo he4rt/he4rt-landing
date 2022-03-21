@@ -25,7 +25,7 @@ html,body{
 
 .swiper {
   width: 100%;
-  padding: 5rem 1rem;
+  padding: 5rem 0.5rem;
   z-index: 20;
 }
 
@@ -33,10 +33,11 @@ html,body{
   border-right-width: 1px;
 }
 
-@media screen and (min-width: 768px) {
-  .swiper {
-    width: 60%;
-  }
+.mw-25{
+max-width: 25px;
+}
+.mh-25{
+max-height: 25px;
 }
 
 .swiper-slide {
@@ -67,7 +68,7 @@ html,body{
   max-width: 1120px;
 }
 
-.content__max-height {
+.header__max-height {
   max-height: 800px;
 }
 
@@ -96,6 +97,21 @@ html,body{
   background-color: rgba(120, 43, 241, 0.1);
 }
 
+.mw-35px {
+  max-width: 70px
+}
+
+.mh-35px {
+  max-height: 50px
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
 @media screen and (max-width: 767px) {
   .for-noobs-section__bg {
     background-image: url('/images/sectionBgImage.svg');
@@ -113,21 +129,16 @@ html,body{
   .header__container {
     max-height: none;
   }
+
+  .border-r-1 {
+    border: none;
+  }
 }
 
-.mw-35px {
-  max-width: 70px
-}
-
-.mh-35px {
-  max-height: 50px
-}
-
-.line-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
+@media screen and (min-width:1024px){
+  .swiper {
+    width: 55%;
+  }
 }
 
 @tailwind base;
