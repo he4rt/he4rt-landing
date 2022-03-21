@@ -43,7 +43,8 @@ max-height: 25px;
 /*Sliders*/
 .swiper {
   width: 100%;
-  padding: 5rem 0.5rem;
+  padding: 2rem 0.5rem;
+  z-index: 40;
 }
 
 .swiper-slide {
@@ -116,16 +117,10 @@ max-height: 25px;
     max-height: none;
   }
   .for-noobs-section__bg {
-    background-image: url('/images/sectionBgImage.svg');
     background-size:auto;
   }
   .for-noobs-section__bg:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background: linear-gradient(180deg, #111827 79%, rgba(17, 24, 39, 0) 100%);
-    z-index: 20;
   }
   
   .header__container {
@@ -133,12 +128,13 @@ max-height: 25px;
   }
 
   .border-r-1 {
-    border: none;
+    border: 2px;
   }
 }
 
 @media screen and (min-width:1024px){
   .swiper {
+    padding: 5rem 0.5rem;
     width: 50%;
   }
   .mw-35{

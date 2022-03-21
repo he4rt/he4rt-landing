@@ -22,7 +22,7 @@ const setSwiperItems = async function(data) {
     forNoobs.forEach((forNoob) => {
         swiperContainer.insertAdjacentHTML('beforeend', `
         <div class="swiper-slide">
-            <div class="flex flex-col mb-10 rounded-lg w-40 sm:w-52 md:w-60 lg:w-64 drop-shadow-xl lg:h-96">
+            <div class="flex rounded-lg flex-col w-40 sm:w-52 md:w-60 lg:w-64 overflow-hidden drop-shadow-xl h-80 lg:h-96">
                 <div class="w-full bg-gradient-to-r from-purple-500 to-pink-700 flex items-center justify-between text-white p-4">
                     <div class="flex items-center">
                         <div class="w-1/4 mw-25 mh-25 mh-35 mw-35 rounded-full overflow-hidden mr-1 lg:mr-4">
