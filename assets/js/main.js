@@ -19,7 +19,7 @@ const fetchData = async function() {
 const setSwiperItems = async function(data) {
     const forNoobs = data.courses;
 
-    forNoobs.forEach((forNoob) => {
+    forNoobs.sort(() => .5 - Math.random()).forEach((forNoob) => {
         swiperContainer.insertAdjacentHTML('beforeend', `
         <div class="swiper-slide">
             <div class="flex rounded-lg flex-col w-40 sm:w-52 md:w-60 lg:w-64 overflow-hidden drop-shadow-xl h-80 lg:h-96">
