@@ -130,6 +130,14 @@ max-height: 25px;
   .border-r-1 {
     border: 2px;
   }
+
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+
 }
 
 @media screen and (min-width:1024px){

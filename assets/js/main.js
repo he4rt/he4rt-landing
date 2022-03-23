@@ -42,9 +42,9 @@ const setSwiperItems = async function(data) {
                                 <span class="text-gray-900">- </span>
                                 <span class="text-gray-900 font-normal font-spline">${forNoob.name}</span>
                             </p>
-                            <p class="text-xs md:text-sm font-spline text-gray-500 pb-1.5">${forNoob.category}</p>
+                            <p class="text-xs font-spline text-gray-500 pb-1.5">${forNoob.category}</p>
                         </div>
-                        <p class="text-xs md:text-sm  text-gray-500 mt-4 line-clamp">${forNoob.description}</p>
+                        <p class="text-xs text-gray-500 mt-4 sm:max-h-12 line-clamp">${forNoob.description}</p>
                     </div>
                     <a href="${forNoob.url}" target="_blank" class="text-xs md:text-sm w-full py-2 my-3 text-purple-500 text-center font-spline font-bold border border-purple-500 rounded-3xl hover:bg-purple-500 hover:text-white transition">Ver agora</a>
                 </div>
