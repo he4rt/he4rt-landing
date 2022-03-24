@@ -15,12 +15,16 @@ html,body{
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
 :root {
   --swiper-navigation-size: 15px;
   --swiper-theme-color: #782BF1
 }
-
+.text-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .border-r-1 {
   border-right-width: 1px;
 }
