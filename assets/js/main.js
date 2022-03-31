@@ -4,6 +4,8 @@ const twitterFollowers = document.querySelector('[data-js="twitter-value"]');
 const instagramFollowers = document.querySelector('[data-js="instagram-value"]');
 const githubFollowers = document.querySelector('[data-js="github-value"]');
 
+document.documentElement.classList.add('dark');
+
 const fetchData = async function() {
     try {
         const res = await axios.get('https://raw.githubusercontent.com/he4rt/4noobs/master/.github/config.json');
@@ -29,22 +31,22 @@ const setSwiperItems = async function(data) {
                             <img src="${forNoob.author.avatar_url}" class="shadow-2xl drop-shadow" alt="${forNoob.alt}">
                         </div>
                         <div>
-                            <h2 class="text-xs text-clamp  md:text-sm text-white font-bold font-spline">${forNoob.author.name}</h2>
+                            <h2 class="text-xs text-clamp  md:text-sm text-white dark:text-gray-600 font-bold font-spline">${forNoob.author.name}</h2>
                             <p class="text-xs  md:text-sm font-normal font-spline">${forNoob.author.username}</p>
                         </div>
                     </div>
                     <i class="fa fa-arrow-right self-end pb-3 pr-2 text-lg"></i>
                 </div>
-                <div class="flex flex-col justify-between w-full h-full bg-white p-5">
+                <div class="flex flex-col justify-between w-full h-full bg-white dark:bg-gray-850 p-5">
                     <div class="flex flex-col">
-                        <div class="flex flex-col border-b border-purple-100">
+                        <div class="flex flex-col border-b border-purple-100 dark:border-purple-400">
                             <p class="text-sm text-purple-500 font-bold font-spline">4Noobs 
-                                <span class="text-gray-900">- </span>
-                                <span class="text-gray-900 font-normal font-spline">${forNoob.name}</span>
+                                <span class="text-gray-900 dark:text-gray-600">- </span>
+                                <span class="text-gray-900 dark:text-gray-600 font-normal font-spline">${forNoob.name}</span>
                             </p>
-                            <p class="text-xs font-spline text-gray-500 pb-1.5">${forNoob.category}</p>
+                            <p class="text-xs font-spline text-gray-500 dark:text-gray-600 pb-1.5">${forNoob.category}</p>
                         </div>
-                        <p class="text-xs lg:text-sm text-gray-500 mt-4 line-clamp">${forNoob.description}</p>
+                        <p class="text-xs lg:text-sm text-gray-500 dark:text-gray-600 mt-4 line-clamp">${forNoob.description}</p>
                     </div>
                     <a href="${forNoob.url}" target="_blank" class="text-xs md:text-sm w-full py-2 my-3 text-purple-500 text-center font-spline font-bold border border-purple-500 rounded-3xl hover:bg-purple-500 hover:text-white transition">Ver agora</a>
                 </div>
