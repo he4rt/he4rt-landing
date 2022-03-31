@@ -19,6 +19,11 @@ html,body{
   --swiper-navigation-size: 15px;
   --swiper-theme-color: #782BF1
 }
+.text-4noobs{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .text-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 1;
