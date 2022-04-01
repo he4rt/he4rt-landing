@@ -1,3 +1,4 @@
+
 /*Padroes*/
 
 #app {
@@ -18,23 +19,6 @@ html,body{
 :root {
   --swiper-navigation-size: 15px;
   --swiper-theme-color: #782BF1
-}
-.name-4noobs{
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.author-4noobs-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.Desc-4noobs-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
 }
 .border-r-1 {
   border-right-width: 1px;
@@ -71,6 +55,27 @@ max-height: 25px;
   align-items: center;
 }
 
+/*Size of Text-Cards*/
+.name-4noobs{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.author-4noobs-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.Desc-4noobs-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
 .swiper-button-prev {
   top: 95%;
   left: 80%;
@@ -80,7 +85,8 @@ max-height: 25px;
   top: 95%;
   left: 90%;
 }
-/*4noobs*/
+
+/*4noobs-section*/
 .for-noobs-section__bg {
   background-image: url('/images/sectionBgImage.svg');
   background-size: cover;
@@ -121,23 +127,26 @@ max-height: 25px;
 }
 
 @media screen and (max-width: 767px) {
+  .border-r-1 {
+    border: 2px;
+  }
+
   .header__max-height {
     max-height: none;
-  }
-  .for-noobs-section__bg {
-    background-size:auto;
-  }
-  .for-noobs-section__bg:before {
-    background: linear-gradient(180deg, #111827 79%, rgba(17, 24, 39, 0) 100%);
   }
   
   .header__container {
     max-height: none;
   }
-
-  .border-r-1 {
-    border: 2px;
+  
+  .for-noobs-section__bg {
+    background-size:auto;
   }
+  
+  .for-noobs-section__bg:before {
+    background: linear-gradient(180deg, #111827 79%, rgba(17, 24, 39, 0) 100%);
+  }
+  
 }
 
 @media screen and (min-width:1024px){
