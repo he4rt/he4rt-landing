@@ -9,10 +9,6 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                fuchsia: colors.fuchsia,
-                cyan: colors.cyan,
-                emerald: colors.emerald,
-                teal: colors.teal,
                 purple: {
                     100: '#F1E9FF',
                     400: '#481990',
@@ -28,7 +24,10 @@ module.exports = {
                     700: '#4F4F4F',
                     800: '#1A1B18',
                     850: '#131516',
-                    900: '#424141',
+                    900: '#282C2E',
+                    997: '#242729',
+                    998: '#e8e6e3',
+                    999: '#232628',
                     1000: '#0F0F11'
                 },
                 blue: {
