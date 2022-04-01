@@ -24,13 +24,13 @@ html,body{
   overflow: hidden;
   white-space: nowrap;
 }
-.text-clamp {
+.author-4noobs-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.line-clamp {
+.Desc-4noobs-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;  

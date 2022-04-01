@@ -29,7 +29,7 @@ const setSwiperItems = async function(data) {
                             <img src="${forNoob.author.avatar_url}" class="shadow-2xl drop-shadow" alt="${forNoob.alt}">
                         </div>
                         <div>
-                            <h2 class="text-xs text-clamp  md:text-sm text-white font-bold font-spline">${forNoob.author.name}</h2>
+                            <h2 class="text-xs author-4noobs-clamp  md:text-sm text-white font-bold font-spline">${forNoob.author.name}</h2>
                             <p class="text-xs  md:text-sm font-normal font-spline">${forNoob.author.username}</p>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const setSwiperItems = async function(data) {
                             <p  class="name-4noobs text-sm text-purple-500 font-bold font-spline"> ${forNoob.name}</p>
                             <p class="text-xs font-spline text-gray-500 pb-1.5">${forNoob.category}</p>
                         </div>
-                        <p class="text-xs lg:text-sm text-gray-500 mt-4 line-clamp">${forNoob.description}</p>
+                        <p class="text-xs lg:text-sm text-gray-500 mt-4 Desc-4noobs-clamp">${forNoob.description}</p>
                     </div>
                     <a href="${forNoob.url}" target="_blank" class="text-xs md:text-sm w-full py-2 my-3 text-purple-500 text-center font-spline font-bold border border-purple-500 rounded-3xl hover:bg-purple-500 hover:text-white transition">Ver agora</a>
                 </div>
