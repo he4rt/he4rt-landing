@@ -91,7 +91,7 @@ const setSwiperItems = async function(data) {
                         </div>
                         <p class="text-xs lg:text-sm text-gray-500 dark:text-gray-998 mt-4 line-clamp">${forNoob.description}</p>
                     </div>
-                    <a href="${forNoob.url}" target="_blank" class="text-xs md:text-sm w-full py-2 my-3 text-purple-500 text-center font-spline font-bold border dark:text-purple-700 border-purple-500 dark:border-purple-700 rounded-3xl hover:bg-purple-500 dark:hover:bg-fuchsia-900 hover:text-white transition">Ver agora</a>
+                    <a href="${forNoob.url}" target="_blank" class="text-xs md:text-sm w-full py-2 my-3 text-purple-500 text-center font-spline font-bold border dark:text-purple-700 border-purple-500 dark:border-purple-700 rounded-3xl hover:bg-purple-500 dark:hover:bg-purple-500 hover:text-white dark:hover:text-white transition">Ver agora</a>
                 </div>
             </div>
         </div>
