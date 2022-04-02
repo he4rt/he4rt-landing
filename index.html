@@ -31,20 +31,25 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
-<body class="w-screen h-screen dark:bg-gray-999 ">
+<body class="w-screen h-screen dark:bg-gray-999">
     <!--Header section feito pela comunidade-->
-    <header
-        class="w-full lg:h-screen header__container content__max-width header__max-height flex flex-col lg:flex-row items-center justify-between relative mx-auto"
-        id="inicio">
-        <div class="flex flex-col w-4/4  px-6 relative z-10 lg:pb-11 mb-0 mt-14 lg:mt-0">
-            <div class="py-4 scroll-left-1 lg:pb-6">
+    <header class="w-full lg:h-screen header__container content__max-width header__max-height flex flex-col lg:flex-row items-center justify-between relative mx-auto" id="inicio">
+        
+        <div class="flex flex-col w-4/4  px-6 relative z-10 lg:pb-11 mb-0 mt-1 lg:mt-0">
+            <div class="scroll-left-1 py-4">
+                <svg class="dark w-10 cursor-pointer" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+                    <svg class="light w-10 cursor-pointer" viewBox="0 0 24 24" stroke="#ffce45" stroke-width="1" fill="#ffce45" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+            </div>
+            <div class="scroll-left-1 lg:pb-6">
                 <img src="./public/images/logo.png"
                     alt="Imagem contendo um coração roxo representando a comunidade He4rtDevs.">
             </div>
             <h1 class="scroll-left-2 text-xl md:text-2xl lg:text-4xl text-gray-900 dark:text-gray-998 font-bold font-spline">Feito pela <span
                     class="text-purple-500 dark:text-purple-700 font-spline">comunidade</span><br> para a <span
                     class="text-purple-500 dark:text-purple-700">comunidade</span></h1>
-            <p class="scroll-left-3 text-sm md:text-lg lg:text-xl font-sans text-gray-500 dark:text-gray-600 my-4 lg:my-3 w-10/12 md:w-8/12 lg:w-6/12">
+            <p class="scroll-left-3 text-sm md:text-lg lg:text-xl font-sans text-gray-500 dark:text-gray-998 my-4 lg:my-3 w-10/12 md:w-8/12 lg:w-6/12">
                 Aqui é o lugar aonde mentes extraordinárias se encontram com o objetivo de alcançar milhares de pessoas
                 com o poder da tecnologia. <span class="text-purple-500 dark:text-purple-700 font-spline">Aqui mais do que participar, você
                     vai contribuir.</span></p>
@@ -100,7 +105,7 @@
                         <div class="scroll-bottom-1 px-1 md:px-0 flex-auto">
                             <h2 class="mb-1 text-gray-700 dark:text-gray-998 font-spline font-bold text-xl md:text-3xl lg:text-4xl">
                                 Afinal, o que é a <span class="text-purple-500 dark:text-purple-700">He4rt Developers</span>?</h2>
-                            <p class="mb-1 text-gray-500 dark:text-gray-600 text-sm md:text-xl lg:text-xl">Temos como filosofia o ensino,
+                            <p class="mb-1 text-gray-500 dark:text-gray-998 text-sm md:text-xl lg:text-xl">Temos como filosofia o ensino,
                                 tecnologia e as pessoas. <span class="text-purple-500 dark:text-purple-700">Acreditamos que quando alinhados conseguimos mudar o mundo</span>. Descubra uma cultura colaborativa de crescimento,
                                 originalidade, apoio e inclusão que podem fazer a diferença na sua vida. <span class="text-purple-500 dark:text-purple-700">Ajude a moldar nossa comunidade: faça parte dela.</span></p>
                         </div>
@@ -109,7 +114,7 @@
                         <div class="flex-auto">
                             <h1 class="mb-1 text-gray-700 dark:text-gray-998 font-spline font-bold text-base md:text-3xl text lg:text-2xl">
                                 Como posso me juntar a <span class="text-purple-500 dark:text-purple-700">He4rt</span>?</h1>
-                            <p class="mb-1 text-gray-500 dark:text-gray-600 text-sm md:text-lg lg:text-xl">Faça parte do nosso <span class="text-purple-500 dark:text-purple-700"> <a href="https://github.com/he4rt"> Discord</a></span> e contribua com diversos projetos que podem mudar a maneira como as pessoas aprendem ao
+                            <p class="mb-1 text-gray-500 dark:text-gray-998 text-sm md:text-lg lg:text-xl">Faça parte do nosso <span class="text-purple-500 dark:text-purple-700"> <a href="https://github.com/he4rt"> Discord</a></span> e contribua com diversos projetos que podem mudar a maneira como as pessoas aprendem ao
                                 redor do mundo. <span class="text-purple-500 dark:text-purple-700">Acompanhe a He4rt nas redes sociais</span>
                                 e descubra nossas iniciativas tecnologicas.</p>
                         </div>
@@ -120,35 +125,34 @@
     </section>
 
     <!--4noobs-->
-    <section id="4noobs"
-        class="min-h-min bg-bottom md:bg-left bg-no-repeat relative for-noobs-section__bg flex justify-center items-center p-6 xl:p-6">
+    <section id="4noobs" class="min-h-min bg-bottom md:bg-left bg-no-repeat relative for-noobs-section__bg flex justify-center items-center p-6 xl:p-6">
         <div class="flex flex-col items-center justify-center relative z-30 content__max-width mx-0 lg:mx-0">
             <div class="text-left mt-8">
-                <h1 class="scroll-left-1 font-spline text-gray-200 dark:text-gray-600 md:mt-0 text-base md:text-lg lg:text-xl font-bold">
+                <h1 class="scroll-left-1 font-spline text-gray-200 md:mt-0 text-base md:text-lg lg:text-xl font-bold">
                     Educação sem barreiras.</h1>
-                <h2 class="scroll-left-2 font-spline font-bold text-white dark:text-gray-998 text-xl md:text-4xl mt-4">Conheça o <a href="https://github.com/he4rt/4noobs"><span
-                        class="text-purple-500 dark:text-purple-700 dark:hover:text-fuchsia-700 hover:text-purple-600 transition-all">4Noobs</span></a>, uma biblioteca de cursos open-source feita pela
+                <h2 class="scroll-left-2 font-spline font-bold text-white  text-xl md:text-4xl mt-4">Conheça o <a href="https://github.com/he4rt/4noobs"><span
+                        class="text-purple-500 dark:text-purple-700 dark:hover:text-purple-500 hover:text-purple-600 transition-all">4Noobs</span></a>, uma biblioteca de cursos open-source feita pela
                     comunidade.</h2>
-                <p class="scroll-left-3 text-gray-200 dark:text-gray-600 text-sm md:text-xl lg:text-xl mt-4">Com apoio de profissionais e
+                <p class="scroll-left-3 text-gray-200 text-sm md:text-xl lg:text-xl mt-4">Com apoio de profissionais e
                     estudantes apaixonados por tecnologia desenvolvemos a maior biblioteca open source do mundo para
                     você aprender, aprimorar e contribuir seus conhecimentos.</p>
                 <div class="grid grid-cols-1 mt-8 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full pb-72 md:pb-10">
                     <div
                         class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
                         <h2 class="dark:text-gray-998 font-bold text-2xl">20</h2>
-                        <p class="w-11/12 md:w-full dark:text-gray-600"><span class="font-bold">Linguagens de Programação</span> - De
+                        <p class="w-11/12 md:w-full dark:dark:text-gray-998"><span class="font-bold">Linguagens de Programação</span> - De
                             front-end à back-end. Várias possibilidades para você aprender.</p>
                     </div>
                     <div
                         class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
                         <h2 class="font-bold text-2xl dark:text-gray-998">2</h2>
-                        <p class="w-11/12 md:w-full dark:text-gray-600"><span class="font-bold">Frameworks</span> - Um conjunto de códigos
+                        <p class="w-11/12 md:w-full dark:dark:text-gray-998"><span class="font-bold">Frameworks</span> - Um conjunto de códigos
                             prontos para facilitar o seu desenvolvimento.</p>
                     </div>
                     <div
                         class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
                         <h2 class="font-bold text-2xl dark:text-gray-998">5</h2>
-                        <p class="w-11/12 md:w-full dark:text-gray-600"><span class="font-bold">Ferramentas</span> - Conheça as ferramentas
+                        <p class="w-11/12 md:w-full dark:dark:text-gray-998"><span class="font-bold">Ferramentas</span> - Conheça as ferramentas
                             que vão te ajudar como programador.</p>
                     </div>
                     <div
@@ -160,13 +164,13 @@
                     <div
                         class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
                         <h2 class="font-bold text-2xl dark:text-gray-998">2</h2>
-                        <p class="w-11/12 md:w-full dark:text-gray-600"><span class="font-bold">Design</span> - Da experiência do usuário
+                        <p class="w-11/12 md:w-full dark:dark:text-gray-998"><span class="font-bold">Design</span> - Da experiência do usuário
                             a interfaces o céu é o seu limite.</p>
                     </div>
                     <div
                         class="scroll-bottom-3 flex flex-col md:px-8 md:py-6 rounded-lg text-white md:bg-blue-700 md:hover:bg-blue-99 md:shadow-sm md:shadow-black/25">
                         <h2 class="font-bold text-2xl dark:text-gray-998">2</h2>
-                        <p class="w-11/12 md:w-full dark:text-gray-600"><span class="font-bold">Banco de Dados</span> - Aprenda sobre
+                        <p class="w-11/12 md:w-full dark:dark:text-gray-998"><span class="font-bold">Banco de Dados</span> - Aprenda sobre
                             estruturas,sistemas e dados.</p>
                     </div>
                 </div>
@@ -181,7 +185,7 @@
                 <h2 class="scroll-left-1 font-bold text-gray-700 dark:text-gray-998 text-xl md:text-3xl lg:text-4xl">Um pouco mais sobre a
                     <span class="text-purple-500 dark:text-purple-700">He4rt Devs</span>.
                 </h2>
-                <p class="scroll-left-2 text-gray-500 dark:text-gray-600 text-base md:text-xl lg:text-xl my-5">Uma comunidade
+                <p class="scroll-left-2 text-gray-500 dark:text-gray-998 text-base md:text-xl lg:text-xl my-5">Uma comunidade
                     extraordinária é formada por pessoas excepcionais. Com mais de 11 mil membros em nosso Discord e com
                     mais de 17 mil seguidores em nossas redes sociais, conseguimos mudar a maneira como a tecnologia
                     revoluciona o futuro, faça parte de uma equipe dedicada a mudar a histórias e criar carreiras de
@@ -219,7 +223,7 @@
                     </div>
                     <div class="mb-8">
                         <h2 class="text-gray-700 dark:text-gray-998 font-bold text-xs sm:text-base lg:text-xl w-2/2">Twitter</h2>
-                        <p class="text-gray-500 dark:text-gray-600 text-xs sm:text-sm  lg:text-base w-2/2" data-js="twitter-value">+12 mil seguidores</p>
+                        <p class="text-gray-500 dark:text-gray-998 text-xs sm:text-sm  lg:text-base w-2/2" data-js="twitter-value">+12 mil seguidores</p>
                     </div>
                 </div>
                 <!---->
@@ -258,7 +262,7 @@
                     </div>
                     <div class="mb-8">
                         <h2 class="text-gray-700 dark:text-gray-998 font-bold text-xs sm:text-base lg:text-xl w-2/2">Instagram</h2>
-                        <p class="text-gray-500 dark:text-gray-600 text-xs sm:text-sm lg:text-base w-2/2" data-js="instagram-value">+ 3 mil seguidores</p>
+                        <p class="text-gray-500 dark:text-gray-998 text-xs sm:text-sm lg:text-base w-2/2" data-js="instagram-value">+ </p>
                     </div>
                 </div>
                 <!---->
@@ -291,7 +295,7 @@
                     </div>
                     <div class="mb-11">
                         <h2 class="text-gray-700 dark:text-gray-998 font-bold text-xs sm:text-base lg:text-xl w-2/2">GitHub</h2>
-                        <p class="text-gray-500 dark:text-gray-600 text-xs sm:text-sm lg:text-base w-2/2" data-js="github-value">+ 2 mil seguidores</p>
+                        <p class="text-gray-500 dark:text-gray-998 text-xs sm:text-sm lg:text-base w-2/2" data-js="github-value">+ </p>
                     </div>
                 </div>
                 <!---->
@@ -330,7 +334,7 @@
                     </div>
                     <div class="mb-11">
                         <h2 class="text-gray-700 dark:text-gray-998 font-bold text-xs sm:text-base lg:text-xl w-2/2">Discord</h2>
-                        <p class="text-gray-500 dark:text-gray-600 text-xs sm:text-sm lg:text-base w-2/2" data-js="discord-value">+ 12 mil membros</p>
+                        <p class="text-gray-500 dark:text-gray-998 text-xs sm:text-sm lg:text-base w-2/2" data-js="discord-value">+ </p>
                     </div>
                 </div>
             </div>
@@ -343,7 +347,7 @@
             <div class="pb-10 w-full">
                 <h2 class="scroll-bottom-1 text-gray-700 dark:text-gray-998 font-bold text-lg md:text-3xl lg:text-4xl">Conheça a He4rt Conf,
                     um dos maiores eventos de Tech do ano de 2021.</h2>
-                <p class="scroll-bottom-2 text-gray-500 dark:text-gray-600 text-base md:text-lg lg:text-xl my-5">A inovação é liderada por
+                <p class="scroll-bottom-2 text-gray-500 dark:text-gray-998 text-base md:text-lg lg:text-xl my-5">A inovação é liderada por
                     pessoas que sabem o que fazem, sejam elas profissionais jovens em início de carreira ou
                     especialistas com anos de experiência. Na He4rt, o ensino não depende só de indivíduos brilhantes,
                     mas de uma comunidade com foco no futuro, e não no passado. Promovemos essa cultura e damos espaço
@@ -351,34 +355,34 @@
             </div>
             <div class="scroll-bottom-3 flex items-center justify-around w-full">
                 <div
-                    class="w-2/4 m-1 md:w-52 lg:w-60 relative h-fit rounded-xl bg-white dark:bg-gray-850 shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-purple-500 dark:before:bg-purple-450">
+                    class="w-2/4 m-1 md:w-52 lg:w-60 relative h-fit rounded-xl bg-white dark:bg-gradient-to-b from-gray-100 to-gray-150 shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-purple-500 dark:before:bg-purple-450">
                     <div class="flex flex-col justify-center items-center">
                         <h2
                             class="text-purple-500 dark:text-purple-450 font-bold pt-5 pb-1 px-4 lg:pt-8 lg:pb-1 lg:px-14 text-base sm:text-xl lg:text-3xl">
                             + 4,677</h2>
-                        <p class="sm:hidden text-center text-gray-500 dark:text-gray-600 pb-2 text-xs">Espectadores <br> simutâneos</p>
-                        <p class="hidden sm:flex text-center text-gray-500 dark:text-gray-600 pb-6 lg:pb-8 md:text-base lg:text-lg">
+                        <p class="sm:hidden text-center text-gray-500 dark:text-gray-998 pb-2 text-xs">Espectadores <br> simutâneos</p>
+                        <p class="hidden sm:flex text-center text-gray-500 dark:text-gray-998 pb-6 lg:pb-8 md:text-base lg:text-lg">
                             Espectadores simutâneos</p>
                     </div>
                 </div>
                 <div
-                    class="w-2/4 m-1 md:w-52 lg:w-60  relative h-min rounded-xl bg-white dark:bg-gray-850 shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-blue-100">
+                    class="w-2/4 m-1 md:w-52 lg:w-60  relative h-min rounded-xl bg-white dark:bg-gradient-to-b from-gray-100 to-gray-150 shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-blue-100">
                     <div class="flex flex-col justify-center items-center">
                         <h2
                             class="text-blue-100 pt-5 pb-1 px-2 lg:pt-8 lg:pb-1 lg:px-13 text-base sm:text-xl lg:text-3xl font-bold">
                             + 70,980</h2>
-                        <p class=" sm:hidden text-center text-gray-500 dark:text-gray-600 text-xs pb-2">Espectadores <br> únicos</p>
-                        <p class=" hidden sm:flex text-center text-gray-500 dark:text-gray-600 md:text-base lg:text-lg pb-6 lg:pb-8">
+                        <p class=" sm:hidden text-center text-gray-500 dark:text-gray-998 text-xs pb-2">Espectadores <br> únicos</p>
+                        <p class=" hidden sm:flex text-center text-gray-500 dark:text-gray-998 md:text-base lg:text-lg pb-6 lg:pb-8">
                             Espectadores únicos</p>
                     </div>
                 </div>
                 <div
-                    class="w-2/4 m-1 md:w-52 lg:w-60 relative h-fit rounded-xl bg-white dark:bg-gray-850 shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-green">
+                    class="w-2/4 m-1 md:w-52 lg:w-60 relative h-fit rounded-xl bg-white dark:bg-gradient-to-b from-gray-100 to-gray-150 shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-green">
                     <div class="flex flex-col justify-center items-center">
                         <h2
                             class="text-green pt-5 pb-1 px-5 lg:pt-8 lg:pb-1 lg:px-14 text-base sm:text-xl lg:text-3xl font-bold">
                             + 13</h2>
-                        <p class="md:flex text-gray-500 dark:text-gray-600 text-sm sm:text-base lg:text-lg pb-5 lg:pb-8">Palestras</p>
+                        <p class="md:flex text-gray-500 dark:text-gray-998 text-sm sm:text-base lg:text-lg pb-5 lg:pb-8">Palestras</p>
                     </div>
                 </div>
             </div>
@@ -414,7 +418,7 @@
                         </div>
                         <h2 class="font-spline font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">Desenvolvendo
                             habilidades</h2>
-                        <p class="text-gray-500 dark:text-gray-600 text-lg">Ajude, contribua e retire suas dúvidas em qualquer área da
+                        <p class="text-gray-500 dark:text-gray-998 text-lg">Ajude, contribua e retire suas dúvidas em qualquer área da
                             tecnologia com nossa comunidade!</p>
                     </div>
                     <div class="flex flex-col items-start my-5 md:pl-28">
@@ -426,7 +430,7 @@
                             </svg>
                         </div>
                         <h2 class="font-spline font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">Projetos</h2>
-                        <p class="text-gray-500 dark:text-gray-600 text-lg">Aprimore e contribua com nossos projetos, evolua constantemente
+                        <p class="text-gray-500 dark:text-gray-998 text-lg">Aprimore e contribua com nossos projetos, evolua constantemente
                             e mostre suas habilidades.</p>
                     </div>
                     <div class="flex flex-col items-start my-5 pr-16 border-r-1 border-pink-500 dark:border-purple-400">
@@ -439,7 +443,7 @@
                             </svg>
                         </div>
                         <h2 class="font-spline font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">Eventos</h2>
-                        <p class="text-gray-500 dark:text-gray-600 text-lg">Participe dos eventos exclusivos da comunidade e receba
+                        <p class="text-gray-500 dark:text-gray-998 text-lg">Participe dos eventos exclusivos da comunidade e receba
                             diversos prêmios por isso!</p>
                     </div>
                     <div class="flex flex-col items-start my-5 md:pl-28">
@@ -451,7 +455,7 @@
                             </svg>
                         </div>
                         <h2 class="font-spline font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">Networking</h2>
-                        <p class="text-gray-500 dark:text-gray-600 text-lg">Tenha oportunidade de conhecer milhares de pessoas com o mesmo
+                        <p class="text-gray-500 dark:text-gray-998 text-lg">Tenha oportunidade de conhecer milhares de pessoas com o mesmo
                             interesse que você.</p>
                     </div>
                 </div>
@@ -460,7 +464,7 @@
     </section>
 
     <!--footer-->
-    <footer class=" w-full flex items-center justify-center">
+    <footer class=" w-full bg-blue-900 dark:bg-gray-100 flex items-center justify-center">
         <div class="flex flex-col text-gray-300 my-10 md:my-16">
             <ul class="flex scroll-bottom-1 justify-between font-sans text-sm mx-5 md:mx-0">
                 <li>
@@ -474,7 +478,7 @@
                 </li>
                 <li>
                     <a href="https://discord.com/invite/5kwDQuv"
-                        class="font-semibold hover:text-purple-500 dark:hover:text-pink-600 transition">Discord</a>
+                        class="font-semibold hover:text-purple-500 transition">Discord</a>
                 </li>
             </ul>
             <div class="flex justify-center items-center my-10">

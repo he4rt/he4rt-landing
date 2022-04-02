@@ -1,3 +1,46 @@
+//* dark mode */
+const sunIcon = document.querySelector('.light');
+const moonIcon = document.querySelector('.dark');
+
+const userTheme = localStorage.getItem("theme")
+const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches
+
+const iconToggle = () => {
+    moonIcon.classList.toggle("display-none")
+    sunIcon.classList.toggle("display-none")
+}
+
+const themeCheck = () => {
+    if (userTheme === "dark" ||(!userTheme && systemTheme)){
+        document.documentElement.classList.add("dark")
+        moonIcon.classList.add("display-none")
+        return
+    }
+    sunIcon.classList.add("display-none")
+}
+
+const themeSwitch = () => {
+    if (document.documentElement.classList.contains("dark")){
+        document.documentElement.classList.remove("dark")
+        localStorage.setItem("theme", "light")
+        iconToggle()
+        return
+    }
+    document.documentElement.classList.add("dark")
+    localStorage.setItem("theme", "dark")
+    iconToggle()
+}
+
+sunIcon.addEventListener("click", () => {
+    themeSwitch()
+})
+
+moonIcon.addEventListener("click", () => {
+    themeSwitch()
+})
+
+themeCheck()
+//* api */
 const swiperContainer = document.querySelector('.swiper-wrapper');
 const discordMembers = document.querySelector('[data-js="discord-value"]');
 const twitterFollowers = document.querySelector('[data-js="twitter-value"]');
@@ -31,7 +74,7 @@ const setSwiperItems = async function(data) {
                             <img src="${forNoob.author.avatar_url}" class="shadow-2xl drop-shadow" alt="${forNoob.alt}">
                         </div>
                         <div>
-                            <h2 class="text-xs text-clamp  md:text-sm text-white dark:text-gray-600 font-bold font-spline">${forNoob.author.name}</h2>
+                            <h2 class="text-xs text-clamp  md:text-sm text-white dark:text-gray-998 font-bold font-spline">${forNoob.author.name}</h2>
                             <p class="text-xs  md:text-sm font-normal font-spline">${forNoob.author.username}</p>
                         </div>
                     </div>
@@ -41,12 +84,12 @@ const setSwiperItems = async function(data) {
                     <div class="flex flex-col">
                         <div class="flex flex-col border-b border-purple-100 dark:border-purple-700">
                             <p class="text-sm text-purple-500 dark:text-purple-700 font-bold font-spline">4Noobs 
-                                <span class="text-gray-900 dark:text-gray-600">- </span>
-                                <span class="text-gray-900 dark:text-gray-600 font-normal font-spline">${forNoob.name}</span>
+                                <span class="text-gray-900 dark:text-gray-998">- </span>
+                                <span class="text-gray-900 dark:text-gray-998 font-normal font-spline">${forNoob.name}</span>
                             </p>
-                            <p class="text-xs font-spline text-gray-500 dark:text-gray-600 pb-1.5">${forNoob.category}</p>
+                            <p class="text-xs font-spline text-gray-500 dark:text-gray-998 pb-1.5">${forNoob.category}</p>
                         </div>
-                        <p class="text-xs lg:text-sm text-gray-500 dark:text-gray-600 mt-4 line-clamp">${forNoob.description}</p>
+                        <p class="text-xs lg:text-sm text-gray-500 dark:text-gray-998 mt-4 line-clamp">${forNoob.description}</p>
                     </div>
                     <a href="${forNoob.url}" target="_blank" class="text-xs md:text-sm w-full py-2 my-3 text-purple-500 text-center font-spline font-bold border dark:text-purple-700 border-purple-500 dark:border-purple-700 rounded-3xl hover:bg-purple-500 dark:hover:bg-fuchsia-900 hover:text-white transition">Ver agora</a>
                 </div>
