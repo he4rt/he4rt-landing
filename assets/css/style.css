@@ -28,7 +28,13 @@ html,body{
   overflow: hidden;
   white-space: nowrap;
 }
-.line-clamp {
+.author-4noobs-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.Desc-4noobs-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;  
@@ -136,14 +142,6 @@ max-height: 25px;
   .border-r-1 {
     border: 2px;
   }
-
-  .line-clamp {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-  }
-
 }
 
 @media screen and (min-width:1024px){
