@@ -23,10 +23,15 @@ html,body{
   --swiper-navigation-size: 15px;
   --swiper-theme-color: #782BF1
 }
-.text-clamp {
+.name-4noobs{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
   overflow: hidden;
 }
 .border-r-1 {
@@ -113,13 +118,6 @@ max-height: 25px;
   background-color: rgba(120, 43, 241, 0.1);
 }
 
-.line-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
-}
-
 @media screen and (max-width: 767px) {
   .header__max-height {
     max-height: none;
@@ -149,6 +147,12 @@ max-height: 25px;
 }
 
 @media screen and (min-width:1024px){
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
   .swiper {
     padding: 5rem 0.5rem;
     width: 50%;
