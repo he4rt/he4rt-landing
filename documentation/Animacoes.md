@@ -6,6 +6,17 @@ Um breve reviu da estrutura da animação
 ```javascript
 ScrollReveal().reveal('aqui vai a classe ou id (classe ex: .left id: #left', {origin: 'de onde vem (left right top bottom)', distance: 'controla a distância que os elementos se movem quando revelados.', duration: a duração do efeito, delay: e o delay de quando se passar em "cima" });
 ```
+Animações do Header:
+Por conta de melhor experiencia para o usuario decidimos criar as animações
+do Header Separada das demais, visto que seriam "lentas" demais para o usuario ver.
+
+```javascript
+ScrollReveal().reveal('.scroll-header-left-1', {origin: 'left', distance: '40px', duration: 1000, delay: 0});
+ScrollReveal().reveal('.scroll-header-left-2', {origin: 'left', distance: '40px', duration: 1000, delay: 150});
+ScrollReveal().reveal('.scroll-header-left-3', {origin: 'left', distance: '40px', duration: 1000, delay: 300});
+ScrollReveal().reveal('.scroll-header-right-1', {origin: 'right', distance: '40px', duration: 1000, delay: 150});
+```
+
 Animações vindo da esquerda:
 ```javascript
 ScrollReveal().reveal('.scroll-left-1', {origin: 'left', distance: '40px', duration: 1000, delay: 500 });
