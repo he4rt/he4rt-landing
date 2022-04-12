@@ -1,5 +1,8 @@
-
 /*Padroes*/
+
+.display-none {
+  @apply hidden;
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -7,8 +10,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
-  background: linear-gradient(180deg, rgba(245, 237, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+* {
+  transition: background-color .3s ease
 }
 
 html,body{
@@ -16,10 +19,26 @@ html,body{
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
 :root {
   --swiper-navigation-size: 15px;
   --swiper-theme-color: #782BF1
+}
+.name-4noobs{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.author-4noobs-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.Desc-4noobs-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 .border-r-1 {
   border-right-width: 1px;
@@ -56,27 +75,6 @@ max-height: 25px;
   align-items: center;
 }
 
-/*Size of Text-Cards*/
-.name-4noobs{
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.author-4noobs-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.Desc-4noobs-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
-}
-
 .swiper-button-prev {
   top: 95%;
   left: 80%;
@@ -86,8 +84,7 @@ max-height: 25px;
   top: 95%;
   left: 90%;
 }
-
-/*4noobs-section*/
+/*4noobs*/
 .for-noobs-section__bg {
   background-image: url('/images/sectionBgImage.svg');
   background-size: cover;
@@ -101,7 +98,16 @@ max-height: 25px;
   background: linear-gradient(270deg, #111827 50%, rgba(17, 24, 39, .65) 100%);
   z-index: 20;
 }
-/* Section o que encontrarei na he4rt?*/
+
+/* footer */
+.footer__icons:hover {
+  filter: drop-shadow(0px 0px 15px #782BF1);
+}
+
+.footer__icons:hover path {
+  transition: all .5s ease;
+  fill: #782BF1;
+}
 
 .icon__bg-rounded {
   position: relative;
@@ -118,61 +124,43 @@ max-height: 25px;
   background-color: rgba(120, 43, 241, 0.1);
 }
 
-/* footer */
-.footer__icons:hover {
-  filter: drop-shadow(0px 0px 15px #782BF1);
-}
-
-.footer__icons:hover path {
-  transition: all .5s ease;
-  fill: #782BF1;
-}
-
-
 @media screen and (max-width: 767px) {
-
-  .border-r-1 {
-    border: 2px;
-  }
-
   .header__max-height {
     max-height: none;
+  }
+  .for-noobs-section__bg {
+    background-size:auto;
+  }
+  .for-noobs-section__bg:before {
+    background: linear-gradient(180deg, #111827 79%, rgba(17, 24, 39, 0) 100%);
   }
   
   .header__container {
     max-height: none;
   }
-  
-  .for-noobs-section__bg {
-    background-size:auto;
-  }
 
-  .for-noobs-section__bg:before {
-    background: linear-gradient(180deg, #111827 79%, rgba(17, 24, 39, 0) 100%);
+  .border-r-1 {
+    border: 2px;
   }
-  
 }
 
 @media screen and (min-width:1024px){
-
   .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
-
+  .swiper {
+    padding: 5rem 0.5rem;
+    width: 50%;
+  }
   .mw-35{
     max-width: 70px
   }
   
   .mh-35{
     max-height: 50px
-  }
-  
-  .swiper {
-    padding: 5rem 0.5rem;
-    width: 50%;
   }
   
 }
