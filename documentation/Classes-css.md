@@ -1,19 +1,25 @@
 ## Padroes criados no css (parecidos com tailwind cuidado!)🚨🧙‍♂️🚨
 Algumas classes que criamos que não são do tailwind, mas são muito parecidas a escrita cuidado!
+
+## Dark-mode
+
 ```css
-// usada na ultima section para adicionar as separaçoes
-.border-r-1 {
-  border-right-width: 1px;
+// E chamada no main.js para trocar o icone assim
+que clicado nele (fazendo ele sumir)
+.display-none {
+  @apply hidden;
 }
 
-// Seta a largura e altura maxima do avatar do autor do 4noobs no swiper/slider (tem um media querie do mesmo)
-.mw-25{
-max-width: 25px;
-}
-.mh-25{
-max-height: 25px;
+//Faz a transição do dark-mode pro light mais suave
+* {
+  transition: background-color .3s ease;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  -ms-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
 }
 ```
+
 ## Tamanho das Sections👷🏻‍♂️👷🏻‍♀️
 O tamanho máximo das **sections** será representado pela classe com o valor do mesmo abaixo.
 
@@ -27,7 +33,6 @@ O tamanho máximo das **sections** será representado pela classe com o valor do
 .header__max-height {
   max-height: 800px;
 }
-
 ```
 
 ## Customizaçoẽs do Slider(swiper,cards como desejar)🎥📹
@@ -51,6 +56,16 @@ O Slider em alguns aspectos não podemos definir pelo tailwind por isso usamos 
   display: flex;
   align-items: center;
 }
+
+// Seta a largura e altura maxima do avatar do autor do 4noobs no swiper/slider (tem um media querie do mesmo)
+.mw-25{
+max-width: 25px;
+}
+
+.mh-25{
+max-height: 25px;
+}
+
 // Define que inves do nome do repositorio quebrar adiciona (...) automaticamente
 .name-4noobs{
   text-overflow: ellipsis;
@@ -85,6 +100,11 @@ O Slider em alguns aspectos não podemos definir pelo tailwind por isso usamos 
   top: 95%;
   left: 90%;
 }
+//Seta o tamanho dos botões do slide e cor
+:root {
+  --swiper-navigation-size: 15px;
+  --swiper-theme-color: #782BF1;
+}
 ```
 
 ## Customizaçoẽs da section 4noobs📚 📕
@@ -109,11 +129,16 @@ a section 4noobs tivemos que adiciona-lo um background diferente das demais sect
 ## Customizaçoẽs da section o que encontrarei na he4rt🫂🥷
 Basicamente aqui temos apenas os icones que contem alguns detalhes
 ```css
+// usada na ultima section para adicionar as separação roxa
+.border-r-1 {
+  border-right-width: 1px;
+}
 
 // adiciona position relative aos icones
 .icon__bg-rounded {
   position: relative;
 }
+
 //adiciona o efeito da cor do icone
 .icon__bg-rounded::before {
   content: '';
