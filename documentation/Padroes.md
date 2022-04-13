@@ -14,4 +14,3 @@ Mas temos aqui um facil overview dos estilos do projeto:
  * [Padrão de textos](./Textos.md)
  * [Padrão de Animações](./Animacoes.md)
  * [Padrão das Classes css](./Classes-css.md)
- * [API usada](./Api.md)
