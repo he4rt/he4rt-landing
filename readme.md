@@ -23,7 +23,7 @@ Segue as tecnologias que usamos no projeto:
 |[Yarn](https://yarnpkg.com/)|1.22.18|
 |[axios](https://axios-http.com/ptbr/)|0.26.1|
 
-### ⌛ To Run the Project
+### ⌛ Para rodar o projeto Localmente
 
  <div id="instalacao">
  
