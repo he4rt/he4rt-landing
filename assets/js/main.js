@@ -2,6 +2,8 @@
 const sunIcon = document.querySelector('.light');
 const moonIcon = document.querySelector('.dark');
 
+const userTheme = localStorage.getItem("theme")
+const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches
 
 const iconToggle = () => {
     moonIcon.classList.toggle("display-none")
@@ -9,16 +11,23 @@ const iconToggle = () => {
 }
 
 const themeCheck = () => {
+    if (userTheme === "dark" ||(!userTheme && systemTheme)){
+        document.documentElement.classList.add("dark")
+        moonIcon.classList.add("display-none")
+        return
+    }
     sunIcon.classList.add("display-none")
 }
 
 const themeSwitch = () => {
     if (document.documentElement.classList.contains("dark")){
         document.documentElement.classList.remove("dark")
+        localStorage.setItem("theme", "light")
         iconToggle()
         return
     }
     document.documentElement.classList.add("dark")
+    localStorage.setItem("theme", "dark")
     iconToggle()
 }
 
@@ -37,8 +46,6 @@ const discordMembers = document.querySelector('[data-js="discord-value"]');
 const twitterFollowers = document.querySelector('[data-js="twitter-value"]');
 const instagramFollowers = document.querySelector('[data-js="instagram-value"]');
 const githubFollowers = document.querySelector('[data-js="github-value"]');
-
-document.documentElement.classList.add('dark');
 
 const fetchData = async function() {
     try {
