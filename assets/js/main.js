@@ -47,8 +47,6 @@ const twitterFollowers = document.querySelector('[data-js="twitter-value"]');
 const instagramFollowers = document.querySelector('[data-js="instagram-value"]');
 const githubFollowers = document.querySelector('[data-js="github-value"]');
 
-document.documentElement.classList.add('dark');
-
 const fetchData = async function() {
     try {
         const res = await axios.get('https://raw.githubusercontent.com/he4rt/4noobs/master/.github/config.json');
