@@ -6,17 +6,17 @@ const userTheme = localStorage.getItem("theme")
 const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches
 
 const iconToggle = () => {
-    moonIcon.classList.toggle("display-none")
-    sunIcon.classList.toggle("display-none")
+    moonIcon.classList.toggle("hidden")
+    sunIcon.classList.toggle("hidden")
 }
 
 const themeCheck = () => {
     if (userTheme === "dark" ||(!userTheme && systemTheme)){
         document.documentElement.classList.add("dark")
-        moonIcon.classList.add("display-none")
+        sunIcon.classList.remove('hidden');
         return
     }
-    sunIcon.classList.add("display-none")
+    moonIcon.classList.remove('hidden')
 }
 
 const themeSwitch = () => {
