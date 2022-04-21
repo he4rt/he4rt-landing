@@ -1,35 +1,42 @@
-# 
-<h1 align="center"> Welcome to He4rtLanding💜!  </h1>
 
-### ⌛ To Run the Project
+<h3 style="text-align: center;">Welcome to He4rtLanding💜!</h3>
 
-```bash
+### Sobre A LandinPage da He4rt
+O projeto foi criado para apresentar para todos a comunidade He4rt Developers De uma forma simples , intuitiva, moderna e claro  **Open-Source**.
 
+### Seções Rápidas
+
+* [Instalação](#instalacao)
+* [Documentação](./doc/Padroes.md)
+* [Contribuir](#como-contribuir🫂)
+
+### Especificações Técnicas🛠️
+Segue as tecnologias que usamos no projeto:
+
+| Tecnologia | Versão |
+|------------|--------|
+|[Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)|5|
+|[Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS)|3|
+|[Tailwindcss](https://tailwindcss.com/)|3.0.24|
+|[ScrollReaveal](https://scrollrevealjs.org/)|4|
+|[Swiperjs](https://swiperjs.com/)|8.1.3|
+|[Yarn](https://yarnpkg.com/)|1.22.18|
+|[axios](https://axios-http.com/ptbr/)|0.26.1|
+
+### ⌛ Para rodar o projeto Localmente
+
+ <div id="instalacao">
+ 
+ ```bash
 $ git clone https://github.com/he4rt/he4rt-landing.git
 
 $ cd he4rt-landing
 
-$ Sudo yarn install
+$ sudo yarn install
 
-$ Sudo yarn run dev
+$ sudo yarn run dev
 ```
-
-## Build
-
-```bash
-$ Sudo yarn build
-```
-
-
-### 🛠️ Technologies
-The following technologies were used:
-- [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [Tailwindcss](https://tailwindcss.com/)
-- [ScrollReaveal](https://scrollrevealjs.org/)
-- [Swiperjs](https://swiperjs.com/)
-- [Yarn](https://yarnpkg.com/)
-- [axios](https://axios-http.com/ptbr/)
+</div>
 
 ## Como contribuir🫂
 
@@ -40,9 +47,9 @@ são **extremamente apreciadas**!
 2. Crie um branch com a nova feature (`git checkout -b feature/featurebraba`)
 3. Realize o Commit (`git commit -m 'feature/featurebraba'`)
 4. Realize o Push no Branch (`git push origin feature/featurebraba`)
-5. Abra um Pull Request
+5. Quando finalizar abra um Pull Request
 
-Veja [Padroes](./documentation/Padroes.md) para saber mais sobre o projeto.
+Veja [Documentação](./documentation/Padroes.md) para saber mais sobre o projeto.
 
 
 <h3 align="center">
