@@ -1,8 +1,8 @@
 ## Animações🤹🏼‍♀️ 
 
-Todas as configurações de animações estão no arquivo `assets/js/ScrollReveal.js`, padronizamos as animações para que todos possam usar o mesmo padrão, separamos em 3, sendo de 1 o mais rapido e 3 o mais lento.
+Todas as configurações de animações se encontram no arquivo `assets/js/ScrollReveal.js`, padronizamos as animações para que todos possam usar o mesmo padrão, separamos em 3, sendo de 1 o mais rapido e 3 o mais lento.
 
-Um breve reviu da estrutura da animação
+Um breve review da estrutura da animação
 ```javascript
 ScrollReveal().reveal('aqui vai a classe ou id (classe ex: .left id: #left', {origin: 'de onde vem (left right top bottom)', distance: 'controla a distância que os elementos se movem quando revelados.', duration: a duração do efeito, delay: e o delay de quando se passar em "cima" });
 ```
