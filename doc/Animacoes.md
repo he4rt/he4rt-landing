@@ -8,7 +8,7 @@ ScrollReveal().reveal('aqui vai a classe ou id (classe ex: .left id: #left', {or
 ```
 Animações do Header:
 Por conta de querermos uma melhor experiência para o usuario decidimos criar as animações
-do Header Separada das demais, visto que seriam "lentas" demais para o usuario ver, causando uma falsa impressao que estaria travando.
+do Header Separada das demais, visto que seriam "lentas" demais para o usuario ver, causando uma falsa impressão que estaria travando.
 
 ```javascript
 ScrollReveal().reveal('.scroll-header-left-1', {origin: 'left', distance: '40px', duration: 1000, delay: 0});
