@@ -1,9 +1,3 @@
-/node_modules
-/.c9
-.c9
-/.env
-.env
-yarn-error.log
-yarn.lock
-/.vs
+node_modules
+dist
 .idea
