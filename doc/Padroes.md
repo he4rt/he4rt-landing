@@ -14,3 +14,5 @@ Mas temos aqui uma fﾃ｡cil Documentaﾃｧaﾌバ dos estilos,textos,classes e animaﾃｧoﾌ
  * [Padraﾌバ de textos](./Textos.md)
  * [Padraﾌバ de Animaﾃｧoﾌテs](./Animacoes.md)
  * [Padraﾌバ das Classes css](./Classes-css.md)
+
+[Voltar](/readme.md)
