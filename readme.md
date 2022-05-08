@@ -49,7 +49,7 @@ são **extremamente apreciadas**!
 4. Realize o Push no Branch (`git push origin feature/featurebraba`)
 5. Quando finalizar abra um Pull Request
 
-Veja [Documentação](./documentation/Padroes.md) para saber mais sobre o projeto.
+Veja [Documentação](./doc/Padroes.md) para saber mais sobre o projeto.
 
 
 <h3 align="center">
