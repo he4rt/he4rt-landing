@@ -16,7 +16,7 @@ O He4rtLanding é um projeto **Open-Source** criado para apresentar a comunidade
   - [Baixando o projeto](#baixando-o-projeto)
   - [Instalando as dependências](#instalando-as-dependências)
   - [Iniciando a aplicação](#iniciando-a-aplicação)
-- [Contribuir](#🫂-como-contribuir)
+- [Contribuir](#como-contribuir)
 - [Documentação](./doc/Padroes.md)
 
 <br/>
@@ -73,7 +73,7 @@ $ npm run dev
 $ yarn dev
 ```
 
-## 🫂 Como contribuir
+## Como contribuir
 
 Contribuições fazem com que a comunidade open source seja um lugar incrível para aprender, inspirar e criar. Todas as contribuições
 são **extremamente apreciadas**!
