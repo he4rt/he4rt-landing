@@ -1,10 +1,10 @@
-## Padroes criados no css (parecidos com tailwind cuidado!)🚨🧙‍♂️🚨
-Algumas classes que criamos que não são do tailwind, mas são muito parecidas a escrita cuidado!
+## Padr&otilde;es criados no css (parecidos com tailwind cuidado!)🚨🧙‍♂️🚨
+Algumas classes que criamos que n&atilde;o s&atilde;o do tailwind, mas s&atilde;o muito parecidas com a escrita, cuidado!
 
 ## Dark-mode 🌑
 
 ```css
-/* É chamada no main.js para trocar o icone assim
+/* É chamada no main.js para trocar o ícone assim
 que clicado nele (fazendo ele sumir)*/
 .display-none {
   @apply hidden;
@@ -21,7 +21,7 @@ que clicado nele (fazendo ele sumir)*/
 ```
 
 ## Tamanho das Sections👷🏻‍♂️👷🏻‍♀️
-O tamanho máximo das **sections** será representado pela classe com o valor do mesmo abaixo.
+O tamanho m&aacute;ximo das **sections** ser&aacute; representado pela classe com o valor do mesmo abaixo.
 
 ```css
 /* Máxima Largura da section*/
@@ -35,7 +35,7 @@ O tamanho máximo das **sections** será representado pela classe com o valor do
 }
 ```
 
-## Customizaçoẽs do Slider(swiper,cards como desejar)🎥📹
+## Customiza&ccedil;&otilde;es do Slider (swiper, cards ou como desejar)🎥📹
 O Slider em alguns aspectos não podemos definir pelo tailwind por isso usamos as seguintes classes:
 
 ```css
@@ -108,8 +108,8 @@ max-height: 25px;
 }
 ```
 
-## Customizaçoẽs da section 4noobs📚 📕
-a section 4noobs tivemos que adiciona-lo um background diferente das demais section e por isso usamos as seguintes classes:
+## Customiza&ccedil;&otilde;es da section 4noobs📚 📕
+A section **4noobs** tivemos que adicion&aacute;-lo um background diferente das demais section e por isso usamos as seguintes classes:
 ```css
 /* Adiciona a imagem de background e seleciona para ela cobrir */
 .for-noobs-section__bg {
@@ -127,8 +127,8 @@ a section 4noobs tivemos que adiciona-lo um background diferente das demais sect
   z-index: 20;
 }
 ```
-## Customizações da section "o que encontrarei na he4rt"🫂🥷
-Aqui no css temos apenas os icones que contem alguns detalhes
+## Customiza&ccedil;&otilde;es da section "o que encontrarei na he4rt"🫂🥷
+Aqui no css temos apenas os &iacute;cones que cont&eacute;m alguns detalhes:
 ```css
 /* Usada na última section para adicionar as separações roxas */
 .border-r-1 {
@@ -152,7 +152,7 @@ Aqui no css temos apenas os icones que contem alguns detalhes
   background-color: rgba(120, 43, 241, 0.1);
 }
 ```
-## Customizaçoẽs do Footer🚦 🚥
+## Customiza&ccedil;&otilde;es do Footer🚦 🚥
 No Footer temos algums icones onde achamos legal adicionar alguns pequenos efeitos como hover:
 ```css
 /* Adiciona um efeito ao passar o mouse por cima no icone */
