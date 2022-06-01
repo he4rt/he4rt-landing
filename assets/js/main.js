@@ -97,10 +97,10 @@ const setSwiperItems = async function(data) {
 const setSocials = async function(data) {
     const socials = data.socials;
 
-    instagramFollowers.textContent = `+ ${socials.instagram} mil seguidores`;
-    twitterFollowers.textContent = `+ ${socials.twitter} mil seguidores`;
-    githubFollowers.textContent = `+ ${socials.github} mil seguidores`;
-    discordMembers.textContent = `+ ${socials.discord} mil seguidores`;
+    instagramFollowers.textContent = `+ ${socials.instagram} Mil seguidores`;
+    twitterFollowers.textContent = `+ ${socials.twitter} Mil seguidores`;
+    githubFollowers.textContent = `+ ${socials.github} Mil seguidores`;
+    discordMembers.textContent = `+ ${socials.discord} Mil Membros`;
 }
 
 const initializeApp = async function () {
