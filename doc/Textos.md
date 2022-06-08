@@ -1,6 +1,6 @@
 ## Tamanhos de textos📜📝
 
-Sabemos que Textos normalmente e chato decidir tamanho do texto para cada situação por isso demos uma padronizada, para seu melhor desenvolvimento!.
+Sabemos que **Textos** normalmente s&atilde;o chatos de decidir o tamanho para cada situação, por isso demos uma padronizada, para seu melhor desenvolvimento.
 
 ### Mobile 0px-640px 📱
 
@@ -24,6 +24,7 @@ Sabemos que Textos normalmente e chato decidir tamanho do texto para cada situa�
 | Secundário        | 20px        | md:text-xl  |
 
 
-### 🚧LEMBRE-SE nem sempre o padrão acima será o correto,olhe sempre no figma pois algumas partes como slider não tem como seguir este padrão, indicamos sempre se basear por lá!!🚧
+### 🚧LEMBRE-SE nem sempre o padrão acima será o correto, olhe sempre no figma pois algumas partes como slider não tem como seguir este padrão, indicamos sempre se basear por lá!!🚧 
+<br />
 
-* [voltar](./Padroes.md)
+* [Voltar](./Padroes.md)
