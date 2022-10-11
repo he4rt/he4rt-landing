@@ -150,10 +150,6 @@ html,body{
     background: linear-gradient(180deg, #111827 79%, rgba(17, 24, 39, 0) 100%);
   }
   
-  .header__container {
-    max-height: none;
-  }
-
   .border-r-1 {
     border: 2px;
   }
