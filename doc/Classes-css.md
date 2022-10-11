@@ -25,14 +25,10 @@ O tamanho m&aacute;ximo das **sections** ser&aacute; representado pela classe co
 
 ```css
 /* Máxima Largura da section*/
-.content__max-width {
-  max-width: 1120px;
-}
+TODO NOVA CLASSE TAILWIND
 
 /* Máxima altura da section*/
-.header__max-height {
-  max-height: 800px;
-}
+TODO NOVA CLASSE TAILWIND
 ```
 
 ## Customiza&ccedil;&otilde;es do Slider (swiper, cards ou como desejar)🎥📹

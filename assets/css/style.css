@@ -26,15 +26,6 @@ html,body{
   scroll-behavior: smooth;
 }
 
-
-.content__max-width {
-  max-width: 1120px;
-}
-
-.header__max-height {
-  max-height: 800px;
-}
-
 /*Sliders , cards*/
 .swiper {
   width: 100%;
@@ -140,9 +131,6 @@ html,body{
 }
 
 @media screen and (max-width: 767px) {
-  .header__max-height {
-    max-height: none;
-  }
   .for-noobs-section__bg{
     background-size: auto;
   }
