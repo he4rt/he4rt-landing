@@ -125,11 +125,6 @@ A section **4noobs** tivemos que adicion&aacute;-lo um background diferente das 
 Aqui no css temos apenas os &iacute;cones que cont&eacute;m alguns detalhes:
 
 ```css
-/* Usada na última section para adicionar as separações roxas */
-.border-r-1 {
-  border-right-width: 1px;
-}
-
 /* Aplica position relative aos icones */
 .icon__bg-rounded {
   position: relative;

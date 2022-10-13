@@ -94,9 +94,6 @@ body {
 }
 
 /* Section o-que-encontrarei-na-he4rt*/
-.border-r-1 {
-  border-right-width: 1px;
-}
 
 /* footer */
 .footer__icons:hover {
@@ -129,10 +126,6 @@ body {
   }
   .for-noobs-section__bg:before {
     background: linear-gradient(180deg, #111827 79%, rgba(17, 24, 39, 0) 100%);
-  }
-
-  .border-r-1 {
-    border: 2px;
   }
 }
 
