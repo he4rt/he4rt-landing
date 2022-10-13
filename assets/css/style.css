@@ -93,11 +93,10 @@ body {
   z-index: 20;
 }
 
-/* Section o-que-encontrarei-na-he4rt*/
-
 /* footer */
 .footer__icons:hover {
   filter: drop-shadow(0px 0px 15px #782bf1);
+  -webkit-filter: drop-shadow(0px 0px 15px #782bf1);
 }
 
 .footer__icons:hover path {

@@ -80,8 +80,8 @@ const setSwiperItems = async function (data) {
                             <img src="${forNoob.author.avatar_url}" class="shadow-2xl drop-shadow" alt="${forNoob.alt}">
                         </div>
                         <div>
-                            <h2 class="text-xs author-4noobs-clamp md:text-sm text-white dark:text-gray-998 font-bold font-spline">${forNoob.author.name}</h2>
-                            <p class="text-xs  md:text-sm font-normal font-spline">${forNoob.author.username}</p>
+                            <h2 class="text-xs author-4noobs-clamp md:text-sm text-white dark:text-gray-998 font-bold">${forNoob.author.name}</h2>
+                            <p class="text-xs md:text-sm">${forNoob.author.username}</p>
                         </div>
                     </div>
                     <i class="fa fa-arrow-right self-end pb-3 pr-2 text-lg"></i>
@@ -89,12 +89,12 @@ const setSwiperItems = async function (data) {
                 <div class="flex flex-col justify-between w-full h-full bg-white dark:bg-gray-997 p-5">
                     <div class="flex flex-col">
                         <div class="flex flex-col border-b border-purple-100 dark:border-purple-700">
-                        <p class="name-4noobs text-sm text-purple-500 font-bold font-spline"> ${forNoob.name}</p>
-                            <p class="text-xs font-spline text-gray-500 dark:text-gray-998 pb-1.5">${forNoob.category}</p>
+                        <p class="name-4noobs text-sm text-purple-500 font-bold"> ${forNoob.name}</p>
+                            <p class="text-xs text-gray-500 dark:text-gray-998 pb-1.5">${forNoob.category}</p>
                         </div>
                         <p class="text-xs lg:text-sm text-gray-500 dark:text-gray-998 mt-4 Desc-4noobs-clamp">${forNoob.description}</p>
                     </div>
-                    <a href="${forNoob.url}" target="_blank" class="text-xs md:text-sm w-full py-2 my-3 text-purple-500 text-center font-spline font-bold border dark:text-purple-700 border-purple-500 dark:border-purple-700 rounded-3xl hover:bg-purple-500 dark:hover:bg-purple-500 hover:text-white dark:hover:text-white transition">Ver agora</a>
+                    <a href="${forNoob.url}" target="_blank" class="text-xs md:text-sm w-full py-2 my-3 text-purple-500 text-center font-bold border dark:text-purple-700 border-purple-500 dark:border-purple-700 rounded-3xl hover:bg-purple-500 dark:hover:bg-purple-500 hover:text-white dark:hover:text-white transition">Ver agora</a>
                 </div>
             </div>
         </div>
