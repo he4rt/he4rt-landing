@@ -31,8 +31,8 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
-<body class="w-screen h-screen dark:bg-gray-999">
-    <header class="w-full lg:h-screen header__container content__max-width header__max-height flex flex-col lg:flex-row items-center justify-between relative mx-auto" id="inicio">
+<body class="w-screen h-screen dark:bg-gray-999 font-spline">
+    <header class="w-full lg:h-screen max-h-none md:max-h-[800px] max-w-6xl flex flex-col lg:flex-row items-center justify-between relative mx-auto" id="inicio">
         <div class="flex flex-col w-4/4  px-6 relative z-10 lg:pb-11 mb-0 mt-1 lg:mt-0">
             <div class="scroll-left-1 py-4">
                 <svg class="light w-10 cursor-pointer hidden" viewBox="0 0 24 24" stroke-width="1.5" fill="#e8e6e3" stroke-linecap="round" stroke-linejoin="round">
@@ -46,16 +46,16 @@
                 <img src="./public/images/logo.png"
                     alt="Imagem contendo um coração roxo representando a comunidade He4rtDevs.">
             </div>
-            <h1 class="scroll-header-left-2 text-xl md:text-2xl lg:text-4xl text-gray-900 dark:text-gray-998 font-bold font-spline">Feito pela 
-                <span class="text-purple-500 dark:text-purple-700 font-spline">comunidade</span><br> para a 
+            <h1 class="scroll-header-left-2 text-xl md:text-2xl lg:text-4xl text-gray-900 dark:text-gray-998 font-bold">Feito pela 
+                <span class="text-purple-500 dark:text-purple-700">comunidade</span><br> para a 
                 <span class="text-purple-500 dark:text-purple-700">comunidade</span></h1>
             <p class="scroll-header-left-3 text-sm md:text-lg lg:text-xl font-sans text-gray-500 dark:text-gray-998 my-4 lg:my-3 w-10/12 md:w-8/12 lg:w-6/12">
                 Aqui é o lugar aonde mentes extraordinárias se encontram com o objetivo de alcançar milhares de pessoas
                 com o poder da tecnologia.
-                <span class="text-purple-500 dark:text-purple-700 font-spline">Aqui mais do que participar, você vai contribuir.</span></p>
+                <span class="text-purple-500 dark:text-purple-700">Aqui mais do que participar, você vai contribuir.</span></p>
             <div class="scroll-header-left-3 mt-3"> 
-                <a tabindex="0" href="https://discord.com/invite/5kwDQuv">
-                    <button class="bg-transparent border-2 border-purple-500 dark:border-purple-700 rounded-3xl px-5 py-1 font-bold font-spline text-purple-500 dark:text-purple-700 dark:hover:text-gray-998 dark:hover:bg-purple-700 hover:bg-purple-500 hover:text-white transition-all">
+                <a tabindex="0" href="https://discord.com/invite/5kwDQuv" target="_blank" >
+                    <button class="bg-transparent border-2 border-purple-500 dark:border-purple-700 rounded-3xl px-5 py-1 font-bold text-purple-500 dark:text-purple-700 dark:hover:text-gray-998 dark:hover:bg-purple-700 hover:bg-purple-500 hover:text-white transition-all">
                         Seja um membro</button></a>
             </div>
         </div>
@@ -90,10 +90,10 @@
             class="absolute top-0 right-0 w-2/4">
     </svg>
     <!--section o que e a he4rt?-->
-    <section id="section-o-que-e-a-he4rt" class="w-full content__max-width mx-auto px-6 xl:px-0 mb-11 lg:mb-28 min-h-max flex items-center">
+    <section id="section-o-que-e-a-he4rt" class="w-full max-w-6xl mx-auto px-6 xl:px-0 mb-11 lg:mb-28 min-h-max flex items-center">
         <div class="hidden scroll-left-1 lg:w-4/12 mr-8 xl:mr-16 lg:flex justify-start items-center">
             <div class="w-96">
-                <img alt="Uma equipe de devs trabalhando em equipe, assim que descrevemos a he4rt Developers." src="/public/images/team.png">
+                <img alt="Uma equipe de desenvolvedores trabalhando em equipe, assim que descrevemos a he4rt Developers." src="/public/images/team.png">
             </div>
         </div>
         <div class="md:w-12/12 lg:w-8/12">
@@ -101,7 +101,7 @@
                 <div class="md:w-12/12">
                     <div class="flex flex-col mt-4">
                         <div class="scroll-bottom-1 px-1 md:px-0 flex-auto">
-                            <h2 class="mb-1 text-gray-700 dark:text-gray-998 font-spline font-bold text-xl md:text-3xl lg:text-4xl">
+                            <h2 class="mb-1 text-gray-700 dark:text-gray-998 font-bold text-xl md:text-3xl lg:text-4xl">
                                 Afinal, o que é a 
                                 <span class="text-purple-500 dark:text-purple-700">He4rt Developers</span>?</h2>
                             <p class="mb-1 text-gray-500 dark:text-gray-998 text-sm md:text-xl lg:text-xl">
@@ -113,7 +113,7 @@
                     </div>
                     <div class="scroll-bottom-2 flex flex-col mt-6 min-w-0">
                         <div class="flex-auto">
-                            <h1 class="mb-1 text-gray-700 dark:text-gray-998 font-spline font-bold text-base md:text-3xl text lg:text-2xl">
+                            <h1 class="mb-1 text-gray-700 dark:text-gray-998 font-bold text-base md:text-3xl text lg:text-2xl">
                                 Como posso me juntar a 
                                 <span class="text-purple-500 dark:text-purple-700">He4rt</span>?</h1>
                             <p class="mb-1 text-gray-500 dark:text-gray-998 text-sm md:text-lg lg:text-xl">
@@ -130,11 +130,11 @@
     </section>
     <!--4noobs-->
     <section id="4noobs" class="min-h-min bg-bottom md:bg-left bg-no-repeat relative for-noobs-section__bg flex justify-center items-center p-6 xl:p-6">
-        <div class="flex flex-col items-center justify-center relative z-30 content__max-width mx-0 lg:mx-0">
+        <div class="flex flex-col items-center justify-center relative z-30 max-w-6xl mx-0 lg:mx-0">
             <div class="text-left mt-8">
-                <h1 class="scroll-left-1 font-spline text-gray-200 md:mt-0 text-base md:text-lg lg:text-xl font-bold">
+                <h1 class="scroll-left-1 text-gray-200 md:mt-0 text-base md:text-lg lg:text-xl font-bold">
                     Educação sem barreiras.</h1>
-                <h2 class="scroll-left-2 font-spline font-bold text-white  text-xl md:text-4xl mt-4">Conheça o <a href="https://github.com/he4rt/4noobs">
+                <h2 class="scroll-left-2 font-bold text-white text-xl md:text-4xl mt-4">Conheça o <a href="https://github.com/he4rt/4noobs" target="_blank">
                     <span class="text-purple-500 dark:text-purple-700 dark:hover:text-purple-500 hover:text-purple-600 transition-all">4Noobs</span></a>, 
                     uma biblioteca de cursos open-source feita pela comunidade.</h2>
                 <p class="scroll-left-3 text-gray-200 text-sm md:text-xl lg:text-xl mt-4">
@@ -183,7 +183,7 @@
         </div>
     </section>
     <!--Um pouco mais sobre a he4rt-->
-    <section id="sobre" class="mx-auto mt-11 lg:mt-28 lg:mb-20 px-6 xl:px-6 w-full content__max-width">
+    <section id="sobre" class="mx-auto mt-11 lg:mt-28 lg:mb-20 px-6 xl:px-6 w-full max-w-6xl">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="w-full">
                 <h2 class="scroll-left-1 font-bold text-gray-700 dark:text-gray-998 text-xl md:text-3xl lg:text-4xl">
@@ -198,7 +198,7 @@
                     sucessos. Não existem nada mais importante para nós do que nossos membros.</p>
             </div>
         </div>
-        <div class="mt-3 mb-5 md:mt-5 md:mb-10 lg:mt-11 lg:mb-20 mx-auto w-full content__max-width">
+        <div class="mt-3 mb-5 md:mt-5 md:mb-10 lg:mt-11 lg:mb-20 mx-auto w-full max-w-6xl">
             <div class="scroll-bottom-3 grid grid-cols-2 md:grid-cols-4 w-full">
                 <div class="flex justify-start sm:justify-center items-stretch">
                     <div>
@@ -308,7 +308,7 @@
         </div>
     </section>
     <!--hea4rtconf-->
-    <section class="mx-auto lg:mb-20 px-6 xl:px-6 w-full content__max-width">
+    <section class="mx-auto lg:mb-20 px-6 xl:px-6 w-full max-w-6xl">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="pb-10 w-full">
                 <h2 class="scroll-bottom-1 text-gray-700 dark:text-gray-998 font-bold text-lg md:text-3xl lg:text-4xl">
@@ -353,7 +353,7 @@
     </section>
     <!--oq eu encontrarei na he4rt-->
     <section
-        class="w-full bg-left bg-no-repeat bg-contain relative flex justify-center content__max-width mx-auto mt-16 mb-40 px-6 xl:px-6">
+        class="w-full bg-left bg-no-repeat bg-contain relative flex justify-center max-w-6xl mx-auto mt-16 mb-40 px-6 xl:px-6">
         <div class="flex flex-col items-center justify-center relative z-30 w-full">
             <div class="text-left w-full">
                 <h2 class="scroll-bottom-1 font-bold text-gray-700 dark:text-gray-998 text-xl md:text-3xl lg:text-4xl">
@@ -363,7 +363,7 @@
                     Descubra como desenvolver
                     projetos que revolucionam a maneira de aprender.</p>
                 <div class="scroll-bottom-3 grid grid-cols-1 md:grid-cols-2 gap-x-0">
-                    <div class="flex flex-col items-start pr-16 my-5 border-r-1 border-pink-500 dark:border-purple-400">
+                    <div class="flex flex-col items-start pr-16 my-5 md:border-r-2 border-pink-500 dark:border-purple-400">
                         <div class="icon__bg-rounded mx-2 mb-6">
                             <svg width="1.3rem" height="1.3rem" viewBox="0 0 21 19" fill="none">
                                 <path
@@ -379,7 +379,7 @@
                                 </defs>
                             </svg>
                         </div>
-                        <h2 class="font-spline font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">
+                        <h2 class= "font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">
                             Desenvolvendo habilidades</h2>
                         <p class="text-gray-500 dark:text-gray-998 text-lg">
                             Ajude, contribua e retire suas dúvidas em qualquer área da tecnologia com nossa comunidade!</p>
@@ -392,13 +392,13 @@
                                     fill="#782BF1" />
                             </svg>
                         </div>
-                        <h2 class="font-spline font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">
+                        <h2 class= "font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">
                             Projetos</h2>
                         <p class="text-gray-500 dark:text-gray-998 text-lg">
                             Aprimore e contribua com nossos projetos, evolua constantemente
                             e mostre suas habilidades.</p>
                     </div>
-                    <div class="flex flex-col items-start my-5 pr-16 border-r-1 border-pink-500 dark:border-purple-400">
+                    <div class="flex flex-col items-start my-5 pr-16 md:border-r-2 md:border-r-2 border-pink-500 dark:border-purple-400">
                         <div class="icon__bg-rounded mx-2 mb-6">
                             <svg width="1.3rem" height="1.3rem" viewBox="0 0 21 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -407,7 +407,7 @@
                                     stroke="#782BF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <h2 class="font-spline font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">
+                        <h2 class= "font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">
                             Eventos</h2>
                         <p class="text-gray-500 dark:text-gray-998 text-lg">
                             Participe dos eventos exclusivos da comunidade e receba
@@ -421,7 +421,7 @@
                                     stroke="#782BF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <h2 class="font-spline font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">
+                        <h2 class= "font-bold text-gray-900 dark:text-gray-998 text-xl md:text-2xl mt-2 mb-4">
                             Networking</h2>
                         <p class="text-gray-500 dark:text-gray-998 text-lg">
                             Tenha oportunidade de conhecer milhares de pessoas com o mesmo
@@ -445,7 +445,7 @@
                     <a href="#sobre" class="font-semibold hover:text-purple-500  md:text-base">Sobre</a>
                 </li>
                 <li>
-                    <a href="https://discord.com/invite/5kwDQuv"
+                    <a href="https://discord.com/invite/5kwDQuv" target="_blank"
                         class="font-semibold hover:text-purple-500 transition md:text-base">Discord</a>
                 </li>
             </ul>
