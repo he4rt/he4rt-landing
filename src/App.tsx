@@ -1,9 +1,10 @@
 import { BrowserRouter } from "react-router";
+import { AppRoutes } from "./routes";
 
 function App() {
   return (
     <BrowserRouter>
-      <h1>Landing</h1>
+      <AppRoutes />
     </BrowserRouter>
   );
 }
