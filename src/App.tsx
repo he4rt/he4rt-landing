@@ -1,8 +1,10 @@
+import { BrowserRouter } from "react-router";
+
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <h1>Landing</h1>
-    </div>
+    </BrowserRouter>
   );
 }
 
