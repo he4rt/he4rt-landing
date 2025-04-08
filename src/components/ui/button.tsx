@@ -49,9 +49,6 @@ function Button({
 }: ButtonProps) {
   const Comp = asChild ? Slot : "button";
 
-  console.log(variant);
-  console.log(cn(buttonVariants({ variant, size, className })));
-
   return (
     <Comp
       data-slot="button"
