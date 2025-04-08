@@ -48,6 +48,8 @@
 
   --color-primary-purple: #782bf1;
   --color-primary-pink: #9828bd;
+
+  --color-card-default: #0f0f10;
 }
 
 @theme inline {
