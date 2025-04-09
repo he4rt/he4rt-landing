@@ -15,7 +15,7 @@ interface CardProps {
 export const Card = ({ title, description, isLoading }: CardProps) => {
   if (isLoading) {
     return (
-      <ShadcnCard className="w-80 h-48 border-neutral-outline bg-primary rounded-lg shadow-none "></ShadcnCard>
+      <ShadcnCard className="w-80 h-48 border-neutral-outline bg-primary rounded-lg shadow-none  animate-pulse"></ShadcnCard>
     );
   }
 
