@@ -10,10 +10,9 @@ export const ButtonDefault = ({
     <Button
       {...props}
       className={clsx(
-        "cursor-pointer bg-linear-to-r from-primary-purple to-primary-pink hover:ring",
+        "cursor-pointer bg-linear-to-r from-primary-purple to-primary-pink hover:ring font-family-secondary font-semibold text-base text-text-high",
         className
       )}
-      {...props}
     >
       {children}
     </Button>
