@@ -37,6 +37,7 @@
   --color-neutral-neutral: #208bee;
   --color-neutral-icon: #c8c8c8;
   --color-neutral-outline: #2c2c2d;
+  --color-neutral-outline-16: rgba(28, 28, 31, 0.32);
 
   --color-text-high: #fdfdfd;
   --color-text-medium: #9c9c9c;
@@ -50,6 +51,7 @@
   --color-primary-pink: #9828bd;
 
   --color-card-default: #0f0f10;
+  --color-button-filled: rgba(28, 28, 31, 0.32);
 }
 
 @theme inline {
