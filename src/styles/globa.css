@@ -52,6 +52,7 @@
 
   --color-card-default: #0f0f10;
   --color-button-filled: rgba(28, 28, 31, 0.32);
+  --color-neutraul-outline-16: rgba(44, 44, 45, 0.16);
 }
 
 @theme inline {
