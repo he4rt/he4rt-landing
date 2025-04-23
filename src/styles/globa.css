@@ -15,9 +15,16 @@
   src: url("/fonts/CalSans.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Fira-Code;
+  font-display: swap;
+  src: url("/fonts/FiraCode-Regular.ttf") format("truetype");
+}
+
 @theme {
   --font-family-primary: Satoshi, sans-serif;
   --font-family-secondary: Cal-Sans, sans-serif;
+  --font-family-code: Fira-Code, sans-serif;
 
   --color-primary: #09090a;
   --color-primary-900: #393939;
