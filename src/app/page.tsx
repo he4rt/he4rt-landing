@@ -15,8 +15,10 @@ import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import { AvatarImage } from "@radix-ui/react-avatar";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
-export const Home = () => {
+export default function Home() {
   return (
     <div className="w-full overflow-x-hidden">
       <div className="absolute inset-0 min-h-full bg-[linear-gradient(-45deg,_#0f0f10_0%,_#1e002f_50%,_#5000a3_100%)] z-0" />
@@ -32,7 +34,7 @@ export const Home = () => {
             className="flex flex-col  sm:flex-row gap-[55px]"
           >
             <div className=" sm:w-[640px] flex flex-col  gap-4">
-              <ButtonOutline className="bg-card-default w-full sm:w-auto sm:max-w-[140px]">
+              <ButtonOutline className="bg-card-default  w-full sm:w-auto sm:max-w-[200px]">
                 Comunidade Open Source
               </ButtonOutline>
               <h1 className="text-text-high text-2xl text-center sm:text-left sm:text-[56px]">
@@ -333,7 +335,7 @@ export const Home = () => {
             </div>
           </Section>
           <Section name="contact">
-            <div className="flex flex-col sm:flex-row gap-[33px]">
+            <div className="flex flex-col sm:flex-row  gap-[33px] sm:pt-28">
               <div className="flex flex-col gap-4 flex-1 border border-neutral-outline p-8 rounded-xl">
                 <h1 className="font-family-secondary font-semibold text-text-high text-2xl text-center sm:text-left sm:text-4xl whitespace-nowrap">
                   Entre em contato conosco
@@ -412,42 +414,55 @@ export const Home = () => {
                   </span>
                   <ul className="flex gap-8">
                     <li>
-                      <a href="">
-                        <img
+                      <Link href="">
+                        <Image
                           src="/images/discord-icon.svg"
                           alt="icone do discord"
+                          width={24}
+                          height={24}
                         />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="">
-                        <img
+                      <Link href="">
+                        <Image
                           src="/images/linkedin-icon.svg"
                           alt="icone do linkedin"
+                          width={24}
+                          height={24}
                         />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="">
-                        <img src="/images/twitter-icon.svg" alt="icone do X" />
-                      </a>
+                      <Link href="">
+                        <Image
+                          src="/images/twitter-icon.svg"
+                          alt="icone do X"
+                          width={24}
+                          height={24}
+                        />
+                      </Link>
                     </li>
                     <li>
                       {" "}
-                      <a href="">
-                        <img
+                      <Link href="">
+                        <Image
                           src="/images/instagram-icon.svg"
                           alt="icone do instagram"
+                          width={24}
+                          height={24}
                         />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="">
-                        <img
+                      <Link href="">
+                        <Image
                           src="/images/github-icon.svg"
                           alt="icone do github"
+                          width={24}
+                          height={24}
                         />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -460,4 +475,4 @@ export const Home = () => {
       </div>
     </div>
   );
-};
+}

@@ -1,8 +1,8 @@
 import {
-  Card as ShadcnCard,
   CardDescription,
   CardHeader,
   CardTitle,
+  Card as ShadcnCard,
 } from "@/components/ui/card";
 import { Code } from "lucide-react";
 

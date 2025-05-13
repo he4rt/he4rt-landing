@@ -1,9 +1,8 @@
-import clsx from "clsx";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import { Avatar, AvatarImage } from "./ui/avatar";
 import { AvatarFallback } from "@radix-ui/react-avatar";
+import clsx from "clsx";
 import { Heart } from "lucide-react";
-import { Separator } from "./ui/separator";
+import { Avatar, AvatarImage } from "./ui/avatar";
+import { Card, CardContent, CardFooter } from "./ui/card";
 
 type Author = {
   imageSrc?: string;

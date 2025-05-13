@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Image from "next/image";
 import { PropsWithChildren } from "react";
 
 interface SectionProps {
@@ -34,10 +35,11 @@ export const Section = ({
 
       <div className="absolute inset-0 z-0 bg-black/75" />
       {isFirstSection && (
-        <img
+        <Image
           src="/images/landingLogo.svg"
           alt="Logo"
           className="absolute top-0 sm:top-[88px] inset-0 z-0 "
+          fill
         />
       )}
       <div
