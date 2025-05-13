@@ -1,12 +1,10 @@
 "use client";
 
 import { ExternalLink, Menu, User, X } from "lucide-react";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import {
@@ -17,11 +15,11 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import clsx from "clsx";
 
 import { useIsMobile } from "@/hooks/isMobile";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { ButtonDefault, ButtonOutline } from "./Button";
 
 const navigationItems = [
@@ -33,8 +31,10 @@ const navigationItems = [
 ];
 
 const HeaderMobile = () => {
+  const [sheetOpen, setSheetOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
       <SheetTrigger asChild>
         <ButtonOutline>
           <Menu />
@@ -62,9 +62,11 @@ const HeaderMobile = () => {
                 <li
                   key={item.name}
                   className="px-3 py-4 rounded-lg focus-within:ring focus-within:ring-neutral-outline"
+                  onClick={() => setSheetOpen(false)}
                 >
                   <Link
                     href={item.href}
+                    //
                     className="font-family-secondary font-semibold text-base text-text-high hover:bg-transparent hover:underline hover:text-text-high hover:underline-offset-4 focus:outline-none"
                   >
                     {item.name}
@@ -98,8 +100,11 @@ const HeaderDesktop = () => {
           {navigationItems.map((item) => {
             return (
               <NavigationMenuItem key={item.name}>
-                <Link href={item.href} className="font-family-secondary font-semibold text-base text-text-high hover:bg-transparent hover:underline hover:text-text-high hover:underline-offset-4">
-                    {item.name}
+                <Link
+                  href={item.href}
+                  className="font-family-secondary font-semibold text-base text-text-high hover:bg-transparent hover:underline hover:text-text-high hover:underline-offset-4"
+                >
+                  {item.name}
                 </Link>
               </NavigationMenuItem>
             );
@@ -123,7 +128,7 @@ export const Header = () => {
   const isMobile = useIsMobile();
 
   return (
-    <header className="bg-primary flex items-center justify-between px-4 sm:px-16 py-6  sm:fixed sm:top-0 sm:z-50 sm:w-full">
+    <header className="bg-primary flex items-center justify-between px-4 sm:px-16 py-6  fixed top-0 z-50 w-full">
       <Link href="#he4rt">
         <Image src="/images/Logo.svg" alt="H4rt Logo" width={147} height={21} />
       </Link>

@@ -27,7 +27,7 @@ export default function Home() {
       <div className="relative z-20">
         <Header />
 
-        <main className="relative  sm:pt-[88px]">
+        <main className="relative  pt-[88px]">
           <Section
             name="he4rt"
             isFirstSection
