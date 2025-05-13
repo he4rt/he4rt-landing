@@ -27,6 +27,7 @@
   --font-family-code: Fira-Code, sans-serif;
 
   --color-primary: #09090a;
+  --color-primary-0: rgba(9, 9, 10, 0);
   --color-primary-900: #393939;
   --color-primary-800: #4b4b4c;
   --color-primary-700: #5e5e5f;
@@ -55,6 +56,7 @@
   --color-icon-low: #353535;
 
   --color-primary-purple: #782bf1;
+
   --color-primary-pink: #9828bd;
 
   --color-card-default: #0f0f10;
@@ -133,6 +135,18 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 .dark {

@@ -37,14 +37,14 @@ export const Articles = ({ isLoading, author, article }: ArticlesProps) => {
   return (
     <div
       className={clsx([
-        "bg-neutral-outline  w-[287px] sm:w-[416px] p-[1px] rounded-xl min-h-[266px]",
+        "bg-transparent  w-[287px] sm:w-[416px] p-[1px] rounded-xl min-h-[266px]",
         !isLoading &&
           "hover:bg-linear-to-r hover:from-primary-purple hover:to-primary-pink",
       ])}
     >
       <Card
         className={clsx([
-          "w-full h-full min-h-[266px] bg-primary border-none  py-9   hover:bg-card-default",
+          "w-full h-full border border-neutral-outline min-h-[266px] bg-transparent  py-9   hover:bg-card-default",
           isLoading && "bg-card-default animate-pulse",
         ])}
       >

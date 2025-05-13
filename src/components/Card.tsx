@@ -20,8 +20,8 @@ export const Card = ({ title, description, isLoading }: CardProps) => {
   }
 
   return (
-    <div className="border-neutral-outline w-80 h-48 bg-neutral-outline rounded-lg p-[1px] group hover:bg-linear-to-r hover:from-primary-purple hover:to-primary-pink hover:pb-2">
-      <ShadcnCard className="w-full h-full rounded-lg border-none  bg-primary  shadow-none  group-hover:bg-card-default group-hover:rounded-b-none">
+    <div className="border-neutral-outline w-80 h-48 bg-transparent rounded-lg p-[1px] group hover:bg-linear-to-r hover:from-primary-purple hover:to-primary-pink hover:pb-2">
+      <ShadcnCard className="w-full h-full rounded-lg border border-neutral-outline  bg-transparent  shadow-none  group-hover:bg-card-default group-hover:rounded-b-none">
         <CardHeader>
           <div className=" w-8 h-8 rounded-sm relative flex items-center justify-center p-[1px]">
             <div className="bg-linear-to-r from-primary-purple to-primary-pink w-full h-full rounded-sm absolute opacity-20 p-[1px]" />

@@ -1,3 +1,5 @@
+import clsx from "clsx";
+import { ButtonLink } from "./Button/ButtonLink";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -7,8 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { ButtonLink } from "./Button/ButtonLink";
-import clsx from "clsx";
 
 interface ProjectProps {
   title: string;
@@ -28,14 +28,14 @@ export const Project = ({
   return (
     <div
       className={clsx([
-        "bg-neutral-outline  w-[287px] sm:w-[416px] p-[1px] rounded-xl min-h-[266px]",
+        "bg-transparent w-[287px] sm:w-[416px] p-[1px] rounded-xl min-h-[266px]",
         !isLoading &&
           "hover:bg-linear-to-r hover:from-primary-purple hover:to-primary-pink",
       ])}
     >
       <Card
         className={clsx([
-          "w-full h-full min-h-[266px] bg-primary border-none  py-9   hover:bg-card-default",
+          "w-full h-full min-h-[266px] bg-transparent border border-neutral-outline   py-9   hover:bg-card-default",
           isLoading && "bg-card-default animate-pulse",
         ])}
       >
@@ -60,7 +60,7 @@ export const Project = ({
               ))}
             </CardContent>
             <CardFooter>
-              <ButtonLink to={href}>Ver Projeto</ButtonLink>
+              <ButtonLink href={href}>Ver Projeto</ButtonLink>
             </CardFooter>
           </>
         )}

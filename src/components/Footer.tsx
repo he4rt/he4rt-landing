@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import { Separator } from "./ui/separator";
 
 export const Footer = () => {
@@ -20,13 +19,13 @@ export const Footer = () => {
             <h3 className="text-text-high uppercase">Sobre nós</h3>
             <ul className="text-text-medium flex flex-col gap-5 text-base font-family-primary font-medium">
               <li>
-                <Link to="/">Home</Link>
+                <a href="/">Home</a>
               </li>
               <li>
-                <Link to="/">Home</Link>
+                <a href="/">Home</a>
               </li>
               <li>
-                <Link to="/">Home</Link>
+                <a href="/">Home</a>
               </li>
             </ul>
           </div>

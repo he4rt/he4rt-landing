@@ -10,8 +10,8 @@ export const ButtonOutline = ({
     <Button
       {...props}
       variant="outline"
-      className={clsx("cursor-pointer", className)}
-      {...props}
+      className={clsx(["cursor-pointer", className])}
+      size="lg"
     >
       {children}
     </Button>

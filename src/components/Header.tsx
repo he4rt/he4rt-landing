@@ -1,5 +1,4 @@
-import { ExternalLink, User, Menu, X } from "lucide-react";
-import { Link } from "react-router";
+import { ExternalLink, Menu, User, X } from "lucide-react";
 
 import {
   NavigationMenu,
@@ -16,15 +15,15 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { ButtonOutline, ButtonDefault } from "./Button";
 import { useIsMobile } from "@/hooks/isMobile";
+import { ButtonDefault, ButtonOutline } from "./Button";
 
 const navigationItems = [
-  { name: "Sobre", href: "/about" },
-  { name: "Comunidades", href: "/comunities" },
-  { name: "Projetos", href: "/projects" },
-  { name: "Depoimentos", href: "/testmonials" },
-  { name: "Contato", href: "/contact" },
+  { name: "Sobre", href: "#about" },
+  { name: "Comunidades", href: "#comunity" },
+  { name: "Projetos", href: "#projects" },
+  { name: "Depoimentos", href: "#testmonials" },
+  { name: "Contato", href: "#contact" },
 ];
 
 const HeaderMobile = () => {
@@ -40,9 +39,9 @@ const HeaderMobile = () => {
           <SheetClose className="text-text-high self-end px-4">
             <X />
           </SheetClose>
-          <Link to="/">
+          <a href="/">
             <img src="/images/Logo.svg" alt="H4rt Logo" className="px-4" />
-          </Link>
+          </a>
         </SheetHeader>
         <nav>
           <ul className=" flex flex-col px-8">
@@ -52,12 +51,12 @@ const HeaderMobile = () => {
                   key={item.name}
                   className="px-3 py-4 rounded-lg focus-within:ring focus-within:ring-neutral-outline"
                 >
-                  <Link
-                    to={item.href}
+                  <a
+                    href={item.href}
                     className="font-family-secondary font-semibold text-base text-text-high hover:bg-transparent hover:underline hover:text-text-high hover:underline-offset-4 focus:outline-none"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 </li>
               );
             })}
@@ -87,11 +86,11 @@ const HeaderDesktop = () => {
           {navigationItems.map((item) => {
             return (
               <NavigationMenuItem key={item.name}>
-                <Link to={item.href}>
+                <a href={item.href}>
                   <NavigationMenuLink className="font-family-secondary font-semibold text-base text-text-high hover:bg-transparent hover:underline hover:text-text-high hover:underline-offset-4">
                     {item.name}
                   </NavigationMenuLink>
-                </Link>
+                </a>
               </NavigationMenuItem>
             );
           })}
@@ -114,10 +113,10 @@ export const Header = () => {
   const isMobile = useIsMobile();
 
   return (
-    <header className="bg-primary px-4 sm:px-16 py-6 flex items-center justify-between">
-      <Link to="/">
+    <header className="bg-primary flex items-center justify-between px-4 sm:px-16 py-6  sm:fixed sm:top-0 sm:z-50 sm:w-full">
+      <a href="#he4rt">
         <img src="/images/Logo.svg" alt="H4rt Logo" />
-      </Link>
+      </a>
       {isMobile ? <HeaderMobile /> : <HeaderDesktop />}
     </header>
   );
