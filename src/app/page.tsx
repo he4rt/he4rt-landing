@@ -401,9 +401,15 @@ export default function Home() {
                     Histórias reais de desenvolvedores que transformaram suas
                     carreiras através da nossa comunidade.
                   </h3>
-                  <ButtonDefault className="w-[183px]">
-                    Entrar no discord
-                  </ButtonDefault>
+                  <a
+                    href="https://discord.gg/he4rt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ButtonDefault className="w-[183px]">
+                      Entrar no discord
+                    </ButtonDefault>
+                  </a>
                 </div>
                 <div className="sm:w-[752px] bg-transparent border border-neutral-outline flex flex-col gap-4 p-8 rounded-xl">
                   <h2 className="font-family-secondary font-semibold text-2xl text-text-high">
@@ -414,7 +420,7 @@ export default function Home() {
                   </span>
                   <ul className="flex gap-8">
                     <li>
-                      <Link href="">
+                      <Link href="https://discord.gg/he4rt">
                         <Image
                           src="/images/discord-icon.svg"
                           alt="icone do discord"
