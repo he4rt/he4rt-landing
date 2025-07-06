@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Comunidade",
+    "description": "Mais de 2.000 membros ativos compartilhando conhecimento."
+  },
+  {
+    "id": 2,
+    "title": "Comunidade",
+    "description": "Dezenas de projetos open source para contribuir e aprender."
+  },
+  {
+    "id": 3,
+    "title": "Comunidade",
+    "description": "Workshops, lives e encontros virtuais com especialistas."
+  },
+  {
+    "id": 4,
+    "title": "Comunidade",
+    "description": "Orientação personalizada para acelerar seu desenvolvimento."
+  }
+]

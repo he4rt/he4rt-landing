@@ -17,6 +17,7 @@ import { AvatarImage } from "@radix-ui/react-avatar";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import aboutCards from "../../aboutCards.json";
 import projects from "../../projects.json";
 import socialMedia from "../../socialMedia.json";
 
@@ -115,10 +116,13 @@ export default function Home() {
           <Section name="about">
             <div className="flex flex-col-reverse sm:flex-row gap-8 sm:gap-[145px]">
               <div className="grid grid-flow-col grid-cols-1 grid-rows-4 sm:grid-rows-2 gap-8 place-items-center">
-                <Card title="Loram" description="AHUWEBVKAWUHJKEA" />
-                <Card title="Loram" description="AHUWEBVKAWUHJKEA" />
-                <Card title="Loram" description="AHUWEBVKAWUHJKEA" />
-                <Card title="Loram" description="AHUWEBVKAWUHJKEA" />
+                {aboutCards.map((card) => (
+                  <Card
+                    key={card.id}
+                    title={card.title}
+                    description={card.description}
+                  />
+                ))}
               </div>
               <div className="flex flex-col gap-4 sm:max-w-[526px]">
                 <ButtonOutline className="sm:max-w-[140px] font-regular bg-linear-to-r from-primary-purple/13 to-primary-pink/13">

@@ -2,8 +2,8 @@
   {
     "id": 1,
     "title": "4Noobs",
-    "description": "O intuito deste repositório é mostrar projetos desenvolvidos para facilitar o estudos dos devs iniciantes feitos pela nossa comunidade!",
-    "tags": ["Tutorial", "4noobs"],
+    "description": "Repositórios de conteúdos sobre diversas tecnologias.",
+    "tags": ["Documentação", "Documentação"],
     "url": "https://github.com/he4rt/4noobs"
   },
   {
@@ -17,8 +17,8 @@
   {
     "id": 3,
 
-    "title": "He4rtLabs",
-    "description": "Projetos práticos desenvolvidos pela comunidade para aprendizado.",
+    "title": "Desafios de Código",
+    "description": "Desafios semanais para praticar suas habilidades de programação.",
     "tags": ["Documentação", "Documentação"],
     "url": ""
   }
