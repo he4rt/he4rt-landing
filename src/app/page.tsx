@@ -420,7 +420,11 @@ export default function Home() {
                   </span>
                   <ul className="flex gap-8">
                     <li>
-                      <Link href="https://discord.gg/he4rt">
+                      <Link
+                        href="https://discord.gg/he4rt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Image
                           src="/images/discord-icon.svg"
                           alt="icone do discord"
@@ -461,7 +465,11 @@ export default function Home() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="">
+                      <Link
+                        href="https://github.com/he4rt/he4rt-landing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Image
                           src="/images/github-icon.svg"
                           alt="icone do github"

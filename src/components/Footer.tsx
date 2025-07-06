@@ -47,10 +47,26 @@ export const Footer = () => {
           <div className="flex flex-col gap-4">
             <h3 className="text-text-high uppercase">Social Media</h3>
             <ul className="text-text-medium grid grid-cols-2 gap-y-5 gap-x-8 text-base font-family-primary font-medium">
-              <li>Discord</li>
+              <li>
+                <a
+                  href="https://discord.gg/he4rt"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Discord
+                </a>
+              </li>
               <li>Instagram</li>
               <li>Linkedin</li>
-              <li>Github</li>
+              <li>
+                <a
+                  href="https://github.com/he4rt/he4rt-landing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+              </li>
               <li>X</li>
             </ul>
           </div>

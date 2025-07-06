@@ -78,9 +78,16 @@ const HeaderMobile = () => {
         </nav>
         <SheetFooter>
           <div className="flex flex-col gap-4">
-            <ButtonOutline>
-              Github <ExternalLink />
-            </ButtonOutline>
+            <a
+              href="https://github.com/he4rt/he4rt-landing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ButtonOutline>
+                Github <ExternalLink />
+              </ButtonOutline>
+            </a>
+
             <ButtonDefault>
               <User />
               Entrar Agora
@@ -112,9 +119,16 @@ const HeaderDesktop = () => {
         </NavigationMenuList>
       </NavigationMenu>
       <div className="flex items-center gap-8">
-        <ButtonOutline>
-          Github <ExternalLink />
-        </ButtonOutline>
+        <a
+          href="https://github.com/he4rt/he4rt-landing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ButtonOutline>
+            Github <ExternalLink />
+          </ButtonOutline>
+        </a>
+
         <ButtonDefault>
           <User />
           Entrar Agora
