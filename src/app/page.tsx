@@ -17,6 +17,8 @@ import { AvatarImage } from "@radix-ui/react-avatar";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import projects from "../../projects.json";
+import socialMedia from "../../socialMedia.json";
 
 export default function Home() {
   return (
@@ -48,12 +50,20 @@ export default function Home() {
                 networking.
               </h2>
               <div className="flex flex-col sm:flex-row gap-8 mt-4">
-                <ButtonDefault>
-                  Começar agora <ChevronRight />
-                </ButtonDefault>
-                <ButtonOutline>
-                  Explorar projetos <ChevronRight />
-                </ButtonOutline>
+                <Link
+                  href={socialMedia.discord}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonDefault>
+                    Começar agora <ChevronRight />
+                  </ButtonDefault>
+                </Link>
+                <Link href="#projects">
+                  <ButtonOutline>
+                    Explorar projetos <ChevronRight />
+                  </ButtonOutline>
+                </Link>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-2 mt-4">
                 <div className="flex">
@@ -155,24 +165,15 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-8">
-                <Project
-                  title="4Noobs"
-                  description="Repositórios de conteúdos sobre diversas tecnologias."
-                  tags={["Documentação", "Documentação"]}
-                  href=""
-                />
-                <Project
-                  title="He4rtLabs"
-                  description="Projetos práticos desenvolvidos pela comunidade para aprendizado."
-                  tags={["Documentação", "Documentação"]}
-                  href=""
-                />
-                <Project
-                  title="He4rtLabs"
-                  description="Projetos práticos desenvolvidos pela comunidade para aprendizado."
-                  tags={["Documentação", "Documentação"]}
-                  href=""
-                />
+                {projects.map((project) => (
+                  <Project
+                    key={project.id}
+                    title={project.title}
+                    description={project.description}
+                    tags={project.tags}
+                    href={project.url}
+                  />
+                ))}
               </div>
             </div>
           </Section>
@@ -402,7 +403,7 @@ export default function Home() {
                     carreiras através da nossa comunidade.
                   </h3>
                   <a
-                    href="https://discord.gg/he4rt"
+                    href={socialMedia.discord}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -421,7 +422,7 @@ export default function Home() {
                   <ul className="flex gap-8">
                     <li>
                       <Link
-                        href="https://discord.gg/he4rt"
+                        href={socialMedia.discord}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -444,7 +445,11 @@ export default function Home() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="">
+                      <Link
+                        href={socialMedia.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Image
                           src="/images/twitter-icon.svg"
                           alt="icone do X"
@@ -466,7 +471,7 @@ export default function Home() {
                     </li>
                     <li>
                       <Link
-                        href="https://github.com/he4rt/he4rt-landing"
+                        href={socialMedia.github}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

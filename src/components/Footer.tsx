@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "./ui/separator";
 
+import socialMedia from "../../socialMedia.json";
+
 export const Footer = () => {
   return (
     <footer className="bg-primary flex flex-col p-12 gap-7">
@@ -48,26 +50,22 @@ export const Footer = () => {
             <h3 className="text-text-high uppercase">Social Media</h3>
             <ul className="text-text-medium grid grid-cols-2 gap-y-5 gap-x-8 text-base font-family-primary font-medium">
               <li>
-                <a
-                  href="https://discord.gg/he4rt"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={socialMedia.discord} target="_blank" rel="noreferrer">
                   Discord
+                </a>
+              </li>
+              <li>
+                <a href={socialMedia.twitter} target="_blank" rel="noreferrer">
+                  X
                 </a>
               </li>
               <li>Instagram</li>
               <li>Linkedin</li>
               <li>
-                <a
-                  href="https://github.com/he4rt/he4rt-landing"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={socialMedia.github} target="_blank" rel="noreferrer">
                   Github
                 </a>
               </li>
-              <li>X</li>
             </ul>
           </div>
         </div>

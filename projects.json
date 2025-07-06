@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "title": "4Noobs",
+    "description": "O intuito deste repositório é mostrar projetos desenvolvidos para facilitar o estudos dos devs iniciantes feitos pela nossa comunidade!",
+    "tags": ["Tutorial", "4noobs"],
+    "url": "https://github.com/he4rt/4noobs"
+  },
+  {
+    "id": 2,
+
+    "title": "He4rtLabs",
+    "description": "Projetos práticos desenvolvidos pela comunidade para aprendizado.",
+    "tags": ["Documentação", "Documentação"],
+    "url": ""
+  },
+  {
+    "id": 3,
+
+    "title": "He4rtLabs",
+    "description": "Projetos práticos desenvolvidos pela comunidade para aprendizado.",
+    "tags": ["Documentação", "Documentação"],
+    "url": ""
+  }
+]
