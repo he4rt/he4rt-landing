@@ -17,9 +17,9 @@ import { AvatarImage } from "@radix-ui/react-avatar";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import aboutCards from "../../aboutCards.json";
-import projects from "../../projects.json";
-import socialMedia from "../../socialMedia.json";
+import aboutCards from "../data/aboutCards.json";
+import projects from "../data/projects.json";
+import socialMedia from "../data/socialMedia.json";
 
 export default function Home() {
   return (

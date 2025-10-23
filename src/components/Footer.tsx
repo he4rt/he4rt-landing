@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "./ui/separator";
 
-import socialMedia from "../../socialMedia.json";
+import socialMedia from "../data/socialMedia.json";
 
 export const Footer = () => {
   return (
